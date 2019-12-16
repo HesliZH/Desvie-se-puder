@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Desvie se puder</name>
+    <description>Jogo de desvio</description>
+    <version>0.00.1</version>
+    <author>HitKill Studios</author>
+    <author-email></author-email>
+    <author-website>www.hitkillstudios.com.br</author-website>
+    <app-id>com.hitkillstudios.desp</app-id>
+    <unique-id>yn5rpjqkmlxn</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>854</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Chão">
+            <object-type name="FundoGrama" sid="848964864324077">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Projetos\Estacione-se-Puder\Textures\tileset_Grama1.png" />
+            </object-type>
+            <object-type name="Estrada" sid="466125146939269">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Projetos\Estacione-se-Puder\Textures\tileset_Asfalto2.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Player">
+            <object-type name="Player" sid="267265731650276">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870431510694486" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
+                            <collision-poly>
+                                <point x="0.038835" y="0.0653595" />
+                                <point x="0.499029" y="0.0653595" />
+                                <point x="0.924272" y="0.127451" />
+                                <point x="0.998058" y="0.5" />
+                                <point x="0.924272" y="0.872549" />
+                                <point x="0.499029" y="0.934641" />
+                                <point x="0.038835" y="0.934641" />
+                                <point x="0.00194175" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Inimigos">
+            <object-type name="Inimigos" sid="990568379337386">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="747125999538020">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576916189586686" speed="0">
+                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\000.png" />
+                        <frame duration="1" hotspotX="0.500846" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501538" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\004.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="InimigosMenu" sid="466935229373390">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="545078841768649" speed="0">
+                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\000.png" />
+                        <frame duration="1" hotspotX="0.500846" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501538" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\004.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Controles">
+            <object-type name="SetaEsquerda" sid="991746141388034">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844184378109896" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\controle_SetaDireita\Default\000.png">
+                            <collision-poly>
+                                <point x="0.153465" y="0.21831" />
+                                <point x="0.5" y="0.00704225" />
+                                <point x="0.945545" y="0.0774648" />
+                                <point x="0.995049" y="0.5" />
+                                <point x="0.945545" y="0.922535" />
+                                <point x="0.5" y="0.992958" />
+                                <point x="0.153465" y="0.78169" />
+                                <point x="0.00495049" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SetaDireita" sid="232743804923902">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567297216796877" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\controle_SetaEsquerda\Default\000.png">
+                            <collision-poly>
+                                <point x="0.0544554" y="0.0774648" />
+                                <point x="0.5" y="0.00704225" />
+                                <point x="0.846535" y="0.21831" />
+                                <point x="0.995049" y="0.5" />
+                                <point x="0.846535" y="0.78169" />
+                                <point x="0.5" y="0.992958" />
+                                <point x="0.0544554" y="0.922535" />
+                                <point x="0.00495049" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Metodos Controles">
+            <object-type name="Touch" sid="510023976937284">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="Keyboard" sid="521771560209185">
+                <plugin id="Keyboard" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Controladores de Spawn">
+            <object-type name="SpawnerInimigos" sid="503975355918573">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341203196540598" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DespawnerInimigos" sid="706840042909774">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="164578235914540" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Derrota">
+            <object-type name="Fundo" sid="726676797864201">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299811167501615" speed="5">
+                        <frame duration="1" hotspotX="0.482796" hotspotY="0.784444" original-source="C:\Projetos\Estacione-se-Puder\Textures\Mesa.png">
+                            <collision-poly>
+                                <point x="0.104301" y="0.00222222" />
+                                <point x="0.86129" y="0.00222222" />
+                                <point x="0.998925" y="0.784444" />
+                                <point x="0.586021" y="0.997778" />
+                                <point x="0.37957" y="0.997778" />
+                                <point x="0.00107527" y="0.784444" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FinalizacaoText" sid="201070260313142">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643872726323441" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.617021" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\Finalização.png">
+                            <collision-poly>
+                                <point x="0.126016" y="0.255319" />
+                                <point x="0.5" y="0.255319" />
+                                <point x="0.821138" y="0.531915" />
+                                <point x="0.95935" y="0.617021" />
+                                <point x="0.853659" y="0.87234" />
+                                <point x="0.5" y="0.489362" />
+                                <point x="0.138211" y="0.914894" />
+                                <point x="0.0569106" y="0.617021" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnVoltar" sid="895607061212505">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="FundoBotao" sid="332801501390779">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620553842344508" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.491525" original-source="C:\Projetos\Estacione-se-Puder\Textures\Retangulo.png">
+                            <collision-poly>
+                                <point x="0.00512295" y="0.0225989" />
+                                <point x="0.5" y="0.00564972" />
+                                <point x="0.994877" y="0.0225989" />
+                                <point x="0.996926" y="0.971751" />
+                                <point x="0.5" y="0.99435" />
+                                <point x="0.00307377" y="0.971751" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnVoltarMenu" sid="362507667636096">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192332074835390" speed="5">
+                        <frame duration="1" hotspotX="0.416327" hotspotY="1.47619" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\VoltarAomenu.png">
+                            <collision-poly>
+                                <point x="0.415743" y="0.388889" />
+                                <point x="1" y="1" />
+                                <point x="1" y="1" />
+                                <point x="1" y="1" />
+                                <point x="0.415743" y="1" />
+                                <point x="0" y="0.3322" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Menu">
+            <object-type name="btnIniciar" sid="724403547170970">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572875086149476" speed="5">
+                        <frame duration="1" hotspotX="0.514286" hotspotY="0.290323" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\Iniciar.png">
+                            <collision-poly>
+                                <point x="0.0809524" y="0.0322581" />
+                                <point x="0.514286" y="0.258065" />
+                                <point x="0.87619" y="0.274194" />
+                                <point x="0.995238" y="0.290323" />
+                                <point x="0.961905" y="0.596774" />
+                                <point x="0.514286" y="0.467742" />
+                                <point x="0.119048" y="0.419355" />
+                                <point x="0.0238095" y="0.290323" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Logo" sid="770454566357579">
+                <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="GlowHorizontal">
+                        <effect id="glowhorizontal" />
+                    </effect-type>
+                </effects>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102773337080655" speed="5">
+                        <frame duration="1" hotspotX="0.493865" hotspotY="0.457143" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\logo.png">
+                            <collision-poly>
+                                <point x="0.0920245" y="0.285714" />
+                                <point x="0.493865" y="0.0571429" />
+                                <point x="0.920245" y="0.0571429" />
+                                <point x="0.993865" y="0.457143" />
+                                <point x="0.92638" y="0.914286" />
+                                <point x="0.493865" y="0.4" />
+                                <point x="0.0644172" y="0.885714" />
+                                <point x="0.00920245" y="0.457143" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu Principal.xml</layout>
+        <layout>Fase01.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Eventos menu.xml</event-sheet>
+        <event-sheet>Eventos Fase 01.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="6" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

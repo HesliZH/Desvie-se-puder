@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Fase 01</name>
+    <events>
+        <variable constant="0" name="PistaAtual" sid="400069639259638" static="0" type="number">2</variable>
+        <comment>Grupo de simulação de paralax</comment>
+        <event-group description="" sid="657307276627161" title="SimulaMovimento">
+            <sub-events>
+                <event-block sid="913180352516056">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="260700908316313" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="133230460141651" type="FundoGrama">
+                            <param id="0" name="Y">FundoGrama.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="466102189984443" type="Estrada">
+                            <param id="0" name="Y">Estrada.Y + 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="972338413663483">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="674632506358581" type="Estrada">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="782246697591532" type="FundoGrama">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="909083684802584" type="Estrada">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <comment>Método para mudança de pista</comment>
+        <event-group description="" sid="972529406490534" title="ControlaPista">
+            <sub-events>
+                <event-block sid="393115390987151">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="744732135201127" type="Touch">
+                            <param id="0" name="Object">SetaEsquerda</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="727872993906660" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="448894144706999" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="228157540078876">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="488754600332876" type="Touch">
+                            <param id="0" name="Object">SetaDireita</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="157434021818140" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="470925162983883" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="971761465484589" title="ControleSpritePista">
+            <sub-events>
+                <event-block sid="196117993479740">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="447689192956647" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="402870032369786" type="Player">
+                            <param id="0" name="X">120</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="759107570316783">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="169433186561940" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="757925192226866" type="Player">
+                            <param id="0" name="X">240</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="203591922716145">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="408679667288305" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="197924891470459" type="Player">
+                            <param id="0" name="X">355</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="875286337379595" title="DestroiInimigos">
+            <sub-events>
+                <event-block sid="118860245065095">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="353594833768076" type="Inimigos">
+                            <param id="0" name="Object">DespawnerInimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="396901354451202" type="Inimigos" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="656834136869997" title="SpawnaInimigos">
+            <sub-events>
+                <event-block sid="820705755565712">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="691555725710873" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="691775442311121" type="SpawnerInimigos">
+                            <param id="0" name="Object">Inimigos</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="915851906176344" type="Inimigos">
+                            <param id="0" name="Frame number">int(random(0,4))</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="102035924887060" type="Inimigos">
+                            <param id="0" name="X">120 + choose(0, 120, 235)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="805045013077800" title="ColisaoDestruicao">
+            <sub-events>
+                <event-block sid="600973023233827">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="625716385838197" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="641999252412867" type="System">
+                            <param id="0" name="Group name">&quot;SpawnaInimigos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="278090711332063" type="System">
+                            <param id="0" name="Group name">&quot;ControlaPista&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="611819172440537" type="System">
+                            <param id="0" name="Group name">&quot;SimulaMovimento&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="796268612688314" type="System">
+                            <param id="0" name="Layer">&quot;Controle&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="963624769913867" type="System">
+                            <param id="0" name="Layer">&quot;Player&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="491112341545444" type="System">
+                            <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="145673012259279" title="ControleDoMenu">
+            <sub-events>
+                <event-block sid="410528113399889">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="952764986611615" type="Touch">
+                            <param id="0" name="Object">FundoBotao</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="772522353407340" type="System">
+                            <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="505946279386494" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="198662330455807" title="DefinicoesIniciais">
+            <sub-events>
+                <event-block sid="586157589677709">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="886902281554129" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="740586718050488" type="System">
+                            <param id="0" name="Group name">&quot;SpawnaInimigos&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="623920768079399" type="System">
+                            <param id="0" name="Group name">&quot;ControlaPista&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="471036492713394" type="System">
+                            <param id="0" name="Group name">&quot;SimulaMovimento&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="146737731368354" type="System">
+                            <param id="0" name="Layer">&quot;Controle&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="187865338722854" type="System">
+                            <param id="0" name="Layer">&quot;Player&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="138529556593950" type="System">
+                            <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
