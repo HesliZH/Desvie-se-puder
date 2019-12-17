@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Fase 01</name>
     <events>
+        <variable constant="0" name="Points" sid="868001230573254" static="0" type="number">0</variable>
         <variable constant="0" name="PistaAtual" sid="400069639259638" static="0" type="number">2</variable>
         <comment>Grupo de simulação de paralax</comment>
         <event-group description="" sid="657307276627161" title="SimulaMovimento">
@@ -24,6 +25,10 @@
                         <action id="-2" name="Set Y" sid="572799009196714" type="BordaDireita">
                             <param id="0" name="Y">BordaDireita.Y + 5</param>
                         </action>
+                        <action id="-24" name="Move to top" sid="927895661129939" type="Pontos" />
+                        <action id="0" name="Set text" sid="577705187589946" type="Pontos">
+                            <param id="0" name="Text">Points</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="972338413663483">
@@ -44,6 +49,9 @@
                             <param id="0" name="Y">-255</param>
                         </action>
                         <action id="-2" name="Set Y" sid="477919077862634" type="BordaDireita">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="822462840279337" type="BordaDireita">
                             <param id="0" name="Y">-255</param>
                         </action>
                     </actions>
@@ -262,9 +270,26 @@
                             <param id="0" name="Layer">&quot;Derrota&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="126528143275176" type="System">
+                            <param id="0" name="Variable">Points</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="957636247086986">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="537612598338162" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="514843324472900" type="System">
+                    <param id="0" name="Variable">Points</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
