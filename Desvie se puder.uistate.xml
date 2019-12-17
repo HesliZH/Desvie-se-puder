@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Menu Principal</layout>
-        <layout order="2">Fase01</layout>
+        <layout order="0">Menu Principal</layout>
+        <layout active="1" order="2">Fase01</layout>
         <event-sheet order="1">Eventos menu</event-sheet>
         <event-sheet order="3">Eventos Fase 01</event-sheet>
     </open-tabs>
@@ -25,13 +25,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="1" path="object-folder/Chão/" />
-        <folder expanded="1" path="object-folder/Player/" />
+        <folder expanded="0" path="object-folder/Player/" />
         <folder expanded="1" path="object-folder/Inimigos/" />
-        <folder expanded="1" path="object-folder/Controles/" />
-        <folder expanded="1" path="object-folder/Metodos Controles/" />
-        <folder expanded="1" path="object-folder/Controladores de Spawn/" />
-        <folder expanded="1" path="object-folder/Derrota/" />
-        <folder expanded="1" path="object-folder/Menu/" />
+        <folder expanded="0" path="object-folder/Controles/" />
+        <folder expanded="0" path="object-folder/Metodos Controles/" />
+        <folder expanded="0" path="object-folder/Controladores de Spawn/" />
+        <folder expanded="0" path="object-folder/Derrota/" />
+        <folder expanded="0" path="object-folder/Menu/" />
+        <folder expanded="1" path="object-folder/Bordas/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />

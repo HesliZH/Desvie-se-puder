@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>240</position-x>
-        <position-y>599.5</position-y>
+        <position-y>451.9</position-y>
         <position-z>120</position-z>
         <lookat-x>240</lookat-x>
-        <lookat-y>599.5</lookat-y>
+        <lookat-y>451.9</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -23,10 +23,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Derrota" />
+    <active-layer name="FundoAreia" />
     <layers>
+        <layer locked="0" name="FundoAreia" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="FundoTerra" parallax-in-editor="0" visible="0" />
         <layer locked="0" name="FundoGrama" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Estrada" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BordaAreia" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="BordaTerra" parallax-in-editor="0" visible="0" />
+        <layer locked="0" name="BordaGrama" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Player" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Controle" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Derrota" parallax-in-editor="0" visible="0" />

@@ -61,6 +61,14 @@
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Projetos\Estacione-se-Puder\Textures\tileset_Asfalto2.png" />
             </object-type>
+            <object-type name="FundoTerra" sid="648096522963408">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Terra Desvie se Pider.png" />
+            </object-type>
+            <object-type name="FundoAreia" sid="640585615438377">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Areia Desvie se Pider clone.png" />
+            </object-type>
         </object-folder>
         <object-folder name="Player">
             <object-type name="Player" sid="267265731650276">
@@ -277,6 +285,7 @@
                                 <point x="0" y="1" />
                                 <point x="0" y="0" />
                                 <point x="0.0678571" y="0.1375" />
+                                <point x="0.0339286" y="0.06875" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -312,14 +321,32 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-type name="Borda" sid="109071223967771">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone.png" />
-        </object-type>
-        <object-type name="BordaDireita" sid="311117475346149">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone(2).png" />
-        </object-type>
+        <object-folder name="Bordas">
+            <object-type name="BordaDireitaGrama" sid="311117475346149">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone(2).png" />
+            </object-type>
+            <object-type name="BordaDireitaTerra" sid="205209594821923">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Terra lado Direita.png" />
+            </object-type>
+            <object-type name="BordaEsquerdaTerra" sid="194477612577349">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Terra lado Esquerda .png" />
+            </object-type>
+            <object-type name="BordaEsquerdaGrama" sid="109071223967771">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone.png" />
+            </object-type>
+            <object-type name="BordaEsquerdaAreia" sid="347025269569267">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Areia Direita clone.png" />
+            </object-type>
+            <object-type name="BordaDireitaAreia" sid="182481247408017">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\Areia Direita.png" />
+            </object-type>
+        </object-folder>
         <object-type name="Preto" sid="364160276822830">
             <plugin id="TiledBg" />
             <texture />
