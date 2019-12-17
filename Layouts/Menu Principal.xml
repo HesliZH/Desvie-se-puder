@@ -49,6 +49,46 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Borda" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>1056</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BordaDireita" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>1056</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -76,8 +116,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>93</x>
-                        <y>-34</y>
+                        <x>96</x>
+                        <y>-32</y>
                         <z>0</z>
                         <width>289</width>
                         <height>1552</height>
@@ -113,6 +153,45 @@
             </instances>
             <effects />
         </layer>
+        <layer name="Efeitos" sid="578361071045708">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Preto" uid="24">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>96</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>224</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>0.400000006</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
         <layer name="Botões" sid="160018521967467">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -136,17 +215,24 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <effect-instances>
+                        <effect-instance type="GlowHorizontal">
+                            <parameters>
+                                <intensity>0.1</intensity>
+                            </parameters>
+                        </effect-instance>
+                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>242</x>
-                        <y>509</y>
+                        <y>508.740753174</y>
                         <z>0</z>
-                        <width>210</width>
-                        <height>62</height>
+                        <width>242</width>
+                        <height>58</height>
                         <depth>0</depth>
-                        <hotspotX>0.514285743</hotspotX>
-                        <hotspotY>0.290322572</hotspotY>
+                        <hotspotX>0.508264482</hotspotX>
+                        <hotspotY>-1.517241359</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -158,24 +244,39 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Sine">
+                            <properties>
+                                <active-on-start>Yes</active-on-start>
+                                <movement>Size</movement>
+                                <wave>Sine</wave>
+                                <period>1</period>
+                                <period-random>0</period-random>
+                                <period-offset>0</period-offset>
+                                <period-offset-random>0</period-offset-random>
+                                <magnitude>10</magnitude>
+                                <magnitude-random>0</magnitude-random>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <effect-instances>
                         <effect-instance type="GlowHorizontal">
                             <parameters>
-                                <intensity>1</intensity>
+                                <intensity>0.25</intensity>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>235.331298828</x>
-                        <y>224</y>
+                        <x>233.805969238</x>
+                        <y>192</y>
                         <z>0</z>
-                        <width>272</width>
-                        <height>35</height>
+                        <width>415</width>
+                        <height>176</height>
                         <depth>0</depth>
-                        <hotspotX>0.493865043</hotspotX>
-                        <hotspotY>0.45714286</hotspotY>
+                        <hotspotX>0.485074639</hotspotX>
+                        <hotspotY>0.415584415</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -196,7 +297,7 @@
                         <width>111</width>
                         <height>60</height>
                         <depth>0</depth>
-                        <hotspotX>0.501048028</hotspotX>
+                        <hotspotX>0.501048207</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0.696789145</angle>
                         <opacity>1</opacity>

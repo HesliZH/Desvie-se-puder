@@ -18,6 +18,12 @@
                         <action id="-2" name="Set Y" sid="466102189984443" type="Estrada">
                             <param id="0" name="Y">Estrada.Y + 5</param>
                         </action>
+                        <action id="-2" name="Set Y" sid="531922170899915" type="Borda">
+                            <param id="0" name="Y">Borda.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="572799009196714" type="BordaDireita">
+                            <param id="0" name="Y">BordaDireita.Y + 5</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="972338413663483">
@@ -32,6 +38,12 @@
                             <param id="0" name="Y">-255</param>
                         </action>
                         <action id="-2" name="Set Y" sid="909083684802584" type="Estrada">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="125081617124799" type="Borda">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="477919077862634" type="BordaDireita">
                             <param id="0" name="Y">-255</param>
                         </action>
                     </actions>

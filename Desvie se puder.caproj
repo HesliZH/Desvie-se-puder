@@ -18,6 +18,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
@@ -51,7 +52,7 @@
         <object-folder name="Chão">
             <object-type name="FundoGrama" sid="848964864324077">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Projetos\Estacione-se-Puder\Textures\tileset_Grama1.png" />
+                <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder.png" />
             </object-type>
             <object-type name="Estrada" sid="466125146939269">
                 <plugin id="TiledBg" />
@@ -255,18 +256,23 @@
         <object-folder name="Menu">
             <object-type name="btnIniciar" sid="724403547170970">
                 <plugin id="Sprite" />
+                <effects>
+                    <effect-type name="GlowHorizontal">
+                        <effect id="glowhorizontal" />
+                    </effect-type>
+                </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572875086149476" speed="5">
-                        <frame duration="1" hotspotX="0.514286" hotspotY="0.290323" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\Iniciar.png">
+                        <frame duration="1" hotspotX="0.508264" hotspotY="-1.51724" original-source="C:\Users\twata\Downloads\Iniciar(1).png">
                             <collision-poly>
-                                <point x="0.0809524" y="0.0322581" />
-                                <point x="0.514286" y="0.258065" />
-                                <point x="0.87619" y="0.274194" />
-                                <point x="0.995238" y="0.290323" />
-                                <point x="0.961905" y="0.596774" />
-                                <point x="0.514286" y="0.467742" />
-                                <point x="0.119048" y="0.419355" />
-                                <point x="0.0238095" y="0.290323" />
+                                <point x="0" y="0" />
+                                <point x="0.507792" y="0" />
+                                <point x="0.94341" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                                <point x="0.507792" y="0.529143" />
+                                <point x="0.0320507" y="0" />
+                                <point x="0" y="0" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -274,6 +280,11 @@
             </object-type>
             <object-type name="Logo" sid="770454566357579">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="823021464367929">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <effects>
                     <effect-type name="GlowHorizontal">
                         <effect id="glowhorizontal" />
@@ -281,22 +292,34 @@
                 </effects>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="102773337080655" speed="5">
-                        <frame duration="1" hotspotX="0.493865" hotspotY="0.457143" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\logo.png">
+                        <frame duration="1" hotspotX="0.485075" hotspotY="0.415584" original-source="C:\Users\twata\Downloads\Desvie se puder(2).png">
                             <collision-poly>
-                                <point x="0.0920245" y="0.285714" />
-                                <point x="0.493865" y="0.0571429" />
-                                <point x="0.920245" y="0.0571429" />
-                                <point x="0.993865" y="0.457143" />
-                                <point x="0.92638" y="0.914286" />
-                                <point x="0.493865" y="0.4" />
-                                <point x="0.0644172" y="0.885714" />
-                                <point x="0.00920245" y="0.457143" />
+                                <point x="0" y="0.0482248" />
+                                <point x="0.487511" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.409645" />
+                                <point x="1" y="1" />
+                                <point x="0.487511" y="0.289172" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0.409645" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-type name="Borda" sid="109071223967771">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone.png" />
+        </object-type>
+        <object-type name="BordaDireita" sid="311117475346149">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone(2).png" />
+        </object-type>
+        <object-type name="Preto" sid="364160276822830">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
