@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
     <name>Desvie se puder</name>
-    <description>Jogo de desvio</description>
-    <version>0.00.1</version>
+    <description>Desvie de carros andando na contramão e prove suas habilidades ao volante</description>
+    <version>0.01.2</version>
     <author>HitKill Studios</author>
     <author-email></author-email>
     <author-website>www.hitkillstudios.com.br</author-website>
@@ -377,6 +377,7 @@
     <event-folder>
         <event-sheet>Eventos menu.xml</event-sheet>
         <event-sheet>Eventos Fase 01.xml</event-sheet>
+        <event-sheet>Eventos de configurações.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">

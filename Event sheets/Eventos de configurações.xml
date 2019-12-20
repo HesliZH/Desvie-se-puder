@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos de configurações</name>
+    <events>
+        <variable constant="0" name="TipoControle" sid="404392568015402" static="0" type="text">Mobile</variable>
+        <comment>As linhas contidas nesse arquivo serão as configurações do menu, nela serão controladas opções para reutilização de conteúdo entre os portes de versões (Mobile / PC)</comment>
+        <event-group description="" sid="386118068159669" title="DefineControle" />
+        <event-group description="" sid="670002619815735" title="ControleMobile" />
+        <event-group description="" sid="670547951282728" title="ControleComputador" />
+    </events>
+</c2eventsheet>

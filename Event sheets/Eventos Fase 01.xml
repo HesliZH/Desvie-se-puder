@@ -201,7 +201,7 @@
                     <actions>
                         <action id="0" name="Spawn another object" sid="691775442311121" type="SpawnerInimigos">
                             <param id="0" name="Object">Inimigos</param>
-                            <param id="1" name="Layer">2</param>
+                            <param id="1" name="Layer">&quot;Player&quot;</param>
                             <param id="2" name="Image point">0</param>
                         </action>
                         <action id="5" name="Set frame" sid="915851906176344" type="Inimigos">
