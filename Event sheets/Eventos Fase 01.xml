@@ -45,6 +45,12 @@
                         <action id="-2" name="Set Y" sid="294229371977331" type="BordaEsquerdaAreia">
                             <param id="0" name="Y">BordaEsquerdaAreia.Y + 5</param>
                         </action>
+                        <action id="-2" name="Set Y" sid="638592660746211" type="ControleDir">
+                            <param id="0" name="Y">ControleDir.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="162988742806546" type="ControleEsq">
+                            <param id="0" name="Y">ControleEsq.Y + 5</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="972338413663483">
@@ -85,6 +91,12 @@
                         <action id="-2" name="Set Y" sid="938187543987635" type="BordaEsquerdaAreia">
                             <param id="0" name="Y">-255</param>
                         </action>
+                        <action id="-2" name="Set Y" sid="356689549540137" type="ControleEsq">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="987415362206516" type="ControleDir">
+                            <param id="0" name="Y">-255</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -95,7 +107,7 @@
                 <event-block sid="393115390987151">
                     <conditions>
                         <condition id="3" name="On touched object" sid="744732135201127" type="Touch">
-                            <param id="0" name="Object">SetaEsquerda</param>
+                            <param id="0" name="Object">ControleEsq</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="727872993906660" type="System">
                             <param id="0" name="Variable">PistaAtual</param>
@@ -113,7 +125,7 @@
                 <event-block sid="228157540078876">
                     <conditions>
                         <condition id="3" name="On touched object" sid="488754600332876" type="Touch">
-                            <param id="0" name="Object">SetaDireita</param>
+                            <param id="0" name="Object">ControleDir</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="157434021818140" type="System">
                             <param id="0" name="Variable">PistaAtual</param>
@@ -273,6 +285,33 @@
         </event-group>
         <event-group description="" sid="198662330455807" title="DefinicoesIniciais">
             <sub-events>
+                <event-block sid="359097677746628">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="338670109155111" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="542949633669761" type="Pontos" />
+                        <action id="0" name="Set text" sid="976883381986593" type="Pontos">
+                            <param id="0" name="Text">Points</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="767665676350233" type="System">
+                            <param id="0" name="Layer">&quot;FundoGrama&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeGrama</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="659717719535907" type="System">
+                            <param id="0" name="Layer">&quot;BordaGrama&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeGrama</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="277173011351689" type="System">
+                            <param id="0" name="Layer">&quot;FundoTerra&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeTerra</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="628615914041467" type="System">
+                            <param id="0" name="Layer">&quot;BordaTerra&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeTerra</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="586157589677709">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="886902281554129" type="System" />
@@ -314,95 +353,72 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="957636247086986">
-            <conditions>
-                <condition id="-6" name="Every X seconds" sid="537612598338162" type="System">
-                    <param id="0" name="Interval (seconds)">0.5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="514843324472900" type="System">
-                    <param id="0" name="Variable">Points</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="277121051493179">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="977433032959234" type="System">
-                    <param id="0" name="Variable">Points</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">20</param>
-                </condition>
-            </conditions>
-            <actions />
+        <event-group description="" sid="426871961920487" title="Pontos">
             <sub-events>
-                <event-block sid="755933993874396">
+                <event-block sid="957636247086986">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="655476520013164" type="System">
+                        <condition id="-6" name="Every X seconds" sid="537612598338162" type="System">
                             <param id="0" name="Interval (seconds)">0.5</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-11" name="Subtract from" sid="593065037281271" type="System">
-                            <param id="0" name="Variable">OpacidadeGrama</param>
-                            <param id="1" name="Value">5</param>
+                        <action id="-10" name="Add to" sid="514843324472900" type="System">
+                            <param id="0" name="Variable">Points</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-            </sub-events>
-        </event-block>
-        <event-block sid="675921339876089">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="904548568808814" type="System">
-                    <param id="0" name="Variable">Points</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">40</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="835799878951147">
+                <event-block sid="277121051493179">
                     <conditions>
-                        <condition id="-6" name="Every X seconds" sid="747866456599446" type="System">
-                            <param id="0" name="Interval (seconds)">0.5</param>
+                        <condition id="-14" name="Compare variable" sid="977433032959234" type="System">
+                            <param id="0" name="Variable">Points</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">20</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="619349391576010" type="System">
-                            <param id="0" name="Variable">OpacidadeTerra</param>
-                            <param id="1" name="Value">5</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="755933993874396">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="655476520013164" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="593065037281271" type="System">
+                                    <param id="0" name="Variable">OpacidadeGrama</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="675921339876089">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="904548568808814" type="System">
+                            <param id="0" name="Variable">Points</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">40</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="835799878951147">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="747866456599446" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="619349391576010" type="System">
+                                    <param id="0" name="Variable">OpacidadeTerra</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="359097677746628">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="338670109155111" type="System" />
-            </conditions>
-            <actions>
-                <action id="-24" name="Move to top" sid="542949633669761" type="Pontos" />
-                <action id="0" name="Set text" sid="976883381986593" type="Pontos">
-                    <param id="0" name="Text">Points</param>
-                </action>
-                <action id="-18" name="Set layer opacity" sid="767665676350233" type="System">
-                    <param id="0" name="Layer">&quot;FundoGrama&quot;</param>
-                    <param id="1" name="Opacity">OpacidadeGrama</param>
-                </action>
-                <action id="-18" name="Set layer opacity" sid="659717719535907" type="System">
-                    <param id="0" name="Layer">&quot;BordaGrama&quot;</param>
-                    <param id="1" name="Opacity">OpacidadeGrama</param>
-                </action>
-                <action id="-18" name="Set layer opacity" sid="277173011351689" type="System">
-                    <param id="0" name="Layer">&quot;FundoTerra&quot;</param>
-                    <param id="1" name="Opacity">OpacidadeTerra</param>
-                </action>
-                <action id="-18" name="Set layer opacity" sid="628615914041467" type="System">
-                    <param id="0" name="Layer">&quot;BordaTerra&quot;</param>
-                    <param id="1" name="Opacity">OpacidadeTerra</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
     </events>
 </c2eventsheet>
