@@ -523,7 +523,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Pontos" uid="25">
+                <instance type="TextoPontos" uid="25">
                     <properties>
                         <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -553,46 +553,42 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ControleEsq" uid="33">
+                <instance type="ControleEsq" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <hotspot>Top-left</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>112</x>
-                        <y>448</y>
+                        <x>0</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>224</width>
-                        <height>864</height>
+                        <height>1120</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ControleDir" uid="34">
+                <instance type="ControleDir" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <hotspot>Top-left</hotspot>
                     </properties>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>368</x>
-                        <y>448</y>
+                        <x>256</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>224</width>
-                        <height>864</height>
+                        <height>1120</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

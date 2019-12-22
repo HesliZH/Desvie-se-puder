@@ -53,7 +53,5 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btnVoltarMenu/" />
         <folder expanded="1" path="animation-folder/btnIniciar/" />
         <folder expanded="1" path="animation-folder/Logo/" />
-        <folder expanded="1" path="animation-folder/ControleEsq/" />
-        <folder expanded="1" path="animation-folder/ControleDir/" />
     </folders-expanded>
 </c2uistate>

@@ -4,7 +4,7 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <show-addaction-links>1</show-addaction-links>
-    <scroll-pos>0</scroll-pos>
+    <scroll-pos>620</scroll-pos>
     <conditions-column>240</conditions-column>
     <actions-namecolumn>80</actions-namecolumn>
     <condition-namecolumns>
@@ -19,11 +19,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <nest>14</nest>
     </condition-namecolumns>
     <events>
-        <event collapsed="1" sid="875286337379595" />
-        <event collapsed="1" sid="656834136869997" />
-        <event collapsed="1" sid="805045013077800" />
-        <event collapsed="1" sid="145673012259279" />
-        <event collapsed="1" sid="198662330455807" />
-        <event collapsed="1" sid="426871961920487" />
+        <event collapsed="1" sid="657307276627161" />
     </events>
 </c2uistate>
