@@ -338,6 +338,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>No início do layout os grupos de funcionamento do jogo são ativados, as layers de jogo são definidas como visíveis e a layer de Game Over é definida como invisível.</comment>
                 <event-block sid="586157589677709">
                     <conditions>
                         <condition id="-2" name="On start of layout" sid="886902281554129" type="System" />
@@ -367,20 +368,60 @@
                             <param id="0" name="Layer">&quot;Derrota&quot;</param>
                             <param id="1" name="Visibility">0</param>
                         </action>
-                        <action id="-9" name="Set value" sid="126528143275176" type="System">
+                    </actions>
+                </event-block>
+                <comment>No início do layout os pontos são definidos como 0, o multiplicado é resetado para 1 e as partículas são fixadas no carro do jogador.</comment>
+                <event-block sid="363412362280532">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="954760784060473" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="109271573585199" type="System">
                             <param id="0" name="Variable">Pontos</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                        <action behavior="Pin" id="0" name="Pin to object" sid="865795868607638" type="Particles">
+                        <action id="-9" name="Set value" sid="829856017794178" type="System">
+                            <param id="0" name="Variable">Multiplicador</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="654611867148612" type="Particles">
                             <param id="0" name="Pin to">Player</param>
                             <param id="1" name="Mode">0</param>
                         </action>
                     </actions>
                 </event-block>
+                <comment>Define a opacidade da layer da grama como 100 (totalmente opaca) e as demais opacidades das layers como 0 (não visível).</comment>
+                <event-block sid="191481972252352">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="338491128750078" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="200830914861986" type="System">
+                            <param id="0" name="Variable">OpacidadeGrama</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="249676526755367" type="System">
+                            <param id="0" name="Variable">OpacidadeTerra</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Define a velocidade da bala como a velocidade base dos inimigos multiplicado pelo valor de multiplicador de velocidade.</comment>
+                <event-block sid="776017520527507">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="359389278354436" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="517564938825915" type="Inimigos">
+                            <param id="0" name="Speed">Inimigos.Bullet.Speed * Multiplicador</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="426871961920487" title="Pontos">
+        <event-group description="Grupo responsável por controlar o fluxo de pontos do jogador." sid="426871961920487" title="Controle de Pontos">
             <sub-events>
+                <comment>A cada 0.5 segundos é somado 1 aos pontos do jogador. É somado também 0.0001 ao multiplicador de velocidade.</comment>
                 <event-block sid="957636247086986">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="537612598338162" type="System">
@@ -398,12 +439,13 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Caso os pontos forem menores que 100 a opacidade do layer da grama é gradativamente diminuída até que os objetos da layer não sejam mais visíveis.</comment>
                 <event-block sid="277121051493179">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="977433032959234" type="System">
                             <param id="0" name="Variable">Pontos</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">20</param>
+                            <param id="2" name="Value">100</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -423,12 +465,13 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <comment>Caso os pontos forem menores que 200 a opacidade do layer da grama é gradativamente diminuída até que os objetos da layer não sejam mais visíveis.</comment>
                 <event-block sid="675921339876089">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="904548568808814" type="System">
                             <param id="0" name="Variable">Pontos</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">40</param>
+                            <param id="2" name="Value">200</param>
                         </condition>
                     </conditions>
                     <actions />
@@ -450,30 +493,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="191481972252352">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="338491128750078" type="System" />
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="200830914861986" type="System">
-                    <param id="0" name="Variable">OpacidadeGrama</param>
-                    <param id="1" name="Value">100</param>
-                </action>
-                <action id="-9" name="Set value" sid="249676526755367" type="System">
-                    <param id="0" name="Variable">OpacidadeTerra</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="776017520527507">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="359389278354436" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Bullet" id="0" name="Set speed" sid="517564938825915" type="Inimigos">
-                    <param id="0" name="Speed">Inimigos.Bullet.Speed * Multiplicador</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
