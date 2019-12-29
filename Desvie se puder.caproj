@@ -2,7 +2,7 @@
 <c2project>
     <name>Desvie se puder</name>
     <description>Desvie de carros andando na contramão e prove suas habilidades ao volante</description>
-    <version>0.01.2</version>
+    <version>0.01.3</version>
     <author>HitKill Studios</author>
     <author-email></author-email>
     <author-website>www.hitkillstudios.com.br</author-website>
@@ -90,6 +90,9 @@
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="TextoGasolina" sid="507516320390016">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-folder name="Inimigos">
@@ -184,6 +187,14 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="164578235914540" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="SpawnerObjetos" sid="213967815051180">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518624721779399" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
@@ -345,6 +356,30 @@
             <object-type name="BordaDireitaAreia" sid="182481247408017">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Areia Direita.png" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Objetos">
+            <object-type name="Gasolina" sid="139236825141558">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="785323670182463">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470525221897119" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.53125" original-source="C:\Projetos\Desvie-se-puder\Textures\Upgrades\Gasolina.png">
+                            <collision-poly>
+                                <point x="0.28" y="0.928571" />
+                                <point x="0.08" y="0.428571" />
+                                <point x="0.36" y="0.0714286" />
+                                <point x="0.76" y="0.0714286" />
+                                <point x="0.96" y="0.428571" />
+                                <point x="0.84" y="0.928571" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-type name="Preto" sid="364160276822830">

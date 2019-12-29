@@ -11,10 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Menu Principal</layout>
-        <layout order="2">Fase01</layout>
-        <event-sheet order="1">Eventos menu</event-sheet>
-        <event-sheet active="1" order="3">Eventos Fase 01</event-sheet>
-        <event-sheet order="4">Eventos de configurações</event-sheet>
+        <layout active="1" order="1">Fase01</layout>
+        <event-sheet order="2">Eventos Fase 01</event-sheet>
+        <event-sheet order="3">Eventos de configurações</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,10 +29,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/Inimigos/" />
         <folder expanded="0" path="object-folder/Controles/" />
         <folder expanded="0" path="object-folder/Metodos Controles/" />
-        <folder expanded="0" path="object-folder/Controladores de Spawn/" />
+        <folder expanded="1" path="object-folder/Controladores de Spawn/" />
         <folder expanded="0" path="object-folder/Derrota/" />
         <folder expanded="0" path="object-folder/Menu/" />
         <folder expanded="1" path="object-folder/Bordas/" />
+        <folder expanded="1" path="object-folder/Objetos/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -47,11 +47,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SetaDireita/" />
         <folder expanded="1" path="animation-folder/SpawnerInimigos/" />
         <folder expanded="1" path="animation-folder/DespawnerInimigos/" />
+        <folder expanded="1" path="animation-folder/SpawnerObjetos/" />
         <folder expanded="1" path="animation-folder/Fundo/" />
         <folder expanded="1" path="animation-folder/FinalizacaoText/" />
         <folder expanded="1" path="animation-folder/FundoBotao/" />
         <folder expanded="1" path="animation-folder/btnVoltarMenu/" />
         <folder expanded="1" path="animation-folder/btnIniciar/" />
         <folder expanded="1" path="animation-folder/Logo/" />
+        <folder expanded="1" path="animation-folder/Gasolina/" />
     </folders-expanded>
 </c2uistate>

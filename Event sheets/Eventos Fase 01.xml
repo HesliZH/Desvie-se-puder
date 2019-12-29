@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Fase 01</name>
     <events>
+        <variable constant="0" name="InimigosDestruidos" sid="915117246645609" static="0" type="number">0</variable>
+        <variable constant="0" name="Gasolina" sid="265436587659301" static="0" type="number">10</variable>
         <comment>Multiplicador de velocidade.</comment>
         <variable constant="0" name="Multiplicador" sid="667474474002943" static="0" type="number">1</variable>
         <comment>Opacidade do layer do terreno de terra.</comment>
@@ -312,6 +314,9 @@
                         <action id="0" name="Set text" sid="976883381986593" type="TextoPontos">
                             <param id="0" name="Text">Pontos</param>
                         </action>
+                        <action id="0" name="Set text" sid="758365957618250" type="TextoGasolina">
+                            <param id="0" name="Text">Gasolina</param>
+                        </action>
                     </actions>
                 </event-block>
                 <comment>Durante todo tempo de execução a opacidade dos layers de terreno recebem os valores das variáveis globais de opacidade.</comment>
@@ -491,6 +496,122 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por subtrair e spawnar mais combustivel" sid="863734165522650" title="Controle de Combustível">
+            <sub-events>
+                <event-group description="" sid="981885872704927" title="Adiciona Combustível">
+                    <sub-events>
+                        <event-block sid="689692720065649">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="576478853856681" type="Player">
+                                    <param id="0" name="Object">Gasolina</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="165285895227609" type="Gasolina" />
+                                <action id="-9" name="Set value" sid="236911185825321" type="System">
+                                    <param id="0" name="Variable">Gasolina</param>
+                                    <param id="1" name="Value">10</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="244717202973394" title="Substrair Combustível">
+                    <sub-events>
+                        <event-block sid="160251059062892">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="735324887546785" type="Inimigos">
+                                    <param id="0" name="Object">DespawnerInimigos</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="704770618539838" type="System">
+                                    <param id="0" name="Variable">InimigosDestruidos</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="883666868636605">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="678229851541420" type="System">
+                                    <param id="0" name="Interval (seconds)">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="636593505365246" type="System">
+                                    <param id="0" name="Variable">Gasolina</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="422355255469036">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="585801499669937" type="System">
+                                    <param id="0" name="Variable">Gasolina</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="884278527031515" type="System">
+                                    <param id="0" name="Group name">&quot;Spawner de Inimigos&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="146409652591310" type="System">
+                                    <param id="0" name="Group name">&quot;Controle de Alteração da Pista&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="623517511633219" type="System">
+                                    <param id="0" name="Group name">&quot;Controle de Posicionamento da Pista&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="573026386670593" type="System">
+                                    <param id="0" name="Group name">&quot;Simula Movimento&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="807801185912852" type="System">
+                                    <param id="0" name="Layer">&quot;Controle&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="400374305713545" type="System">
+                                    <param id="0" name="Layer">&quot;Player&quot;</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="503042247689091" type="System">
+                                    <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                                    <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="812570584515935" type="Particles" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Grupo para realizar o Spawner de combustíveis" sid="962647170491318" title="Spawner Combustivel">
+                    <sub-events>
+                        <event-block any="1" sid="185280990694672">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="375720911806992" type="System">
+                                    <param id="0" name="Interval (seconds)">5</param>
+                                </condition>
+                                <condition id="-6" name="Every X seconds" sid="393914538395752" type="System">
+                                    <param id="0" name="Interval (seconds)">10</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="505131316544849" type="SpawnerObjetos">
+                                    <param id="0" name="Object">Gasolina</param>
+                                    <param id="1" name="Layer">&quot;Player&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="142491013244577" type="Gasolina">
+                                    <param id="0" name="X">120 + choose(0, 120, 235)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
             </sub-events>
         </event-group>
     </events>
