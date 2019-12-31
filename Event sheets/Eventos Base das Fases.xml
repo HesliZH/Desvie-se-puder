@@ -541,7 +541,7 @@
                         <event-block any="1" sid="185280990694672">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="375720911806992" type="System">
-                                    <param id="0" name="Interval (seconds)">random(5, 10)</param>
+                                    <param id="0" name="Interval (seconds)">1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -552,6 +552,9 @@
                                 </action>
                                 <action id="-1" name="Set X" sid="142491013244577" type="Gasolina">
                                     <param id="0" name="X">120 + choose(0, 120, 235)</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="639138603108260" type="Gasolina">
+                                    <param id="0" name="Angle">90</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -674,5 +677,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="956770108113985">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="554290660921388" type="Gasolina">
+                    <param id="0" name="Object">Inimigos</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="314549422638517" type="Gasolina" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

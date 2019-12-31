@@ -474,7 +474,7 @@
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>No</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
+                                <set-angle>No</set-angle>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -485,7 +485,7 @@
                         <x>120</x>
                         <y>-171</y>
                         <z>0</z>
-                        <width>57.142860413</width>
+                        <width>57.142856598</width>
                         <height>35.840000153</height>
                         <depth>0</depth>
                         <hotspotX>0.560000002</hotspotX>
