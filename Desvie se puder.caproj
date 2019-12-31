@@ -418,9 +418,9 @@
         <layout>Fase01.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Eventos menu.xml</event-sheet>
-        <event-sheet>Eventos Fase 01.xml</event-sheet>
-        <event-sheet>Eventos de configurações.xml</event-sheet>
+        <event-sheet>Eventos Menu.xml</event-sheet>
+        <event-sheet>Eventos Base das Fases.xml</event-sheet>
+        <event-sheet>Eventos de Configurações.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">

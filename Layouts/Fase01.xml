@@ -2,7 +2,7 @@
 <c2layout>
     <name>Fase01</name>
     <sid>284969291824176</sid>
-    <event-sheet>Eventos Fase 01</event-sheet>
+    <event-sheet>Eventos Base das Fases</event-sheet>
     <size>
         <width>480</width>
         <height>854</height>
@@ -545,8 +545,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>282.5</x>
-                        <y>1031</y>
+                        <x>288</x>
+                        <y>1152</y>
                         <z>0</z>
                         <width>1108</width>
                         <height>250</height>
