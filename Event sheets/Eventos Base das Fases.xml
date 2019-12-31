@@ -170,6 +170,9 @@
                         <action id="-2" name="Set Y" sid="292412677336608" type="ControleEsq">
                             <param id="0" name="Y">ControleEsq.Y + 5</param>
                         </action>
+                        <action id="-2" name="Set Y" sid="844726892700298" type="Marcas">
+                            <param id="0" name="Y">Marcas.Y + 5</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="972338413663483">
@@ -214,6 +217,9 @@
                             <param id="0" name="Y">-255</param>
                         </action>
                         <action id="-2" name="Set Y" sid="915492667138325" type="ControleEsq">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="962230725192166" type="Marcas">
                             <param id="0" name="Y">-255</param>
                         </action>
                     </actions>
@@ -541,7 +547,7 @@
                         <event-block any="1" sid="185280990694672">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="375720911806992" type="System">
-                                    <param id="0" name="Interval (seconds)">1</param>
+                                    <param id="0" name="Interval (seconds)">random(5,10)</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -556,6 +562,16 @@
                                 <action id="-8" name="Set angle" sid="639138603108260" type="Gasolina">
                                     <param id="0" name="Angle">90</param>
                                 </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="956770108113985">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="554290660921388" type="Gasolina">
+                                    <param id="0" name="Object">Inimigos</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="314549422638517" type="Gasolina" />
                             </actions>
                         </event-block>
                     </sub-events>
@@ -677,15 +693,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="956770108113985">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="554290660921388" type="Gasolina">
-                    <param id="0" name="Object">Inimigos</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="314549422638517" type="Gasolina" />
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

@@ -411,6 +411,10 @@
             <plugin id="TiledBg" />
             <texture />
         </object-type>
+        <object-type name="Marcas" sid="769706700936612">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\twata\Downloads\asfalto2 clone(1).png" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
