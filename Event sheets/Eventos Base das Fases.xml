@@ -371,6 +371,19 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="796417627491427">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="936436764715159" type="Inimigos">
+                            <param id="0" name="Object">DespawnerInimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="628416450383080" type="System">
+                            <param id="0" name="Variable">InimigosDestruidos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="Grupo que controla o menu de GameOver." sid="145673012259279" title="Controle do Menu">
@@ -489,19 +502,6 @@
                 </event-group>
                 <event-group description="Grupo responsável por subtrair o combustível." sid="244717202973394" title="Substrai Combustível">
                     <sub-events>
-                        <event-block sid="160251059062892">
-                            <conditions>
-                                <condition id="0" name="On collision with another object" sid="735324887546785" type="Inimigos">
-                                    <param id="0" name="Object">DespawnerInimigos</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Add to" sid="704770618539838" type="System">
-                                    <param id="0" name="Variable">InimigosDestruidos</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="883666868636605">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="678229851541420" type="System">
@@ -617,7 +617,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="882985709234083" title="Funcionamento do Jogo">
+        <event-group description="Grupo responsável por definir o funcionamento do jogo." sid="882985709234083" title="Funcionamento do Jogo">
             <sub-events>
                 <event-block sid="123752542972259">
                     <conditions>
