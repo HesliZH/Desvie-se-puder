@@ -485,8 +485,38 @@
         </event-group>
         <event-group description="Grupo responsável por subtrair e spawnar mais combustivel." sid="863734165522650" title="Controle de Combustível">
             <sub-events>
+                <event-group description="Grupo responsável por definir o funcionamento do sprite que exibe o combustível." sid="350681661598378" title="Representar Combustível">
+                    <sub-events>
+                        <event-block sid="277334925866629">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="962524116241737" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="919572396563680" type="ContadorGasolina" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="573285507302074">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="924734999445709" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="773462803312069" type="ContadorGasolina">
+                                    <param id="0" name="Frame number">40 - Gasolina</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
                 <event-group description="Grupo responsável por adicionar combustível ao contador do jogador conforme o jogo avança." sid="981885872704927" title="Adiciona Combustível">
                     <sub-events>
+                        <event-block sid="278094819563703">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="452282921100909" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="935254364509716" type="Gasolina" />
+                            </actions>
+                        </event-block>
                         <event-block sid="689692720065649">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="576478853856681" type="Player">
@@ -707,23 +737,5 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="277334925866629">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="962524116241737" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Stop" sid="919572396563680" type="ContadorGasolina" />
-            </actions>
-        </event-block>
-        <event-block sid="573285507302074">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="924734999445709" type="System" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="773462803312069" type="ContadorGasolina">
-                    <param id="0" name="Frame number">40 - Gasolina</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>
