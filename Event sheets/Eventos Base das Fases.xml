@@ -267,7 +267,7 @@
         </event-group>
         <event-group description="Grupo responsável por alterar a posição do carro conforme o valor da pista atual é alterado." sid="971761465484589" title="Controle de Posicionamento da Pista">
             <sub-events>
-                <comment>Caso o valor da pista atual for 1 a posição do eixo X do jogador é definido para 120.</comment>
+                <comment>Caso o valor da pista atual for 1 a posição do eixo X do jogador é definido para 134.</comment>
                 <event-block sid="196117993479740">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="447689192956647" type="System">
@@ -278,7 +278,7 @@
                     </conditions>
                     <actions>
                         <action id="-1" name="Set X" sid="402870032369786" type="Player">
-                            <param id="0" name="X">120</param>
+                            <param id="0" name="X">134</param>
                         </action>
                     </actions>
                 </event-block>
@@ -297,7 +297,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <comment>Caso o valor da pista atual for 3 a posição do eixo X do jogador é definido para 355.</comment>
+                <comment>Caso o valor da pista atual for 3 a posição do eixo X do jogador é definido para 344.</comment>
                 <event-block sid="203591922716145">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="408679667288305" type="System">
@@ -308,7 +308,7 @@
                     </conditions>
                     <actions>
                         <action id="-1" name="Set X" sid="197924891470459" type="Player">
-                            <param id="0" name="X">355</param>
+                            <param id="0" name="X">344</param>
                         </action>
                     </actions>
                 </event-block>
@@ -348,7 +348,7 @@
                             <param id="0" name="Frame number">int(random(0,4))</param>
                         </action>
                         <action id="-1" name="Set X" sid="102035924887060" type="Inimigos">
-                            <param id="0" name="X">120 + choose(0, 120, 235)</param>
+                            <param id="0" name="X">choose(134, 240, 344)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -601,7 +601,7 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-1" name="Set X" sid="142491013244577" type="Gasolina">
-                                    <param id="0" name="X">120 + choose(0, 120, 235)</param>
+                                    <param id="0" name="X">choose(134, 240, 344)</param>
                                 </action>
                                 <action id="-8" name="Set angle" sid="639138603108260" type="Gasolina">
                                     <param id="0" name="Angle">90</param>
