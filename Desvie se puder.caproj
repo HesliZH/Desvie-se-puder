@@ -91,8 +91,14 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="TextoGasolina" sid="507516320390016">
-                <plugin id="Text" />
+            <object-type name="Particles" sid="870211469287450">
+                <plugin id="Particles" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="997456426229410">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Users\twata\Desktop\Desvie-se-puder\Textures\Estrada.png" />
             </object-type>
         </object-folder>
         <object-folder name="Inimigos">
@@ -127,46 +133,16 @@
             </object-type>
         </object-folder>
         <object-folder name="Controles">
-            <object-type name="SetaEsquerda" sid="991746141388034">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="844184378109896" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\controle_SetaDireita\Default\000.png">
-                            <collision-poly>
-                                <point x="0.153465" y="0.21831" />
-                                <point x="0.5" y="0.00704225" />
-                                <point x="0.945545" y="0.0774648" />
-                                <point x="0.995049" y="0.5" />
-                                <point x="0.945545" y="0.922535" />
-                                <point x="0.5" y="0.992958" />
-                                <point x="0.153465" y="0.78169" />
-                                <point x="0.00495049" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
+            <object-type name="ControleDir" sid="901962205847499">
+                <plugin id="TiledBg" />
+                <texture />
             </object-type>
-            <object-type name="SetaDireita" sid="232743804923902">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="567297216796877" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\controle_SetaEsquerda\Default\000.png">
-                            <collision-poly>
-                                <point x="0.0544554" y="0.0774648" />
-                                <point x="0.5" y="0.00704225" />
-                                <point x="0.846535" y="0.21831" />
-                                <point x="0.995049" y="0.5" />
-                                <point x="0.846535" y="0.78169" />
-                                <point x="0.5" y="0.992958" />
-                                <point x="0.0544554" y="0.922535" />
-                                <point x="0.00495049" y="0.5" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
+            <object-type name="ControleEsq" sid="622597190200418">
+                <plugin id="TiledBg" />
+                <texture />
             </object-type>
         </object-folder>
-        <object-folder name="Metodos Controles">
+        <object-folder name="Métodos de Controle">
             <object-type name="Touch" sid="510023976937284">
                 <plugin id="Touch" />
             </object-type>
@@ -331,8 +307,12 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Preto" sid="364160276822830">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
         </object-folder>
-        <object-folder name="Bordas">
+        <object-folder name="Detalhes da Fase">
             <object-type name="BordaDireitaGrama" sid="311117475346149">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone(2).png" />
@@ -356,6 +336,10 @@
             <object-type name="BordaDireitaAreia" sid="182481247408017">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Areia Direita.png" />
+            </object-type>
+            <object-type name="Marcas" sid="769706700936612">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Users\twata\Downloads\asfalto2 clone(1).png" />
             </object-type>
         </object-folder>
         <object-folder name="Objetos">
@@ -382,39 +366,64 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-type name="Preto" sid="364160276822830">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="TextoPontos" sid="380984018418638">
-            <plugin id="Text" />
-            <behaviors>
-                <behavior-type name="Pin" sid="357544380167582">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-        </object-type>
-        <object-type name="Particles" sid="870211469287450">
-            <plugin id="Particles" />
-            <behaviors>
-                <behavior-type name="Pin" sid="997456426229410">
-                    <behavior id="Pin" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Users\twata\Desktop\Desvie-se-puder\Textures\Estrada.png" />
-        </object-type>
-        <object-type name="ControleEsq" sid="622597190200418">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="ControleDir" sid="901962205847499">
-            <plugin id="TiledBg" />
-            <texture />
-        </object-type>
-        <object-type name="Marcas" sid="769706700936612">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Users\twata\Downloads\asfalto2 clone(1).png" />
-        </object-type>
+        <object-folder name="HUD">
+            <object-type name="ContadorGasolina" sid="770468825190545">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="41" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="519273261066231" speed="5">
+                        <frame duration="1" hotspotX="0.523256" hotspotY="0.567961" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="TextoPontos" sid="380984018418638">
+                <plugin id="Text" />
+                <behaviors>
+                    <behavior-type name="Pin" sid="357544380167582">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>

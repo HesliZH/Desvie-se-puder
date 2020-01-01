@@ -6,7 +6,7 @@
         <comment>Contador de inimigos destruídos.</comment>
         <variable constant="0" name="InimigosDestruidos" sid="915117246645609" static="0" type="number">0</variable>
         <comment>Valor referente a gasolina.</comment>
-        <variable constant="0" name="Gasolina" sid="265436587659301" static="0" type="number">10</variable>
+        <variable constant="0" name="Gasolina" sid="265436587659301" static="0" type="number">40</variable>
         <comment>Multiplicador de velocidade.</comment>
         <variable constant="0" name="Multiplicador" sid="667474474002943" static="0" type="number">1</variable>
         <comment>Opacidade do layer do terreno de terra.</comment>
@@ -40,9 +40,6 @@
                         <action id="-24" name="Move to top" sid="542949633669761" type="TextoPontos" />
                         <action id="0" name="Set text" sid="976883381986593" type="TextoPontos">
                             <param id="0" name="Text">Pontos</param>
-                        </action>
-                        <action id="0" name="Set text" sid="758365957618250" type="TextoGasolina">
-                            <param id="0" name="Text">Gasolina</param>
                         </action>
                     </actions>
                 </event-block>
@@ -82,7 +79,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="880668435918195" type="System">
                             <param id="0" name="Variable">Gasolina</param>
-                            <param id="1" name="Value">10</param>
+                            <param id="1" name="Value">40</param>
                         </action>
                         <action id="-9" name="Set value" sid="829856017794178" type="System">
                             <param id="0" name="Variable">Multiplicador</param>
@@ -498,11 +495,28 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="165285895227609" type="Gasolina" />
-                                <action id="-9" name="Set value" sid="236911185825321" type="System">
+                                <action id="-10" name="Add to" sid="236911185825321" type="System">
                                     <param id="0" name="Variable">Gasolina</param>
                                     <param id="1" name="Value">10</param>
                                 </action>
                             </actions>
+                            <sub-events>
+                                <event-block sid="132020798717995">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="341864947147154" type="System">
+                                            <param id="0" name="Variable">Gasolina</param>
+                                            <param id="1" name="Comparison">5</param>
+                                            <param id="2" name="Value">30</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="796791669066016" type="System">
+                                            <param id="0" name="Variable">Gasolina</param>
+                                            <param id="1" name="Value">40</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-group>
@@ -511,13 +525,13 @@
                         <event-block sid="883666868636605">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="678229851541420" type="System">
-                                    <param id="0" name="Interval (seconds)">5</param>
+                                    <param id="0" name="Interval (seconds)">1</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="636593505365246" type="System">
                                     <param id="0" name="Variable">Gasolina</param>
-                                    <param id="1" name="Value">2</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -693,5 +707,23 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="277334925866629">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="962524116241737" type="System" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="919572396563680" type="ContadorGasolina" />
+            </actions>
+        </event-block>
+        <event-block sid="573285507302074">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="924734999445709" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="773462803312069" type="ContadorGasolina">
+                    <param id="0" name="Frame number">40 - Gasolina</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
