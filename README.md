@@ -9,6 +9,11 @@ OBS .: Atualmente o projeto encontra-se em estágio de desenvolvimento BETA, sem
 Features futuras :
 
 
-  * Controle de combutíveis 
+  * Controle de combutíveis (concluído)
   * Controle de veículo utilizado
   * Sistema de loja baseado nos pontos do jogador
+  * Implementação de outros obstáculos
+  
+  
+  
+  Data de lençamento prevista para 26/01/2020
