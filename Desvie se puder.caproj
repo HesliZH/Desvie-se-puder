@@ -21,6 +21,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
@@ -435,6 +436,69 @@
                 </behaviors>
             </object-type>
         </object-folder>
+        <object-folder name="Tela Abertura">
+            <object-type name="sprBlackSolid" sid="469893808140181">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401456250099377" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="sprLogo" sid="593857411814877">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="Opacidade" sid="122458666011471" type="number" />
+                </instance-variables>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="490156662507391" speed="5">
+                        <frame duration="1" hotspotX="0.505878" hotspotY="0.51426" original-source="C:\Users\Zik4Urubu\Downloads\New Piskel clone clone.png">
+                            <collision-poly>
+                                <point x="0.0591477" y="0.286096" />
+                                <point x="0.929096" y="0.343137" />
+                                <point x="0.893828" y="0.51426" />
+                                <point x="0.929096" y="0.685383" />
+                                <point x="0.0356356" y="0.799465" />
+                                <point x="0.811536" y="0.51426" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Playerabertura" sid="598996414461429">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Car" sid="459126566473988">
+                        <behavior id="Car" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="807206694422930" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
+                            <image-point name="Escape" x="-0.00390625" y="0.53125" />
+                            <collision-poly>
+                                <point x="0.038835" y="0.0653595" />
+                                <point x="0.499029" y="0.0653595" />
+                                <point x="0.924272" y="0.127451" />
+                                <point x="0.998058" y="0.5" />
+                                <point x="0.924272" y="0.872549" />
+                                <point x="0.499029" y="0.934641" />
+                                <point x="0.038835" y="0.934641" />
+                                <point x="0.00194175" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="sprAviso" sid="907290258468155">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302336420249913" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Tela inicial\Aviso.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
@@ -443,11 +507,13 @@
     <layout-folder>
         <layout>Menu Principal.xml</layout>
         <layout>Fase01.xml</layout>
+        <layout>Tela Inicial.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
         <event-sheet>Eventos Base das Fases.xml</event-sheet>
         <event-sheet>Eventos de Configurações.xml</event-sheet>
+        <event-sheet>Eventos Tela Inicial.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">

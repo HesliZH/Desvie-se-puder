@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Tela Inicial</name>
+    <events>
+        <variable constant="0" name="Jogo" sid="222751210415130" static="0" type="number">0</variable>
+        <variable constant="0" name="TempoInicio" sid="552885361135609" static="0" type="number">0</variable>
+        <event-block sid="956758533503218">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="229087397735245" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Car" id="5" name="Set acceleration" sid="727157236032326" type="Playerabertura">
+                    <param id="0" name="Acceleration">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856364114529298">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="948116674752453" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="758137768892066" type="System">
+                    <param id="0" name="Variable">TempoInicio</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="693921496854906" title="AnalisaSaida">
+            <sub-events>
+                <event-block sid="843001532827682">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="812144258437893" type="System" />
+                        <condition id="-14" name="Compare variable" sid="950128836302663" type="System">
+                            <param id="0" name="Variable">TempoInicio</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="372417011703865" type="sprAviso">
+                            <param id="0" name="Opacity">sprAviso.Opacity - 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="549420480061065">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="368159634609711" type="System">
+                    <param id="0" name="Variable">TempoInicio</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="280447789471877" type="System">
+                    <param id="0" name="Group name">&quot;AnalisaSaida&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="933968761714361" type="System">
+                    <param id="0" name="Variable">TempoInicio</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-12" name="Set group active" sid="673484444326597" type="System">
+                    <param id="0" name="Group name">&quot;CriaEntrada&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="826969555784504" title="CriaEntrada">
+            <sub-events>
+                <event-block sid="484690386123326">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="934764975244184" type="System" />
+                        <condition id="-14" name="Compare variable" sid="600518813138143" type="System">
+                            <param id="0" name="Variable">TempoInicio</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="767353744695759" type="sprLogo">
+                            <param id="0" name="Opacity">sprLogo.Opacity + 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="296973418888169">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="481097914348744" type="System">
+                            <param id="0" name="Variable">TempoInicio</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="807757198383025" type="System">
+                            <param id="0" name="Group name">&quot;CriaEntrada&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="429292746961336" type="System">
+                            <param id="0" name="Variable">Jogo</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="601209504506244" type="System">
+                            <param id="0" name="Group name">&quot;TerminaEntrada&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="510777090744662" title="TerminaEntrada">
+            <sub-events>
+                <event-block sid="835719113400842">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="472309378378700" type="System">
+                            <param id="0" name="Variable">Jogo</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="116328966829319" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

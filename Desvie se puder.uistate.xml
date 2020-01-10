@@ -12,8 +12,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Menu Principal</layout>
         <layout order="1">Fase01</layout>
-        <event-sheet active="1" order="2">Eventos Base das Fases</event-sheet>
+        <layout order="4">Tela Inicial</layout>
+        <event-sheet order="2">Eventos Base das Fases</event-sheet>
         <event-sheet order="3">Eventos de Configurações</event-sheet>
+        <event-sheet active="1" order="5">Eventos Tela Inicial</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -35,11 +37,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Detalhes da Fase/" />
         <folder expanded="1" path="object-folder/Objetos/" />
         <folder expanded="0" path="object-folder/HUD/" />
+        <folder expanded="1" path="object-folder/Tela Abertura/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
-        <folder expanded="1" path="sound-folder/" />
-        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/Inimigos/" />
@@ -55,5 +58,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Logo/" />
         <folder expanded="1" path="animation-folder/Gasolina/" />
         <folder expanded="1" path="animation-folder/ContadorGasolina/" />
+        <folder expanded="1" path="animation-folder/sprBlackSolid/" />
+        <folder expanded="1" path="animation-folder/sprLogo/" />
+        <folder expanded="1" path="animation-folder/Playerabertura/" />
+        <folder expanded="1" path="animation-folder/sprAviso/" />
     </folders-expanded>
 </c2uistate>
