@@ -372,6 +372,15 @@
                             <param id="0" name="Group name">&quot;Funcionamento do Jogo&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
+                        <action id="0" name="Play" sid="740434373945165" type="Audio">
+                            <param id="0" name="Audio file">Batida</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="207399844175639" type="Audio">
+                            <param id="0" name="Tag">&quot;Música&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="796417627491427">
@@ -737,5 +746,18 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="484843064965435">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="268999019223852" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="149205677897023" type="Audio">
+                    <param id="0" name="Audio file">Música</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Música&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
