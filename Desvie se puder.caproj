@@ -37,6 +37,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Tela Inicial</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -539,10 +540,10 @@
     </global-instances>
     <sounds-folder>
         <file name="Batida.ogg" />
-        <file name="Aceleração Beta.ogg" />
+        <file name="Aceleracao Beta.ogg" />
     </sounds-folder>
     <music-folder>
-        <file name="Música.ogg" />
+        <file name="Musica.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

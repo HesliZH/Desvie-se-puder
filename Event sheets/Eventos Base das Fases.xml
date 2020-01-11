@@ -379,7 +379,7 @@
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                         <action id="6" name="Stop" sid="207399844175639" type="Audio">
-                            <param id="0" name="Tag">&quot;Música&quot;</param>
+                            <param id="0" name="Tag">&quot;Musica&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -752,10 +752,10 @@
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="149205677897023" type="Audio">
-                    <param id="0" name="Audio file">Música</param>
+                    <param id="0" name="Audio file">Musica</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;Música&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;Musica&quot;</param>
                 </action>
             </actions>
         </event-block>
