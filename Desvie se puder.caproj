@@ -183,7 +183,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299811167501615" speed="5">
-                        <frame duration="1" hotspotX="0.482796" hotspotY="0.784444" original-source="C:\Projetos\Estacione-se-Puder\Textures\Mesa.png">
+                        <frame duration="1" hotspotX="0.483173" hotspotY="0.785156" original-source="C:\Users\twata\Downloads\New Piskel(10).png">
                             <collision-poly>
                                 <point x="0.104301" y="0.00222222" />
                                 <point x="0.86129" y="0.00222222" />
@@ -200,16 +200,16 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643872726323441" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.617021" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\Finalização.png">
+                        <frame duration="1" hotspotX="0.518653" hotspotY="0.693548" original-source="C:\Users\twata\Pictures\alalla.png">
                             <collision-poly>
-                                <point x="0.126016" y="0.255319" />
-                                <point x="0.5" y="0.255319" />
-                                <point x="0.821138" y="0.531915" />
-                                <point x="0.95935" y="0.617021" />
-                                <point x="0.853659" y="0.87234" />
-                                <point x="0.5" y="0.489362" />
-                                <point x="0.138211" y="0.914894" />
-                                <point x="0.0569106" y="0.617021" />
+                                <point x="0.00545951" y="0.00403226" />
+                                <point x="0.510464" y="0.391129" />
+                                <point x="0.942675" y="0.326613" />
+                                <point x="0.919927" y="0.475806" />
+                                <point x="0.940855" y="0.616935" />
+                                <point x="0.510464" y="0.995968" />
+                                <point x="0.0946315" y="0.552419" />
+                                <point x="0.0609645" y="0.475806" />
                             </collision-poly>
                         </frame>
                     </animation>
@@ -222,7 +222,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620553842344508" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.491525" original-source="C:\Projetos\Estacione-se-Puder\Textures\Retangulo.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.491103" original-source="C:\Users\twata\Downloads\New Piskel clone.png">
                             <collision-poly>
                                 <point x="0.00512295" y="0.0225989" />
                                 <point x="0.5" y="0.00564972" />
@@ -239,14 +239,14 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192332074835390" speed="5">
-                        <frame duration="1" hotspotX="0.416327" hotspotY="1.47619" original-source="C:\Projetos\Desvie-se-puder\Textures\Textos e botões\VoltarAomenu.png">
+                        <frame duration="1" hotspotX="0.38326" hotspotY="2.39655" original-source="C:\Users\twata\Pictures\alalla.png">
                             <collision-poly>
-                                <point x="0.415743" y="0.388889" />
+                                <point x="0.382437" y="0.159962" />
                                 <point x="1" y="1" />
                                 <point x="1" y="1" />
                                 <point x="1" y="1" />
-                                <point x="0.415743" y="1" />
-                                <point x="0" y="0.3322" />
+                                <point x="0.382437" y="1" />
+                                <point x="0" y="0.0436517" />
                                 <point x="0" y="1" />
                             </collision-poly>
                         </frame>
@@ -452,7 +452,7 @@
                 </instance-variables>
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="490156662507391" speed="5">
-                        <frame duration="1" hotspotX="0.505878" hotspotY="0.51426" original-source="C:\Users\Zik4Urubu\Downloads\New Piskel clone clone.png">
+                        <frame duration="1" hotspotX="0.506133" hotspotY="0.514133" original-source="C:\Users\twata\Downloads\New Piskel clone clone(2).png">
                             <collision-poly>
                                 <point x="0.0591477" y="0.286096" />
                                 <point x="0.929096" y="0.343137" />
