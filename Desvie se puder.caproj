@@ -18,6 +18,8 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+        <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -151,6 +153,9 @@
             </object-type>
             <object-type name="Keyboard" sid="521771560209185">
                 <plugin id="Keyboard" />
+            </object-type>
+            <object-type name="Gamepad" sid="625717332512439">
+                <plugin id="gamepad" />
             </object-type>
         </object-folder>
         <object-folder name="Controladores de Spawn">
@@ -313,6 +318,28 @@
             <object-type name="Preto" sid="364160276822830">
                 <plugin id="TiledBg" />
                 <texture />
+            </object-type>
+            <object-type name="btnControle" sid="792700695184140">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324416693590700" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.472299" original-source="C:\Projetos\Desvie-se-puder\Textures\Menu\controle.png">
+                            <collision-poly>
+                                <point x="0.0869191" y="0.139889" />
+                                <point x="0.5" y="0.0290859" />
+                                <point x="0.930293" y="0.112188" />
+                                <point x="0.981928" y="0.472299" />
+                                <point x="0.981928" y="0.915512" />
+                                <point x="0.5" y="0.638504" />
+                                <point x="0.0180723" y="0.915512" />
+                                <point x="0.0180723" y="0.472299" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="VolumeMusica" sid="835613717829524">
+                <plugin id="sliderbar" />
             </object-type>
         </object-folder>
         <object-folder name="Detalhes da Fase">
@@ -509,12 +536,14 @@
         <layout>Menu Principal.xml</layout>
         <layout>Fase01.xml</layout>
         <layout>Tela Inicial.xml</layout>
+        <layout>Opções.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
         <event-sheet>Eventos Base das Fases.xml</event-sheet>
         <event-sheet>Eventos de Configurações.xml</event-sheet>
         <event-sheet>Eventos Tela Inicial.xml</event-sheet>
+        <event-sheet>Eventos Opções.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">
@@ -535,6 +564,11 @@
                 <reference-distance>600</reference-distance>
                 <maximum-distance>10000</maximum-distance>
                 <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Gamepad" uid="50">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
     </global-instances>

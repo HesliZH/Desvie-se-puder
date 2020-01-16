@@ -223,7 +223,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por controlar a posição do carro." sid="972529406490534" title="Controle de Alteração da Pista">
+        <event-group description="Grupo responsável por controlar a posição do carro." inactive="1" sid="972529406490534" title="Controle de Alteração da Pista">
             <sub-events>
                 <comment>Ao tocar o gatilho do controle esquerdo é subtraído 1 ao valor da pista atual. O valor não pode ser substiuído caso o valor da pista atual for menor que 1.</comment>
                 <event-block sid="393115390987151">

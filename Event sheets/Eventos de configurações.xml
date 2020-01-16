@@ -3,10 +3,108 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos de Configurações</name>
     <events>
+        <variable constant="0" name="VolumeMusica" sid="681116173414575" static="0" type="number">100</variable>
         <variable constant="0" name="TipoControle" sid="404392568015402" static="0" type="text">Mobile</variable>
         <comment>As linhas contidas nesse arquivo serão as configurações do menu, nela serão controladas opções para reutilização de conteúdo entre os portes de versões (Mobile / PC)</comment>
-        <event-group description="" sid="386118068159669" title="DefineControle" />
-        <event-group description="" sid="670002619815735" title="ControleMobile" />
-        <event-group description="" sid="670547951282728" title="ControleComputador" />
+        <event-group description="" sid="386118068159669" title="DefineControle">
+            <sub-events>
+                <event-block sid="751306420637060">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="493037555378724" type="Touch">
+                            <param id="0" name="Object">btnControle</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="742506475946008" type="System">
+                            <param id="0" name="Variable">TipoControle</param>
+                            <param id="1" name="Value">&quot;PC&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="670002619815735" title="ControleMobile">
+            <sub-events>
+                <event-block sid="397760209898522">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="731627255284365" type="Touch">
+                            <param id="0" name="Object">ControleEsq</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="103085626091927" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="709613665241242" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Ao tocar o gatilho do controle direito é adicionado 1 ao valor da pista atual. O valor não pode ser substiuído caso o valor da pista atual for maior que 3.</comment>
+                <event-block sid="225822167108773">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="455664555511665" type="Touch">
+                            <param id="0" name="Object">ControleDir</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="126821447933458" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="649553669572868" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="670547951282728" title="ControleComputador">
+            <sub-events>
+                <event-block sid="584900834308535">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="548937158545874" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">10</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="654231904868033" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="147275457894533" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="497447345104898">
+                    <conditions>
+                        <condition id="6" name="On button pressed" sid="495544488414706" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Button">11</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="156612483039923" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="915795080145882" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
