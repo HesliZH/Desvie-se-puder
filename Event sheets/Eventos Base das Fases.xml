@@ -751,6 +751,10 @@
                 <condition id="-2" name="On start of layout" sid="268999019223852" type="System" />
             </conditions>
             <actions>
+                <action id="3" name="Set volume" sid="829533659861473" type="Audio">
+                    <param id="0" name="Tag">&quot;Musica&quot;</param>
+                    <param id="1" name="dB">VolumeMusica - 20</param>
+                </action>
                 <action id="0" name="Play" sid="149205677897023" type="Audio">
                     <param id="0" name="Audio file">Musica</param>
                     <param id="2" name="Loop">1</param>

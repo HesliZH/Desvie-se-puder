@@ -12,9 +12,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Opções</layout>
         <layout order="1">Menu Principal</layout>
-        <event-sheet order="2">Eventos de Configurações</event-sheet>
+        <layout order="5">Tela Inicial</layout>
+        <event-sheet active="1" order="2">Eventos de Configurações</event-sheet>
         <event-sheet order="3">Eventos Base das Fases</event-sheet>
-        <event-sheet active="1" order="4">Eventos Menu</event-sheet>
+        <event-sheet order="4">Eventos Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -56,6 +57,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btnIniciar/" />
         <folder expanded="1" path="animation-folder/Logo/" />
         <folder expanded="1" path="animation-folder/btnControle/" />
+        <folder expanded="1" path="animation-folder/btnMobile/" />
         <folder expanded="1" path="animation-folder/Gasolina/" />
         <folder expanded="1" path="animation-folder/ContadorGasolina/" />
         <folder expanded="1" path="animation-folder/sprBlackSolid/" />

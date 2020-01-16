@@ -59,5 +59,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="376814117157103">
+            <conditions>
+                <condition id="0" name="On clicked" sid="546067727957630" type="btnDebugOpc" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="191880354521280" type="System">
+                    <param id="0" name="Layout">Opções</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

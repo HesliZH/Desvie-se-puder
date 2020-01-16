@@ -13,11 +13,34 @@
                         <condition id="3" name="On touched object" sid="493037555378724" type="Touch">
                             <param id="0" name="Object">btnControle</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="763885167902829" type="System">
+                            <param id="0" name="Variable">TipoControle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Mobile&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="742506475946008" type="System">
                             <param id="0" name="Variable">TipoControle</param>
                             <param id="1" name="Value">&quot;PC&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="563804223300006">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="432036201094774" type="Touch">
+                            <param id="0" name="Object">btnMobile</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="332194133069920" type="System">
+                            <param id="0" name="Variable">TipoControle</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;PC&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="821438961755236" type="System">
+                            <param id="0" name="Variable">TipoControle</param>
+                            <param id="1" name="Value">&quot;Mobile&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -106,5 +129,40 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="921590956393059" title="ControleDeVolume">
+            <sub-events>
+                <event-block sid="184274701465970">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="989354828206835" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="292731300061316" type="System">
+                            <param id="0" name="Variable">VolumeMusica</param>
+                            <param id="1" name="Value">VolumeMusica.Value</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="355003544813627">
+            <conditions>
+                <condition id="0" name="On clicked" sid="751386449668985" type="btnDebug" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="430012424269632" type="System">
+                    <param id="0" name="Layout">Menu Principal</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="740638565416656">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="378466988876243" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set value" sid="561672276529864" type="VolumeMusica">
+                    <param id="0" name="Value">VolumeMusica</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
