@@ -13,9 +13,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Opções</layout>
         <layout order="1">Menu Principal</layout>
         <layout order="5">Tela Inicial</layout>
-        <event-sheet active="1" order="2">Eventos de Configurações</event-sheet>
+        <layout order="6">Loja</layout>
+        <layout order="7">Fase01</layout>
+        <event-sheet order="2">Eventos de Configurações</event-sheet>
         <event-sheet order="3">Eventos Base das Fases</event-sheet>
         <event-sheet order="4">Eventos Menu</event-sheet>
+        <event-sheet active="1" order="8">Eventos Loja</event-sheet>
+        <event-sheet order="9">Eventos Carros</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -27,17 +31,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Chão/" />
-        <folder expanded="1" path="object-folder/Player/" />
+        <folder expanded="0" path="object-folder/Player/" />
         <folder expanded="0" path="object-folder/Inimigos/" />
         <folder expanded="0" path="object-folder/Controles/" />
         <folder expanded="0" path="object-folder/Métodos de Controle/" />
         <folder expanded="0" path="object-folder/Controladores de Spawn/" />
         <folder expanded="0" path="object-folder/Derrota/" />
-        <folder expanded="1" path="object-folder/Menu/" />
+        <folder expanded="0" path="object-folder/Menu/" />
         <folder expanded="0" path="object-folder/Detalhes da Fase/" />
-        <folder expanded="1" path="object-folder/Objetos/" />
+        <folder expanded="0" path="object-folder/Objetos/" />
         <folder expanded="0" path="object-folder/HUD/" />
-        <folder expanded="1" path="object-folder/Tela Abertura/" />
+        <folder expanded="0" path="object-folder/Tela Abertura/" />
+        <folder expanded="1" path="object-folder/Loja/" />
+        <folder expanded="1" path="object-folder/Arrays/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -45,6 +51,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Player/" />
+        <folder expanded="1" path="animation-folder/Carro_loja/" />
         <folder expanded="1" path="animation-folder/Inimigos/" />
         <folder expanded="1" path="animation-folder/InimigosMenu/" />
         <folder expanded="1" path="animation-folder/SpawnerInimigos/" />
@@ -64,5 +71,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/sprLogo/" />
         <folder expanded="1" path="animation-folder/Playerabertura/" />
         <folder expanded="1" path="animation-folder/sprAviso/" />
+        <folder expanded="1" path="animation-folder/DetalheNomeCarro/" />
+        <folder expanded="1" path="animation-folder/GatilhoTrocaCarro/" />
+        <folder expanded="1" path="animation-folder/GatilhoVoltaCarro/" />
+        <folder expanded="1" path="animation-folder/StatusMotor/" />
+        <folder expanded="1" path="animation-folder/StatusInjection/" />
+        <folder expanded="1" path="animation-folder/MultiplicadorPontosStar/" />
+        <folder expanded="1" path="animation-folder/FundobtnComprar/" />
+        <folder expanded="1" path="animation-folder/btnComprar/" />
+        <folder expanded="1" path="animation-folder/FundoVoltar/" />
+        <folder expanded="1" path="animation-folder/btnVoltar2/" />
+        <folder expanded="1" path="animation-folder/MyMoney/" />
     </folders-expanded>
 </c2uistate>

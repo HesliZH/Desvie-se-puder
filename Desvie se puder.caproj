@@ -10,6 +10,7 @@
     <unique-id>yn5rpjqkmlxn</unique-id>
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -104,6 +105,28 @@
                     </behavior-type>
                 </behaviors>
                 <texture original-source="C:\Users\twata\Desktop\Desvie-se-puder\Textures\Estrada.png" />
+            </object-type>
+            <object-type name="Carro_loja" sid="239720952461185">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653521158625329" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
+                            <image-point name="Escape" x="-0.00390625" y="0.53125" />
+                            <collision-poly>
+                                <point x="0.038835" y="0.0653595" />
+                                <point x="0.499029" y="0.0653595" />
+                                <point x="0.924272" y="0.127451" />
+                                <point x="0.998058" y="0.5" />
+                                <point x="0.924272" y="0.872549" />
+                                <point x="0.499029" y="0.934641" />
+                                <point x="0.038835" y="0.934641" />
+                                <point x="0.00194175" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro0\Default\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro5\Default\000.png" />
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Inimigos">
@@ -551,6 +574,208 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Loja">
+            <object-type name="FundoLoja" sid="330178447248869">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Projetos\Desvie-se-puder\Textures\piso loja.png" />
+            </object-type>
+            <object-type name="DetalheNomeCarro" sid="249848670695166">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587209471012536" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.500528" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\000.png">
+                            <collision-poly>
+                                <point x="0.116368" y="0.0960929" />
+                                <point x="0.5" y="0.127772" />
+                                <point x="0.883632" y="0.0960929" />
+                                <point x="0.998721" y="0.499472" />
+                                <point x="0.97954" y="0.983105" />
+                                <point x="0.5" y="0.998944" />
+                                <point x="0.0204604" y="0.983105" />
+                                <point x="0.00127877" y="0.499472" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GatilhoTrocaCarro" sid="698212981059984">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543586080852287" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="GatilhoVoltaCarro" sid="431062896827807">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="874233095844616" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StatusMotor" sid="230912732854997">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499044797760202" speed="5">
+                        <frame duration="1" hotspotX="0.44" hotspotY="0.52" original-source="C:\Projetos\Desvie-se-puder_old\Textures\Loja\BombaGasolina.png">
+                            <collision-poly>
+                                <point x="0.08" y="0.16" />
+                                <point x="0.44" y="0.04" />
+                                <point x="0.84" y="0.12" />
+                                <point x="0.92" y="0.52" />
+                                <point x="0.88" y="0.96" />
+                                <point x="0.44" y="0.96" />
+                                <point x="0.04" y="0.92" />
+                                <point x="0.08" y="0.52" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="StatusInjection" sid="952113134194489">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="126435120769411" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.666667" original-source="C:\Projetos\Desvie-se-puder_old\Textures\Loja\Injeção.png">
+                            <collision-poly>
+                                <point x="0.235294" y="0.238095" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="0.764706" y="0.238095" />
+                                <point x="0.970588" y="0.666667" />
+                                <point x="0.647059" y="0.904762" />
+                                <point x="0.352941" y="0.904762" />
+                                <point x="0.0588235" y="0.666667" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="info_Motor" sid="777926854157133">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="info_Consumo" sid="794325911171663">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="MultiplicadorPontosStar" sid="420293836026018">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="253790967872724" speed="5">
+                        <frame duration="1" hotspotX="0.461538" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\star.png">
+                            <collision-poly>
+                                <point x="0.307692" y="0.333333" />
+                                <point x="0.461538" y="0.0833333" />
+                                <point x="0.692308" y="0.25" />
+                                <point x="0.846154" y="0.5" />
+                                <point x="0.846154" y="0.916667" />
+                                <point x="0.461538" y="0.75" />
+                                <point x="0.153846" y="0.833333" />
+                                <point x="0.153846" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="info_Multiplicacao" sid="256818793233828">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="FundobtnComprar" sid="712695832975787">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570549503346534" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\fundoCOmpra.png">
+                            <collision-poly>
+                                <point x="0.0125" y="0.044586" />
+                                <point x="0.5" y="0.00318471" />
+                                <point x="0.9875" y="0.044586" />
+                                <point x="0.9875" y="0.955414" />
+                                <point x="0.5" y="0.996815" />
+                                <point x="0.0125" y="0.955414" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnComprar" sid="258912037714969">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="901223060433830" speed="5">
+                        <frame duration="1" hotspotX="0.501241" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\Comprar.png">
+                            <collision-poly>
+                                <point x="0.0272953" y="0.166667" />
+                                <point x="0.498759" y="0.030303" />
+                                <point x="0.975186" y="0.151515" />
+                                <point x="0.992556" y="0.954545" />
+                                <point x="0.498759" y="0.984848" />
+                                <point x="0.0248139" y="0.848485" />
+                                <point x="0.00248139" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FundoVoltar" sid="599394093451896">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="433902438985504" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\FundoVoltar.png">
+                            <collision-poly>
+                                <point x="0.0125" y="0.044586" />
+                                <point x="0.5" y="0.00318471" />
+                                <point x="0.9875" y="0.044586" />
+                                <point x="0.9875" y="0.955414" />
+                                <point x="0.5" y="0.996815" />
+                                <point x="0.0125" y="0.955414" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnVoltar2" sid="170763713789270">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141412542213251" speed="5">
+                        <frame duration="1" hotspotX="0.502618" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\btnVoltar.png">
+                            <collision-poly>
+                                <point x="0.0209424" y="0.0625" />
+                                <point x="0.82199" y="0.53125" />
+                                <point x="0.947644" y="0.5" />
+                                <point x="0.910995" y="0.734375" />
+                                <point x="0.0732984" y="0.78125" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="MyMoney" sid="248956896522356">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127620815748342" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\Money.png">
+                            <collision-poly>
+                                <point x="0.00905433" y="0.0272727" />
+                                <point x="0.5" y="0.0030303" />
+                                <point x="0.990946" y="0.0272727" />
+                                <point x="0.990946" y="0.972727" />
+                                <point x="0.5" y="0.99697" />
+                                <point x="0.00905433" y="0.972727" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="info_MyMoney" sid="949288265649356">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="info_PrecoCarro" sid="813352756793848">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Arrays">
+            <object-type global="1" name="CarrosComprados" sid="832185031746071">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
@@ -561,6 +786,7 @@
         <layout>Fase01.xml</layout>
         <layout>Tela Inicial.xml</layout>
         <layout>Opções.xml</layout>
+        <layout>Loja.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
@@ -568,6 +794,8 @@
         <event-sheet>Eventos de Configurações.xml</event-sheet>
         <event-sheet>Eventos Tela Inicial.xml</event-sheet>
         <event-sheet>Eventos Opções.xml</event-sheet>
+        <event-sheet>Eventos Loja.xml</event-sheet>
+        <event-sheet>Eventos Carros.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">
