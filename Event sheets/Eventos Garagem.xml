@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Garagem</name>
+    <events>
+        <event-group description="" sid="889868046205976" title="AnalisaCarros">
+            <sub-events>
+                <event-block sid="487369106849984">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="957942997848621" type="CarrosComprados">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="218912129177607" type="Carro01">
+                            <param id="0" name="X">68</param>
+                            <param id="1" name="Y">625</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="553424901144985">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="764249772119720" type="CarrosComprados">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="570602409099238" type="Carro02">
+                            <param id="0" name="X">416</param>
+                            <param id="1" name="Y">451</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="651364136001047" title="IniciaFase">
+            <sub-events>
+                <event-block sid="731669844858307">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="609702821857213" type="Touch">
+                            <param id="0" name="Object">Carro0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="804702712961430" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="700780691358327" type="System">
+                            <param id="0" name="Layout">Fase01</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="711963907431168">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="969190767836931" type="Touch">
+                            <param id="0" name="Object">Carro01</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="262365263916299" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="398768508339738" type="System">
+                            <param id="0" name="Layout">Fase01</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="698459039716292">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="693239895247467" type="Touch">
+                            <param id="0" name="Object">Carro02</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="265260435795588" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="743905565269419" type="System">
+                            <param id="0" name="Layout">Fase01</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

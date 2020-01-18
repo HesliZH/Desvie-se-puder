@@ -175,6 +175,18 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="241205942504807">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="615908072992030" type="Touch">
+                            <param id="0" name="Object">btnVoltar2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="932202895569052" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="578665876608910" title="ComprarCarro">

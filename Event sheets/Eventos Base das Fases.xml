@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base das Fases</name>
     <events>
+        <include>Eventos Carros</include>
         <comment>Contador de inimigos destruídos.</comment>
         <variable constant="0" name="InimigosDestruidos" sid="915117246645609" static="0" type="number">0</variable>
         <comment>Valor referente a gasolina.</comment>
@@ -430,7 +431,7 @@
                     <actions>
                         <action id="-10" name="Add to" sid="514843324472900" type="System">
                             <param id="0" name="Variable">Pontos</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">1 * MultiplicadorPontos</param>
                         </action>
                         <action id="-10" name="Add to" sid="634887380968653" type="System">
                             <param id="0" name="Variable">Multiplicador</param>
@@ -570,7 +571,7 @@
                             <actions>
                                 <action id="-11" name="Subtract from" sid="636593505365246" type="System">
                                     <param id="0" name="Variable">Gasolina</param>
-                                    <param id="1" name="Value">1</param>
+                                    <param id="1" name="Value">Consumo</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -760,6 +761,26 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;Musica&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="159507871822654">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="828188700918507" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">200</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="582078702037865" type="System">
+                    <param id="0" name="Variable">Pontos</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">400</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="238578618134848" type="System">
+                    <param id="0" name="Variable">Dinheiro</param>
+                    <param id="1" name="Value">1000</param>
                 </action>
             </actions>
         </event-block>

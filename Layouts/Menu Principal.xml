@@ -213,6 +213,28 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
+                <instance type="btnLoja" uid="105">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>224</x>
+                        <y>704</y>
+                        <z>0</z>
+                        <width>168.654800415</width>
+                        <height>60.715740204</height>
+                        <depth>0</depth>
+                        <hotspotX>0.467999995</hotspotX>
+                        <hotspotY>1.266666651</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -250,7 +272,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>242</x>
-                        <y>508.740753174</y>
+                        <y>431.740753174</y>
                         <z>0</z>
                         <width>280</width>
                         <height>80</height>
