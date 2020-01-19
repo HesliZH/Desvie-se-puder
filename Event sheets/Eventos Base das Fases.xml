@@ -421,7 +421,7 @@
         </event-group>
         <event-group description="Grupo responsável por controlar o fluxo de pontos do jogador." sid="426871961920487" title="Controle de Pontos">
             <sub-events>
-                <comment>A cada 0.5 segundos é somado 1 aos pontos do jogador. É somado também 0.0001 ao multiplicador de velocidade.</comment>
+                <comment>A cada 0.5 segundos é somado 1 aos pontos do jogador. É somado também 0.0001 ao multiplicador de velocidade. A cada 5 segundos é adicionado 0.5 de dinheiro ao jogador</comment>
                 <event-block sid="957636247086986">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="537612598338162" type="System">
@@ -436,6 +436,19 @@
                         <action id="-10" name="Add to" sid="634887380968653" type="System">
                             <param id="0" name="Variable">Multiplicador</param>
                             <param id="1" name="Value">0.0001</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="182011885679741">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="408300889931971" type="System">
+                            <param id="0" name="Interval (seconds)">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="466379824511024" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">0.5</param>
                         </action>
                     </actions>
                 </event-block>
@@ -579,7 +592,7 @@
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="508330295883070" type="System">
                                     <param id="0" name="Variable">Gasolina</param>
-                                    <param id="1" name="Comparison">0</param>
+                                    <param id="1" name="Comparison">3</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
@@ -761,26 +774,6 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;Musica&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block any="1" sid="159507871822654">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="828188700918507" type="System">
-                    <param id="0" name="Variable">Pontos</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">200</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="582078702037865" type="System">
-                    <param id="0" name="Variable">Pontos</param>
-                    <param id="1" name="Comparison">2</param>
-                    <param id="2" name="Value">400</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="238578618134848" type="System">
-                    <param id="0" name="Variable">Dinheiro</param>
-                    <param id="1" name="Value">1000</param>
                 </action>
             </actions>
         </event-block>
