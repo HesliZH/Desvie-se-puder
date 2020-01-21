@@ -30,6 +30,7 @@
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="glowhorizontal">Glow Horizontal</effect>
+        <effect author="Scirra" id="glowvertical">Glow Vertical</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -294,31 +295,6 @@
             </object-type>
         </object-folder>
         <object-folder name="Menu">
-            <object-type name="btnIniciar" sid="724403547170970">
-                <plugin id="Sprite" />
-                <effects>
-                    <effect-type name="GlowHorizontal">
-                        <effect id="glowhorizontal" />
-                    </effect-type>
-                </effects>
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572875086149476" speed="5">
-                        <frame duration="1" hotspotX="0.507143" hotspotY="-0.9625" original-source="C:\Users\twata\Downloads\Iniciar(1).png">
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0" y="0" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="0.0678571" y="0.1375" />
-                                <point x="0.0339286" y="0.06875" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
-            </object-type>
             <object-type name="Logo" sid="770454566357579">
                 <plugin id="Sprite" />
                 <behaviors>
@@ -397,25 +373,6 @@
             </object-type>
             <object-type name="btnDebugOpc" sid="851755921508184">
                 <plugin id="Button" />
-            </object-type>
-            <object-type name="btnLoja" sid="408765622267655">
-                <plugin id="Sprite" />
-                <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="128717365068738" speed="5">
-                        <frame duration="1" hotspotX="0.468" hotspotY="1.26667" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\New Piskel (1).png">
-                            <collision-poly>
-                                <point x="0" y="0" />
-                                <point x="0.460727" y="0" />
-                                <point x="0.996" y="0" />
-                                <point x="0.996" y="1" />
-                                <point x="0.546061" y="1" />
-                                <point x="0.313333" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0.831624" />
-                            </collision-poly>
-                        </frame>
-                    </animation>
-                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Detalhes da Fase">
@@ -606,13 +563,13 @@
         <object-folder name="Loja">
             <object-type name="FundoLoja" sid="330178447248869">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Projetos\Desvie-se-puder\Textures\piso loja.png" />
+                <texture original-source="C:\Users\Thiago L. Watambak\Downloads\Wall5 clone.png" />
             </object-type>
             <object-type name="DetalheNomeCarro" sid="249848670695166">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="587209471012536" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.500528" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\000.png">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (13).png">
                             <collision-poly>
                                 <point x="0.116368" y="0.0960929" />
                                 <point x="0.5" y="0.127772" />
@@ -867,6 +824,65 @@
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
+        <object-type name="Texto_Opcoes" sid="905028263229785">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="ID" sid="569501869709909" type="number" />
+            </instance-variables>
+            <effects>
+                <effect-type name="GlowHorizontal">
+                    <effect id="glowhorizontal" />
+                </effect-type>
+                <effect-type name="GlowVertical">
+                    <effect id="glowvertical" />
+                </effect-type>
+            </effects>
+        </object-type>
+        <object-type name="ParedeLoja" sid="186582092622672">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel clone (1).png" />
+        </object-type>
+        <object-type name="Pessoa1" sid="707778030572265">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378297039957991" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (9).png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.6875" y="0.6875" />
+                            <point x="0.5" y="0.71875" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pessoa2" sid="650423775791270">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250697678848954" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (10).png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.3125" />
+                            <point x="0.5" y="0.25" />
+                            <point x="0.6875" y="0.3125" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.71875" y="0.71875" />
+                            <point x="0.5" y="0.71875" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MarcaCarro" sid="975082675245443">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -930,5 +946,14 @@
             <file name="icon-256.png" />
             <file name="loading-logo.png" />
         </file-folder>
+        <file name="sneak_attack-webfont.woff" />
+        <file name="sneak_attack-webfont.woff2" />
+        <file name="sneakattack.css" />
+        <file name="edeka.css" />
+        <file name="edekasupertoll-webfont.woff" />
+        <file name="edekasupertoll-webfont.woff2" />
+        <file name="joy.css" />
+        <file name="joystix_monospace-webfont.woff" />
+        <file name="joystix_monospace-webfont.woff2" />
     </files-folder>
 </c2project>

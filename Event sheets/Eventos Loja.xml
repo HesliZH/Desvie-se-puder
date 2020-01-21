@@ -105,7 +105,7 @@
                             <param id="0" name="Text">&quot;8 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="382530490761144" type="info_Motor">
-                            <param id="0" name="Text">&quot;Motor 2.0&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 2.0&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="515526211293519" type="info_Multiplicacao">
                             <param id="0" name="Text">&quot;0X&quot;</param>
@@ -128,7 +128,7 @@
                             <param id="0" name="Text">&quot;15 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="371586771194687" type="info_Motor">
-                            <param id="0" name="Text">&quot;Motor 1.4&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 1.4&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="225194414967548" type="info_Multiplicacao">
                             <param id="0" name="Text">&quot;1X&quot;</param>
@@ -151,7 +151,7 @@
                             <param id="0" name="Text">&quot;22 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="465987823575646" type="info_Motor">
-                            <param id="0" name="Text">&quot;Motor 900cc&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 900cc&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="789037483183384" type="info_Multiplicacao">
                             <param id="0" name="Text">&quot;2X&quot;</param>
@@ -247,5 +247,36 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="381874938529436">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="264149286476886" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="328152460665151" type="MarcaCarro">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="974724674744426" type="info_Consumo">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="901058228061729" type="info_Motor">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="115353589447056" type="info_Multiplicacao">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="291004350180908" type="info_PrecoCarro">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="498227787698452" type="info_MyMoney">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
