@@ -119,6 +119,11 @@
             </object-type>
             <object-type name="Carro_loja" sid="239720952461185">
                 <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="437265643028811">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
                 <animation-folder>
                     <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653521158625329" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
@@ -669,7 +674,7 @@
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570549503346534" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Loja\fundoCOmpra.png">
+                        <frame duration="1" hotspotX="0.9575" hotspotY="1.4225" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (1).png">
                             <collision-poly>
                                 <point x="0.0125" y="0.044586" />
                                 <point x="0.5" y="0.00318471" />
@@ -755,6 +760,23 @@
             </object-type>
             <object-type name="info_PrecoCarro" sid="813352756793848">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="FundobtnVoltar" sid="377833001867410">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958841398820131" speed="5">
+                        <frame duration="1" hotspotX="0.9575" hotspotY="1.4225" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (1).png">
+                            <collision-poly>
+                                <point x="0.0125" y="0.044586" />
+                                <point x="0.5" y="0.00318471" />
+                                <point x="0.9875" y="0.044586" />
+                                <point x="0.9875" y="0.955414" />
+                                <point x="0.5" y="0.996815" />
+                                <point x="0.0125" y="0.955414" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
         <object-folder name="Arrays">
@@ -844,6 +866,11 @@
         </object-type>
         <object-type name="Pessoa1" sid="707778030572265">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="423146645177342">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="378297039957991" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel (9).png">
@@ -881,6 +908,17 @@
             </animation-folder>
         </object-type>
         <object-type name="MarcaCarro" sid="975082675245443">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Sine" sid="802058121528265">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="txtBtn_LojaComprar" sid="859307029539712">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtBtn_LojaVoltar" sid="250966730329816">
             <plugin id="Text" />
         </object-type>
     </object-folder>
