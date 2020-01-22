@@ -41,6 +41,34 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="140222408677780">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="558320825905842" type="Texto_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="116857104600066" type="System">
+                                    <param id="0" name="Layout">Loja</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="381110761492853">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="578952165701072" type="Texto_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="465880963234250" type="System">
+                                    <param id="0" name="Layout">Creditos</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>

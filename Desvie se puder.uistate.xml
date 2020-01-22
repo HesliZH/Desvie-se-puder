@@ -10,12 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="5">Loja</layout>
         <layout order="2">Menu Principal</layout>
-        <layout order="4">Fase01</layout>
+        <layout order="4">Base</layout>
+        <layout order="5">Loja</layout>
+        <layout order="7">Creditos</layout>
         <event-sheet order="1">Eventos Base das Fases</event-sheet>
-        <event-sheet order="3">Eventos Menu</event-sheet>
-        <event-sheet active="1" order="6">Eventos Loja</event-sheet>
+        <event-sheet active="1" order="3">Eventos Menu</event-sheet>
+        <event-sheet order="6">Eventos Loja</event-sheet>
+        <event-sheet order="8">Eventos dos Creditos</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -26,7 +28,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="object-folder/Chão/" />
+        <folder expanded="0" path="object-folder/Chão/" />
         <folder expanded="0" path="object-folder/Player/" />
         <folder expanded="0" path="object-folder/Inimigos/" />
         <folder expanded="0" path="object-folder/Controles/" />
@@ -34,13 +36,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Controladores de Spawn/" />
         <folder expanded="0" path="object-folder/Derrota/" />
         <folder expanded="0" path="object-folder/Menu/" />
-        <folder expanded="1" path="object-folder/Detalhes da Fase/" />
+        <folder expanded="0" path="object-folder/Detalhes da Fase/" />
         <folder expanded="0" path="object-folder/Objetos/" />
         <folder expanded="0" path="object-folder/HUD/" />
         <folder expanded="0" path="object-folder/Tela Abertura/" />
-        <folder expanded="1" path="object-folder/Loja/" />
-        <folder expanded="1" path="object-folder/Arrays/" />
+        <folder expanded="0" path="object-folder/Loja/" />
+        <folder expanded="0" path="object-folder/Arrays/" />
         <folder expanded="0" path="object-folder/Garagem/" />
+        <folder expanded="1" path="object-folder/Creditos/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
