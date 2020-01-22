@@ -60,23 +60,23 @@
     </configuration-settings>
     <object-folder>
         <object-folder name="Chão">
-            <object-type name="FundoGrama" sid="848964864324077">
+            <object-type name="tileFundoGrama" sid="848964864324077">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder.png" />
             </object-type>
-            <object-type name="Estrada" sid="466125146939269">
+            <object-type name="tileEstrada" sid="466125146939269">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Projetos\Estacione-se-Puder\Textures\tileset_Asfalto2.png" />
             </object-type>
-            <object-type name="FundoTerra" sid="648096522963408">
+            <object-type name="tileFundoTerra" sid="648096522963408">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Terra Desvie se Pider.png" />
             </object-type>
-            <object-type name="FundoAreia" sid="640585615438377">
+            <object-type name="tileFundoAreia" sid="640585615438377">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Areia Desvie se Pider clone.png" />
             </object-type>
-            <object-type name="Marcacao" sid="794253262813803">
+            <object-type name="objMarcacao" sid="794253262813803">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795470572333985" speed="5">
@@ -177,11 +177,11 @@
             </object-type>
         </object-folder>
         <object-folder name="Controles">
-            <object-type name="ControleDir" sid="901962205847499">
+            <object-type name="trgControleDireita" sid="901962205847499">
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
-            <object-type name="ControleEsq" sid="622597190200418">
+            <object-type name="trgControleEsquerda" sid="622597190200418">
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
@@ -198,7 +198,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Controladores de Spawn">
-            <object-type name="SpawnerInimigos" sid="503975355918573">
+            <object-type name="trgSpawnerInimigos" sid="503975355918573">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="341203196540598" speed="5">
@@ -206,7 +206,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="DespawnerInimigos" sid="706840042909774">
+            <object-type name="trgDespawnerInimigos" sid="706840042909774">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="164578235914540" speed="5">
@@ -214,7 +214,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="SpawnerObjetos" sid="213967815051180">
+            <object-type name="trgSpawnerObjetos" sid="213967815051180">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518624721779399" speed="5">
@@ -224,7 +224,7 @@
             </object-type>
         </object-folder>
         <object-folder name="Derrota">
-            <object-type name="Fundo" sid="726676797864201">
+            <object-type name="objFundo" sid="726676797864201">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="299811167501615" speed="5">
@@ -241,7 +241,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="FinalizacaoText" sid="201070260313142">
+            <object-type name="imgTxtFim" sid="201070260313142">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="643872726323441" speed="5">
@@ -263,7 +263,7 @@
             <object-type name="btnVoltar" sid="895607061212505">
                 <plugin id="Button" />
             </object-type>
-            <object-type name="FundoBotao" sid="332801501390779">
+            <object-type name="objFundoBotao" sid="332801501390779">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620553842344508" speed="5">
@@ -381,31 +381,31 @@
             </object-type>
         </object-folder>
         <object-folder name="Detalhes da Fase">
-            <object-type name="BordaDireitaGrama" sid="311117475346149">
+            <object-type name="tileBordaDireitaGrama" sid="311117475346149">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone(2).png" />
             </object-type>
-            <object-type name="BordaDireitaTerra" sid="205209594821923">
+            <object-type name="tileBordaDireitaTerra" sid="205209594821923">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Terra lado Direita.png" />
             </object-type>
-            <object-type name="BordaEsquerdaTerra" sid="194477612577349">
+            <object-type name="tileBordaEsquerdaTerra" sid="194477612577349">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Terra lado Esquerda .png" />
             </object-type>
-            <object-type name="BordaEsquerdaGrama" sid="109071223967771">
+            <object-type name="tileBordaEsquerdaGrama" sid="109071223967771">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Grama Desvie se Puder clone.png" />
             </object-type>
-            <object-type name="BordaEsquerdaAreia" sid="347025269569267">
+            <object-type name="tileBordaEsquerdaAreia" sid="347025269569267">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Areia Direita clone.png" />
             </object-type>
-            <object-type name="BordaDireitaAreia" sid="182481247408017">
+            <object-type name="tileBordaDireitaAreia" sid="182481247408017">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\Areia Direita.png" />
             </object-type>
-            <object-type name="Marcas" sid="769706700936612">
+            <object-type name="tileMarcas" sid="769706700936612">
                 <plugin id="TiledBg" />
                 <texture original-source="C:\Users\twata\Downloads\asfalto2 clone(1).png" />
             </object-type>
@@ -780,12 +780,12 @@
             </object-type>
         </object-folder>
         <object-folder name="Arrays">
-            <object-type global="1" name="CarrosComprados" sid="832185031746071">
+            <object-type global="1" name="arrayCarrosComprados" sid="832185031746071">
                 <plugin id="Arr" />
             </object-type>
         </object-folder>
         <object-folder name="Garagem">
-            <object-type name="Carro0" sid="532615076153461">
+            <object-type name="objCarro0" sid="532615076153461">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869843242957716" speed="5">
@@ -804,7 +804,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Carro01" sid="378610649998857">
+            <object-type name="objCarro01" sid="378610649998857">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550926458373835" speed="5">
@@ -823,7 +823,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="Carro02" sid="861342333405493">
+            <object-type name="objCarro02" sid="861342333405493">
                 <plugin id="Sprite" />
                 <animation-folder>
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="580987545561126" speed="5">
@@ -844,17 +844,17 @@
             </object-type>
         </object-folder>
         <object-folder name="Creditos">
-            <object-type name="Texto_Creditos" sid="366643110326382">
+            <object-type name="txtCreditos" sid="366643110326382">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="Texto_CreditosVoltar" sid="305214702432538">
+            <object-type name="txtBtnCreditosVoltar" sid="305214702432538">
                 <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="Texto_Opcoes" sid="905028263229785">
+        <object-type name="txtBtnOpcoesMenu" sid="905028263229785">
             <plugin id="Text" />
             <instance-variables>
                 <instance-variable name="ID" sid="569501869709909" type="number" />
@@ -868,11 +868,11 @@
                 </effect-type>
             </effects>
         </object-type>
-        <object-type name="ParedeLoja" sid="186582092622672">
+        <object-type name="objParedeLoja" sid="186582092622672">
             <plugin id="TiledBg" />
             <texture original-source="C:\Users\Thiago L. Watambak\Downloads\New Piskel clone (1).png" />
         </object-type>
-        <object-type name="Pessoa1" sid="707778030572265">
+        <object-type name="objPessoa1" sid="707778030572265">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Sine" sid="423146645177342">
@@ -896,7 +896,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Pessoa2" sid="650423775791270">
+        <object-type name="objPessoa2" sid="650423775791270">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250697678848954" speed="5">
@@ -915,7 +915,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="MarcaCarro" sid="975082675245443">
+        <object-type name="txtMarcaCarro" sid="975082675245443">
             <plugin id="Text" />
             <behaviors>
                 <behavior-type name="Sine" sid="802058121528265">
@@ -923,10 +923,16 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="txtBtn_LojaComprar" sid="859307029539712">
+        <object-type name="txtBtnLojaComprar" sid="859307029539712">
             <plugin id="Text" />
         </object-type>
-        <object-type name="txtBtn_LojaVoltar" sid="250966730329816">
+        <object-type name="txtBtnLojaVoltar" sid="250966730329816">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtHighscore" sid="808140564024288">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txtHighscoreInfo" sid="690822890121177">
             <plugin id="Text" />
         </object-type>
     </object-folder>

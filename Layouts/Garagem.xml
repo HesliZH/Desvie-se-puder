@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Estrada" uid="76">
+                <instance type="tileEstrada" uid="76">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -68,7 +68,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Marcacao" uid="77">
+                <instance type="objMarcacao" uid="77">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -90,7 +90,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="78">
+                <instance type="objMarcacao" uid="78">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -112,7 +112,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="79">
+                <instance type="objMarcacao" uid="79">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -134,7 +134,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="80">
+                <instance type="objMarcacao" uid="80">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -156,7 +156,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="81">
+                <instance type="objMarcacao" uid="81">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -178,7 +178,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="82">
+                <instance type="objMarcacao" uid="82">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -200,7 +200,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="83">
+                <instance type="objMarcacao" uid="83">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -222,7 +222,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="84">
+                <instance type="objMarcacao" uid="84">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -244,7 +244,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="85">
+                <instance type="objMarcacao" uid="85">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -266,7 +266,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="86">
+                <instance type="objMarcacao" uid="86">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -288,7 +288,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="87">
+                <instance type="objMarcacao" uid="87">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -310,7 +310,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="88">
+                <instance type="objMarcacao" uid="88">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -332,7 +332,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcas" uid="89">
+                <instance type="tileMarcas" uid="89">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -352,7 +352,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="90">
+                <instance type="objMarcacao" uid="90">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -374,7 +374,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="91">
+                <instance type="objMarcacao" uid="91">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -396,7 +396,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="92">
+                <instance type="objMarcacao" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -418,7 +418,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="93">
+                <instance type="objMarcacao" uid="93">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -440,7 +440,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="94">
+                <instance type="objMarcacao" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -462,7 +462,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="95">
+                <instance type="objMarcacao" uid="95">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -484,7 +484,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="96">
+                <instance type="objMarcacao" uid="96">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -506,7 +506,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="97">
+                <instance type="objMarcacao" uid="97">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -528,7 +528,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="98">
+                <instance type="objMarcacao" uid="98">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -550,7 +550,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="99">
+                <instance type="objMarcacao" uid="99">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -572,7 +572,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="100">
+                <instance type="objMarcacao" uid="100">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -594,7 +594,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Marcacao" uid="101">
+                <instance type="objMarcacao" uid="101">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -635,7 +635,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Carro0" uid="102">
+                <instance type="objCarro0" uid="102">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -657,7 +657,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Carro01" uid="103">
+                <instance type="objCarro01" uid="103">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -679,7 +679,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Carro02" uid="104">
+                <instance type="objCarro02" uid="104">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

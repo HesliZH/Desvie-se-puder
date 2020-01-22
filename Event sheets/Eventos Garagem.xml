@@ -7,14 +7,14 @@
             <sub-events>
                 <event-block sid="487369106849984">
                     <conditions>
-                        <condition id="0" name="Compare at X" sid="957942997848621" type="CarrosComprados">
+                        <condition id="0" name="Compare at X" sid="957942997848621" type="arrayCarrosComprados">
                             <param id="0" name="X">1</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="218912129177607" type="Carro01">
+                        <action id="-3" name="Set position" sid="218912129177607" type="objCarro01">
                             <param id="0" name="X">68</param>
                             <param id="1" name="Y">625</param>
                         </action>
@@ -22,14 +22,14 @@
                 </event-block>
                 <event-block sid="553424901144985">
                     <conditions>
-                        <condition id="0" name="Compare at X" sid="764249772119720" type="CarrosComprados">
+                        <condition id="0" name="Compare at X" sid="764249772119720" type="arrayCarrosComprados">
                             <param id="0" name="X">2</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Set position" sid="570602409099238" type="Carro02">
+                        <action id="-3" name="Set position" sid="570602409099238" type="objCarro02">
                             <param id="0" name="X">416</param>
                             <param id="1" name="Y">451</param>
                         </action>
@@ -42,7 +42,7 @@
                 <event-block sid="731669844858307">
                     <conditions>
                         <condition id="3" name="On touched object" sid="609702821857213" type="Touch">
-                            <param id="0" name="Object">Carro0</param>
+                            <param id="0" name="Object">objCarro0</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -58,7 +58,7 @@
                 <event-block sid="711963907431168">
                     <conditions>
                         <condition id="3" name="On touched object" sid="969190767836931" type="Touch">
-                            <param id="0" name="Object">Carro01</param>
+                            <param id="0" name="Object">objCarro01</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -74,7 +74,7 @@
                 <event-block sid="698459039716292">
                     <conditions>
                         <condition id="3" name="On touched object" sid="693239895247467" type="Touch">
-                            <param id="0" name="Object">Carro02</param>
+                            <param id="0" name="Object">objCarro02</param>
                         </condition>
                     </conditions>
                     <actions>
