@@ -85,7 +85,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="objParedeLoja" uid="18">
+                <instance type="ParedeLoja" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -105,7 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="objParedeLoja" uid="57">
+                <instance type="ParedeLoja" uid="57">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -144,7 +144,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="tileEstrada" uid="56">
+                <instance type="Estrada" uid="56">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -283,7 +283,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="objPessoa1" uid="105">
+                <instance type="Pessoa1" uid="105">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -320,7 +320,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="objPessoa2" uid="108">
+                <instance type="Pessoa2" uid="108">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -568,7 +568,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txtMarcaCarro" uid="109">
+                <instance type="MarcaCarro" uid="109">
                     <properties>
                         <text>VELOSTER</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -664,7 +664,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="txtBtnLojaComprar" uid="71">
+                <instance type="txtBtn_LojaComprar" uid="71">
                     <properties>
                         <text>Comprar</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -814,7 +814,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="txtBtnLojaVoltar" uid="110">
+                <instance type="txtBtn_LojaVoltar" uid="110">
                     <properties>
                         <text>Voltar</text>
                         <initial-visibility>Visible</initial-visibility>

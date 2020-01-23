@@ -18,7 +18,7 @@
         <variable constant="0" name="Pontos" sid="868001230573254" static="0" type="number">0</variable>
         <comment>Identifica a pista atual que se encontra o carro.</comment>
         <variable constant="0" name="PistaAtual" sid="400069639259638" static="0" type="number">2</variable>
-        <event-group description="" sid="198662330455807" title="ConfiguracoesIniciais">
+        <event-group description="Grupo responsável por definir os valores, funcionamentos e configurações iniciais da fase." sid="198662330455807" title="Configurações Iniciais ">
             <sub-events>
                 <comment>No início do layout os grupos de funcionamento do jogo são ativados, as layers de jogo são definidas como visíveis e a layer de Game Over é definida como invisível.</comment>
                 <event-block sid="991330044540856">
@@ -123,131 +123,114 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="484843064965435">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="268999019223852" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="3" name="Set volume" sid="829533659861473" type="Audio">
-                            <param id="0" name="Tag">&quot;Musica&quot;</param>
-                            <param id="1" name="dB">VolumeMusica - 20</param>
-                        </action>
-                        <action id="0" name="Play" sid="149205677897023" type="Audio">
-                            <param id="0" name="Audio file">Musica</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;Musica&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="657307276627161" title="SimulaMovimento">
+        <event-group description="Grupo responsável por simular o movimento da estrada, do fundo e das bordas." sid="657307276627161" title="Simula Movimento">
             <sub-events>
                 <event-block sid="913180352516056">
                     <conditions>
                         <condition id="-1" name="Every tick" sid="260700908316313" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-2" name="Set Y" sid="466102189984443" type="tileEstrada">
-                            <param id="0" name="Y">tileEstrada.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="466102189984443" type="Estrada">
+                            <param id="0" name="Y">Estrada.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="133230460141651" type="tileFundoGrama">
-                            <param id="0" name="Y">tileFundoGrama.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="133230460141651" type="FundoGrama">
+                            <param id="0" name="Y">FundoGrama.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="531922170899915" type="tileBordaEsquerdaGrama">
-                            <param id="0" name="Y">tileBordaEsquerdaGrama.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="531922170899915" type="BordaEsquerdaGrama">
+                            <param id="0" name="Y">BordaEsquerdaGrama.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="572799009196714" type="tileBordaDireitaGrama">
-                            <param id="0" name="Y">tileBordaDireitaGrama.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="572799009196714" type="BordaDireitaGrama">
+                            <param id="0" name="Y">BordaDireitaGrama.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="427706849301916" type="tileFundoTerra">
-                            <param id="0" name="Y">tileFundoTerra.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="427706849301916" type="FundoTerra">
+                            <param id="0" name="Y">FundoTerra.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="644117627278484" type="tileBordaDireitaTerra">
-                            <param id="0" name="Y">tileBordaDireitaTerra.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="644117627278484" type="BordaDireitaTerra">
+                            <param id="0" name="Y">BordaDireitaTerra.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="431784019290092" type="tileBordaEsquerdaTerra">
-                            <param id="0" name="Y">tileBordaEsquerdaTerra.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="431784019290092" type="BordaEsquerdaTerra">
+                            <param id="0" name="Y">BordaEsquerdaTerra.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="455930891303344" type="tileFundoAreia">
-                            <param id="0" name="Y">tileFundoAreia.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="455930891303344" type="FundoAreia">
+                            <param id="0" name="Y">FundoAreia.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="602303655324543" type="tileBordaDireitaAreia">
-                            <param id="0" name="Y">tileBordaDireitaAreia.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="602303655324543" type="BordaDireitaAreia">
+                            <param id="0" name="Y">BordaDireitaAreia.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="294229371977331" type="tileBordaEsquerdaAreia">
-                            <param id="0" name="Y">tileBordaEsquerdaAreia.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="294229371977331" type="BordaEsquerdaAreia">
+                            <param id="0" name="Y">BordaEsquerdaAreia.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="838659542591975" type="trgControleDireita">
-                            <param id="0" name="Y">trgControleDireita.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="838659542591975" type="ControleDir">
+                            <param id="0" name="Y">ControleDir.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="292412677336608" type="trgControleEsquerda">
-                            <param id="0" name="Y">trgControleEsquerda.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="292412677336608" type="ControleEsq">
+                            <param id="0" name="Y">ControleEsq.Y + 5</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="844726892700298" type="tileMarcas">
-                            <param id="0" name="Y">tileMarcas.Y + 5</param>
+                        <action id="-2" name="Set Y" sid="844726892700298" type="Marcas">
+                            <param id="0" name="Y">Marcas.Y + 5</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="972338413663483">
                     <conditions>
-                        <condition id="-2" name="Compare Y" sid="674632506358581" type="tileEstrada">
+                        <condition id="-2" name="Compare Y" sid="674632506358581" type="Estrada">
                             <param id="0" name="Comparison">0</param>
                             <param id="1" name="Y co-ordinate">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Set Y" sid="909083684802584" type="tileEstrada">
+                        <action id="-2" name="Set Y" sid="909083684802584" type="Estrada">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="782246697591532" type="tileFundoGrama">
+                        <action id="-2" name="Set Y" sid="782246697591532" type="FundoGrama">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="125081617124799" type="tileBordaEsquerdaGrama">
+                        <action id="-2" name="Set Y" sid="125081617124799" type="BordaEsquerdaGrama">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="477919077862634" type="tileBordaDireitaGrama">
+                        <action id="-2" name="Set Y" sid="477919077862634" type="BordaDireitaGrama">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="392171487061273" type="tileFundoTerra">
+                        <action id="-2" name="Set Y" sid="392171487061273" type="FundoTerra">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="397287569748678" type="tileBordaDireitaTerra">
+                        <action id="-2" name="Set Y" sid="397287569748678" type="BordaDireitaTerra">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="764350638465790" type="tileBordaEsquerdaTerra">
+                        <action id="-2" name="Set Y" sid="764350638465790" type="BordaEsquerdaTerra">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="884304898673527" type="tileFundoAreia">
+                        <action id="-2" name="Set Y" sid="884304898673527" type="FundoAreia">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="987141438101867" type="tileBordaDireitaAreia">
+                        <action id="-2" name="Set Y" sid="987141438101867" type="BordaDireitaAreia">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="938187543987635" type="tileBordaEsquerdaAreia">
+                        <action id="-2" name="Set Y" sid="938187543987635" type="BordaEsquerdaAreia">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="167425457732752" type="trgControleDireita">
+                        <action id="-2" name="Set Y" sid="167425457732752" type="ControleDir">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="915492667138325" type="trgControleEsquerda">
+                        <action id="-2" name="Set Y" sid="915492667138325" type="ControleEsq">
                             <param id="0" name="Y">-255</param>
                         </action>
-                        <action id="-2" name="Set Y" sid="962230725192166" type="tileMarcas">
+                        <action id="-2" name="Set Y" sid="962230725192166" type="Marcas">
                             <param id="0" name="Y">-255</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" inactive="1" sid="972529406490534" title="ControleDeAlteracaoDaPista">
+        <event-group description="Grupo responsável por controlar a posição do carro." inactive="1" sid="972529406490534" title="Controle de Alteração da Pista">
             <sub-events>
                 <comment>Ao tocar o gatilho do controle esquerdo é subtraído 1 ao valor da pista atual. O valor não pode ser substiuído caso o valor da pista atual for menor que 1.</comment>
                 <event-block sid="393115390987151">
                     <conditions>
                         <condition id="3" name="On touched object" sid="525740803555642" type="Touch">
-                            <param id="0" name="Object">trgControleEsquerda</param>
+                            <param id="0" name="Object">ControleEsq</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="727872993906660" type="System">
                             <param id="0" name="Variable">PistaAtual</param>
@@ -266,7 +249,7 @@
                 <event-block sid="228157540078876">
                     <conditions>
                         <condition id="3" name="On touched object" sid="339489015691918" type="Touch">
-                            <param id="0" name="Object">trgControleDireita</param>
+                            <param id="0" name="Object">ControleDir</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="157434021818140" type="System">
                             <param id="0" name="Variable">PistaAtual</param>
@@ -283,7 +266,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="971761465484589" title="ControleDePosicionamentoDaPista">
+        <event-group description="Grupo responsável por alterar a posição do carro conforme o valor da pista atual é alterado." sid="971761465484589" title="Controle de Posicionamento da Pista">
             <sub-events>
                 <comment>Caso o valor da pista atual for 1 a posição do eixo X do jogador é definido para 134.</comment>
                 <event-block sid="196117993479740">
@@ -332,13 +315,13 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="875286337379595" title="DestroiInimigos">
+        <event-group description="Grupo responsável por gerenciar a destruição dos inimigos." sid="875286337379595" title="Destrói Inimigos">
             <sub-events>
                 <comment>Ao entrar em colisão com o gatilho de destruição o inimigo é destruído. O gatilho se encontra abaixo da borda inferior da tela. </comment>
                 <event-block sid="118860245065095">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="353594833768076" type="Inimigos">
-                            <param id="0" name="Object">trgDespawnerInimigos</param>
+                            <param id="0" name="Object">DespawnerInimigos</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -347,7 +330,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="656834136869997" title="SpawnerDeInimigos">
+        <event-group description="Grupo responsável por spawnar os inimigos." sid="656834136869997" title="Spawner de Inimigos">
             <sub-events>
                 <comment>A cada um segundo é criado um inimigo no gatilho de spawner de inimigos. Quando é criado um inimigo novo é randomizado a pista a qual o inimigo estará e o sprite do inimigo. O gatilho se encontra acima da borda superior da tela.</comment>
                 <event-block sid="820705755565712">
@@ -357,7 +340,7 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Spawn another object" sid="691775442311121" type="trgSpawnerInimigos">
+                        <action id="0" name="Spawn another object" sid="691775442311121" type="SpawnerInimigos">
                             <param id="0" name="Object">Inimigos</param>
                             <param id="1" name="Layer">&quot;Player&quot;</param>
                             <param id="2" name="Image point">0</param>
@@ -372,7 +355,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="805045013077800" title="ColisaoInimigoJogador">
+        <event-group description="Grupo responsável por gerenciar os eventos de colisão entre o jogador e o inimigo." sid="805045013077800" title="Colisão Inimigo-Jogador">
             <sub-events>
                 <comment>Ao colidir com um inimigo o jogo acaba. Os grupos de funcionamento do jogo são desativados. A tela de Game Over é exibida e os detalhes do jogo são destruídos.</comment>
                 <event-block sid="600973023233827">
@@ -396,12 +379,15 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="6" name="Stop" sid="207399844175639" type="Audio">
+                            <param id="0" name="Tag">&quot;Musica&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="796417627491427">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="936436764715159" type="Inimigos">
-                            <param id="0" name="Object">trgDespawnerInimigos</param>
+                            <param id="0" name="Object">DespawnerInimigos</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -413,13 +399,13 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="145673012259279" title="ControleDoGameOver">
+        <event-group description="Grupo que controla o menu de GameOver." sid="145673012259279" title="Controle do Menu">
             <sub-events>
                 <comment>Caso a layer de GameOver esteja visível e o botão de retornar ao menu principal for tocado o jogo retorna ao menu principal.</comment>
                 <event-block sid="410528113399889">
                     <conditions>
                         <condition id="3" name="On touched object" sid="952764986611615" type="Touch">
-                            <param id="0" name="Object">objFundoBotao</param>
+                            <param id="0" name="Object">FundoBotao</param>
                         </condition>
                         <condition id="-9" name="Layer is visible" sid="772522353407340" type="System">
                             <param id="0" name="Layer">&quot;Derrota&quot;</param>
@@ -433,7 +419,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="426871961920487" title="ControleDePontos">
+        <event-group description="Grupo responsável por controlar o fluxo de pontos do jogador." sid="426871961920487" title="Controle de Pontos">
             <sub-events>
                 <comment>A cada 0.5 segundos é somado 1 aos pontos do jogador. É somado também 0.0001 ao multiplicador de velocidade. A cada 5 segundos é adicionado 0.5 de dinheiro ao jogador</comment>
                 <event-block sid="957636247086986">
@@ -520,9 +506,9 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="863734165522650" title="ControleDeCombustivel">
+        <event-group description="Grupo responsável por subtrair e spawnar mais combustivel." sid="863734165522650" title="Controle de Combustível">
             <sub-events>
-                <event-group description="" sid="350681661598378" title="Representar Combustivel">
+                <event-group description="Grupo responsável por definir o funcionamento do sprite que exibe o combustível." sid="350681661598378" title="Representar Combustível">
                     <sub-events>
                         <event-block sid="277334925866629">
                             <conditions>
@@ -544,7 +530,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="981885872704927" title="Adiciona Combustivel">
+                <event-group description="Grupo responsável por adicionar combustível ao contador do jogador conforme o jogo avança." sid="981885872704927" title="Adiciona Combustível">
                     <sub-events>
                         <event-block sid="278094819563703">
                             <conditions>
@@ -587,7 +573,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="244717202973394" title="Substrai Combustivel">
+                <event-group description="Grupo responsável por subtrair o combustível." sid="244717202973394" title="Substrai Combustível">
                     <sub-events>
                         <event-block sid="883666868636605">
                             <conditions>
@@ -623,7 +609,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group description="" sid="962647170491318" title="Spawner Combustivel">
+                <event-group description="Grupo para realizar o Spawner de combustíveis" sid="962647170491318" title="Spawner Combustivel">
                     <sub-events>
                         <event-block any="1" sid="185280990694672">
                             <conditions>
@@ -632,7 +618,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Spawn another object" sid="505131316544849" type="trgSpawnerObjetos">
+                                <action id="0" name="Spawn another object" sid="505131316544849" type="SpawnerObjetos">
                                     <param id="0" name="Object">Gasolina</param>
                                     <param id="1" name="Layer">&quot;Player&quot;</param>
                                     <param id="2" name="Image point">0</param>
@@ -659,7 +645,7 @@
                 </event-group>
             </sub-events>
         </event-group>
-        <event-group description="" sid="370420206027650" title="ControleDeDerrota">
+        <event-group description="Grupo responsável por controlar as configurações de GameOver." sid="370420206027650" title="Controle de Derrota">
             <sub-events>
                 <event-block sid="760298931565666">
                     <conditions>
@@ -668,9 +654,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="6" name="Stop" sid="671887415802903" type="Audio">
-                            <param id="0" name="Tag">&quot;Musica&quot;</param>
-                        </action>
                         <action id="-12" name="Set group active" sid="432168849883023" type="System">
                             <param id="0" name="Group name">&quot;Simula Movimento&quot;</param>
                             <param id="1" name="State">0</param>
@@ -718,24 +701,9 @@
                         <action id="-9" name="Destroy" sid="789443199108258" type="Particles" />
                     </actions>
                 </event-block>
-                <event-block sid="858257918047628">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="841253714352224" type="System">
-                            <param id="0" name="Variable">Pontos</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">Highscore</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="847019283355884" type="System">
-                            <param id="0" name="Variable">Highscore</param>
-                            <param id="1" name="Value">Pontos</param>
-                        </action>
-                    </actions>
-                </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="882985709234083" title="FuncionamentoDoJogo">
+        <event-group description="Grupo responsável por definir o funcionamento do jogo." sid="882985709234083" title="Funcionamento do Jogo">
             <sub-events>
                 <event-block sid="123752542972259">
                     <conditions>
@@ -792,5 +760,22 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="484843064965435">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="268999019223852" type="System" />
+            </conditions>
+            <actions>
+                <action id="3" name="Set volume" sid="829533659861473" type="Audio">
+                    <param id="0" name="Tag">&quot;Musica&quot;</param>
+                    <param id="1" name="dB">VolumeMusica - 20</param>
+                </action>
+                <action id="0" name="Play" sid="149205677897023" type="Audio">
+                    <param id="0" name="Audio file">Musica</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Musica&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

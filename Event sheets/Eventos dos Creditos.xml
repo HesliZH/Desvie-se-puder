@@ -8,11 +8,11 @@
                 <condition id="-2" name="On start of layout" sid="145519803170464" type="System" />
             </conditions>
             <actions>
-                <action id="5" name="Set web font" sid="606531710220005" type="txtCreditos">
+                <action id="5" name="Set web font" sid="606531710220005" type="Texto_Creditos">
                     <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
                     <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="709330704495862" type="txtBtnCreditosVoltar">
+                <action id="5" name="Set web font" sid="709330704495862" type="Texto_CreditosVoltar">
                     <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
                 </action>
@@ -21,7 +21,7 @@
         <event-block sid="584151946911253">
             <conditions>
                 <condition id="3" name="On touched object" sid="856781125696545" type="Touch">
-                    <param id="0" name="Object">txtBtnCreditosVoltar</param>
+                    <param id="0" name="Object">Texto_CreditosVoltar</param>
                 </condition>
             </conditions>
             <actions>

@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos de Configurações</name>
     <events>
-        <variable constant="0" name="Highscore" sid="456972417931511" static="0" type="number">0</variable>
         <variable constant="0" name="Dinheiro" sid="244787028462605" static="0" type="number">500</variable>
         <variable constant="0" name="VolumeMusica" sid="681116173414575" static="0" type="number">100</variable>
         <variable constant="0" name="TipoControle" sid="404392568015402" static="0" type="text">Mobile</variable>
@@ -53,7 +52,7 @@
                 <event-block sid="397760209898522">
                     <conditions>
                         <condition id="3" name="On touched object" sid="731627255284365" type="Touch">
-                            <param id="0" name="Object">trgControleEsquerda</param>
+                            <param id="0" name="Object">ControleEsq</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="103085626091927" type="System">
                             <param id="0" name="Variable">PistaAtual</param>
@@ -72,7 +71,7 @@
                 <event-block sid="225822167108773">
                     <conditions>
                         <condition id="3" name="On touched object" sid="455664555511665" type="Touch">
-                            <param id="0" name="Object">trgControleDireita</param>
+                            <param id="0" name="Object">ControleDir</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="126821447933458" type="System">
                             <param id="0" name="Variable">PistaAtual</param>

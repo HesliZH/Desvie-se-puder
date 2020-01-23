@@ -178,7 +178,7 @@
                 <event-block sid="241205942504807">
                     <conditions>
                         <condition id="3" name="On touched object" sid="615908072992030" type="Touch">
-                            <param id="0" name="Object">txtBtnLojaVoltar</param>
+                            <param id="0" name="Object">txtBtn_LojaVoltar</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -194,21 +194,21 @@
                 <event-block sid="291064019832422">
                     <conditions>
                         <condition id="3" name="On touched object" sid="822386849623685" type="Touch">
-                            <param id="0" name="Object">txtBtnLojaComprar</param>
+                            <param id="0" name="Object">txtBtn_LojaComprar</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="745466314445089" type="System">
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
-                        <condition id="0" name="Compare at X" sid="316230369276098" type="arrayCarrosComprados">
+                        <condition id="0" name="Compare at X" sid="316230369276098" type="CarrosComprados">
                             <param id="0" name="X">1</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="2" name="Set at X" sid="979211347114754" type="arrayCarrosComprados">
+                        <action id="2" name="Set at X" sid="979211347114754" type="CarrosComprados">
                             <param id="0" name="X">1</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -221,21 +221,21 @@
                 <event-block sid="918875803999906">
                     <conditions>
                         <condition id="3" name="On touched object" sid="389234818847859" type="Touch">
-                            <param id="0" name="Object">txtBtnLojaComprar</param>
+                            <param id="0" name="Object">txtBtn_LojaComprar</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="654664379853412" type="System">
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
                         </condition>
-                        <condition id="0" name="Compare at X" sid="562511182393986" type="arrayCarrosComprados">
+                        <condition id="0" name="Compare at X" sid="562511182393986" type="CarrosComprados">
                             <param id="0" name="X">2</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="2" name="Set at X" sid="486563972461980" type="arrayCarrosComprados">
+                        <action id="2" name="Set at X" sid="486563972461980" type="CarrosComprados">
                             <param id="0" name="X">2</param>
                             <param id="1" name="Value">2</param>
                         </action>
@@ -252,7 +252,7 @@
                 <condition id="-2" name="On start of layout" sid="264149286476886" type="System" />
             </conditions>
             <actions>
-                <action id="5" name="Set web font" sid="328152460665151" type="txtMarcaCarro">
+                <action id="5" name="Set web font" sid="328152460665151" type="MarcaCarro">
                     <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
                     <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
                 </action>
@@ -276,11 +276,11 @@
                     <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
                     <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="440787629100993" type="txtBtnLojaComprar">
+                <action id="5" name="Set web font" sid="440787629100993" type="txtBtn_LojaComprar">
                     <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="113745373443990" type="txtBtnLojaVoltar">
+                <action id="5" name="Set web font" sid="113745373443990" type="txtBtn_LojaVoltar">
                     <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
                 </action>
