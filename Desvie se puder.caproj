@@ -875,6 +875,12 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="btnConclui" sid="457011195148658">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="TextoCodigo" sid="334951198804998">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
