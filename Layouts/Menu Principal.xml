@@ -506,7 +506,7 @@
                 </instance>
                 <instance type="Texto_Opcoes" uid="69">
                     <properties>
-                        <text> Opções</text>
+                        <text> Password</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
                         <color>255,0,102</color>

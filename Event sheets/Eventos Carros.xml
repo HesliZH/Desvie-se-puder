@@ -22,7 +22,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="927948673145357" type="System">
                             <param id="0" name="Variable">Consumo</param>
-                            <param id="1" name="Value">3</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                         <action id="-9" name="Set value" sid="734544001821884" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>
@@ -44,7 +44,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="393494198749463" type="System">
                             <param id="0" name="Variable">Consumo</param>
-                            <param id="1" name="Value">2</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="716214742736069" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>
@@ -66,7 +66,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="144873899368807" type="System">
                             <param id="0" name="Variable">Consumo</param>
-                            <param id="1" name="Value">1</param>
+                            <param id="1" name="Value">0.5</param>
                         </action>
                         <action id="-9" name="Set value" sid="144423858309340" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>

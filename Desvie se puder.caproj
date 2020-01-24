@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
@@ -851,6 +852,20 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder name="Codigos">
+            <object-type global="1" name="ReedeenCodes" sid="254593821502307">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type name="tbxCode" sid="389450413444735">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="ConfirmaCode" sid="313071648544261">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="btnVoltarPass" sid="730696875414109">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
@@ -939,6 +954,7 @@
         <layout>Opções.xml</layout>
         <layout>Loja.xml</layout>
         <layout>Garagem.xml</layout>
+        <layout>Password.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
@@ -950,6 +966,7 @@
         <event-sheet>Eventos Carros.xml</event-sheet>
         <event-sheet>Eventos Garagem.xml</event-sheet>
         <event-sheet>Eventos dos Creditos.xml</event-sheet>
+        <event-sheet>Eventos Password.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">

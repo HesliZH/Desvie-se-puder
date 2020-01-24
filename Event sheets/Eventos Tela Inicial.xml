@@ -36,7 +36,7 @@
                         <condition id="-14" name="Compare variable" sid="950128836302663" type="System">
                             <param id="0" name="Variable">TempoInicio</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">10</param>
+                            <param id="2" name="Value">5</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -52,7 +52,7 @@
                 <condition id="-14" name="Compare variable" sid="368159634609711" type="System">
                     <param id="0" name="Variable">TempoInicio</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">13</param>
+                    <param id="2" name="Value">8</param>
                 </condition>
             </conditions>
             <actions>
@@ -78,7 +78,7 @@
                         <condition id="-14" name="Compare variable" sid="600518813138143" type="System">
                             <param id="0" name="Variable">TempoInicio</param>
                             <param id="1" name="Comparison">2</param>
-                            <param id="2" name="Value">10</param>
+                            <param id="2" name="Value">5</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -92,7 +92,7 @@
                         <condition id="-14" name="Compare variable" sid="481097914348744" type="System">
                             <param id="0" name="Variable">TempoInicio</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">10</param>
+                            <param id="2" name="Value">5</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -125,6 +125,57 @@
                     <actions>
                         <action id="-2" name="Go to layout" sid="116328966829319" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="135540987261618" title="CriaCodigoAtivacao">
+            <sub-events>
+                <event-block sid="988450646511851">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="295911714109796" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set at XY" sid="298115846713825" type="ReedeenCodes">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;G4M3BR0D1S&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="693033855113897" type="ReedeenCodes">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;DEBUG_TEST&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="628693914838645" type="ReedeenCodes">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;CAR_TEST&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="417811859751984" type="ReedeenCodes">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">1</param>
+                            <param id="2" name="Value">&quot;MONEY_TEST&quot;</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="595803306023524" type="ReedeenCodes">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="926168545869207" type="ReedeenCodes">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="396266652096716" type="ReedeenCodes">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">0</param>
+                        </action>
+                        <action id="3" name="Set at XY" sid="326306874682459" type="ReedeenCodes">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Y">2</param>
+                            <param id="2" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
