@@ -777,5 +777,48 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="755188857901798">
+            <conditions>
+                <condition id="3" name="On touched object" sid="358183856103070" type="Touch">
+                    <param id="0" name="Object">FundoBotao</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="372847439213791" type="System">
+                    <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="138389460123875" type="System">
+                    <param id="0" name="Layout">Menu Principal</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="651639682973194" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;dinheiro&quot;</param>
+                    <param id="1" name="Value">Dinheiro</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="595896539854603" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;carro01&quot;</param>
+                    <param id="1" name="Value">CarrosComprados.At(1)</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="663014424338934" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;carro02&quot;</param>
+                    <param id="1" name="Value">CarrosComprados.At(2)</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="819727292948152" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;carro03&quot;</param>
+                    <param id="1" name="Value">CarrosComprados.At(3)</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="838070948051981" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;codigo01&quot;</param>
+                    <param id="1" name="Value">CarroUsado</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="922214571160184" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;codigo02&quot;</param>
+                    <param id="1" name="Value">DinheiroUsado</param>
+                </action>
+                <action id="-9" name="Set value" sid="597887422947666" type="System">
+                    <param id="0" name="Variable">Salvar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
         <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -104,8 +105,24 @@
                                 <point x="0.00194175" y="0.5" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\000.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\000.png">
+                            <collision-poly>
+                                <point x="0.0507813" y="0.09375" />
+                                <point x="0.835938" y="0.0625" />
+                                <point x="0.933594" y="0.226563" />
+                                <point x="0.898438" y="0.875" />
+                                <point x="0.0351563" y="0.945313" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\001.png">
+                            <collision-poly>
+                                <point x="0.03125" y="0.03125" />
+                                <point x="0.914063" y="0.0703125" />
+                                <point x="0.96875" y="0.484375" />
+                                <point x="0.929688" y="0.929688" />
+                                <point x="0.0273438" y="0.953125" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -156,11 +173,52 @@
                 </behaviors>
                 <animation-folder>
                     <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576916189586686" speed="0">
-                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\000.png" />
-                        <frame duration="1" hotspotX="0.500846" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\001.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501538" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\002.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\003.png" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\004.png" />
+                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\000.png">
+                            <collision-poly>
+                                <point x="0.0545073" y="0.0373134" />
+                                <point x="0.849056" y="0.119403" />
+                                <point x="0.958071" y="0.507463" />
+                                <point x="0.822851" y="0.921642" />
+                                <point x="0.0251572" y="0.917911" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.500846" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\001.png">
+                            <collision-poly>
+                                <point x="0.037225" y="0.0820895" />
+                                <point x="0.94247" y="0.0895522" />
+                                <point x="0.993232" y="0.522388" />
+                                <point x="0.884941" y="0.865672" />
+                                <point x="0.0439932" y="0.858209" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501538" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\002.png">
+                            <collision-poly>
+                                <point x="0.0411985" y="0.08" />
+                                <point x="0.891386" y="0.0676923" />
+                                <point x="0.975655" y="0.496923" />
+                                <point x="0.88015" y="0.932308" />
+                                <point x="0.0299625" y="0.932308" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\003.png">
+                            <collision-poly>
+                                <point x="0.0524345" y="0.0970149" />
+                                <point x="0.496255" y="0.0597015" />
+                                <point x="0.925094" y="0.126866" />
+                                <point x="0.93633" y="0.820896" />
+                                <point x="0.483146" y="0.91791" />
+                                <point x="0.0524345" y="0.80597" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\004.png">
+                            <collision-poly>
+                                <point x="0.0483871" y="0.0447761" />
+                                <point x="0.895161" y="0.0895523" />
+                                <point x="0.967742" y="0.485075" />
+                                <point x="0.901209" y="0.88806" />
+                                <point x="0.0282258" y="0.895522" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -882,6 +940,11 @@
                 <plugin id="Text" />
             </object-type>
         </object-folder>
+        <object-folder name="Saves">
+            <object-type name="ArmazenamentoLocal" sid="474100462230396">
+                <plugin id="LocalStorage" />
+            </object-type>
+        </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
@@ -1010,6 +1073,7 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
+        <global-instance type="ArmazenamentoLocal" uid="142" />
     </global-instances>
     <sounds-folder>
         <file name="Batida.ogg" />

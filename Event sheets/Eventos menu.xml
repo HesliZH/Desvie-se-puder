@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
+        <variable constant="0" name="Salvar" sid="948882073332959" static="0" type="number">0</variable>
         <event-group description="" sid="851830550865762" title="IniciaJogo">
             <sub-events>
                 <event-block sid="165674701894936">
@@ -135,5 +136,47 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="230584500729499">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="706258199980969" type="System" />
+                <condition id="-14" name="Compare variable" sid="663143909936903" type="System">
+                    <param id="0" name="Variable">Salvar</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="175800984017274" type="System">
+                    <param id="0" name="Group name">&quot;SalvarGame&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="117553665280491" title="SalvarGame">
+            <sub-events>
+                <event-block sid="785815575660217">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="931511806549539" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-36" name="Save" sid="641472153991418" type="System">
+                            <param id="0" name="Slot">&quot;dsp001&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="699970438480469" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="521286917399146" type="System">
+                            <param id="0" name="Group name">&quot;SalvarGame&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

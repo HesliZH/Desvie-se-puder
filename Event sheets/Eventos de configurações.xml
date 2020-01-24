@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos de Configurações</name>
     <events>
-        <variable constant="0" name="Dinheiro" sid="244787028462605" static="0" type="number">500</variable>
+        <variable constant="0" name="Dinheiro" sid="244787028462605" static="0" type="number">0</variable>
         <variable constant="0" name="VolumeMusica" sid="681116173414575" static="0" type="number">100</variable>
         <variable constant="0" name="TipoControle" sid="404392568015402" static="0" type="text">Mobile</variable>
         <comment>As linhas contidas nesse arquivo serão as configurações do menu, nela serão controladas opções para reutilização de conteúdo entre os portes de versões (Mobile / PC)</comment>

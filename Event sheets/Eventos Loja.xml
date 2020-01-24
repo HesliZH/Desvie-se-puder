@@ -113,6 +113,9 @@
                         <action id="0" name="Set text" sid="167099710769656" type="info_PrecoCarro">
                             <param id="0" name="Text">&quot;R$&quot; &amp; &quot;0&quot;</param>
                         </action>
+                        <action id="0" name="Set text" sid="663673832553126" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;SPEED MAXX&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="620730030129643">
@@ -136,6 +139,9 @@
                         <action id="0" name="Set text" sid="803567298634341" type="info_PrecoCarro">
                             <param id="0" name="Text">&quot;R$&quot; &amp; &quot;100&quot;</param>
                         </action>
+                        <action id="0" name="Set text" sid="953839634638038" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;H TYPE+&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="309025924901792">
@@ -158,6 +164,9 @@
                         </action>
                         <action id="0" name="Set text" sid="213022885701632" type="info_PrecoCarro">
                             <param id="0" name="Text">&quot;R$&quot; &amp; &quot;200&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="286217982935932" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;ECO POWER&quot;</param>
                         </action>
                     </actions>
                 </event-block>
