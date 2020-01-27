@@ -9,14 +9,14 @@
                 <event-block sid="165674701894936">
                     <conditions>
                         <condition id="3" name="On touched object" sid="107862314689259" type="Touch">
-                            <param id="0" name="Object">Texto_Opcoes</param>
+                            <param id="0" name="Object">txtBtn_Opcoes</param>
                         </condition>
                     </conditions>
                     <actions />
                     <sub-events>
                         <event-block sid="261458257242883">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="878572243826244" type="Texto_Opcoes">
+                                <condition id="-7" name="Compare instance variable" sid="878572243826244" type="txtBtn_Opcoes">
                                     <param id="0" name="Instance variable">ID</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
@@ -30,7 +30,7 @@
                         </event-block>
                         <event-block sid="365814655251763">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="124486111604371" type="Texto_Opcoes">
+                                <condition id="-7" name="Compare instance variable" sid="124486111604371" type="txtBtn_Opcoes">
                                     <param id="0" name="Instance variable">ID</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">2</param>
@@ -45,7 +45,7 @@
                         <comment>Caso acesse os password irá para a tela de reedeen code</comment>
                         <event-block sid="140222408677780">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="558320825905842" type="Texto_Opcoes">
+                                <condition id="-7" name="Compare instance variable" sid="558320825905842" type="txtBtn_Opcoes">
                                     <param id="0" name="Instance variable">ID</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">3</param>
@@ -59,7 +59,7 @@
                         </event-block>
                         <event-block sid="381110761492853">
                             <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="578952165701072" type="Texto_Opcoes">
+                                <condition id="-7" name="Compare instance variable" sid="578952165701072" type="txtBtn_Opcoes">
                                     <param id="0" name="Instance variable">ID</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">4</param>
@@ -130,9 +130,17 @@
                 <condition id="-2" name="On start of layout" sid="439230011234798" type="System" />
             </conditions>
             <actions>
-                <action id="5" name="Set web font" sid="187817374927905" type="Texto_Opcoes">
+                <action id="5" name="Set web font" sid="187817374927905" type="txtBtn_Opcoes">
                     <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="676832667669194" type="txt_Highscore">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="853990843316448" type="txt_Highscore2">
+                    <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                    <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -178,5 +186,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="908423081688465">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="747097413599371" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="574052505868093" type="txt_Highscore">
+                    <param id="0" name="Text">Highscore</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

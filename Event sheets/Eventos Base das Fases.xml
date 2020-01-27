@@ -4,6 +4,7 @@
     <name>Eventos Base das Fases</name>
     <events>
         <include>Eventos Carros</include>
+        <variable constant="0" name="Highscore" sid="150580278928293" static="0" type="number">0</variable>
         <comment>Contador de inimigos destruídos.</comment>
         <variable constant="0" name="InimigosDestruidos" sid="915117246645609" static="0" type="number">0</variable>
         <comment>Valor referente a gasolina.</comment>
@@ -699,6 +700,21 @@
                             <param id="1" name="Visibility">1</param>
                         </action>
                         <action id="-9" name="Destroy" sid="789443199108258" type="Particles" />
+                    </actions>
+                </event-block>
+                <event-block sid="872336531417536">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="293232316011924" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Highscore</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="776436817838817" type="System">
+                            <param id="0" name="Variable">Highscore</param>
+                            <param id="1" name="Value">Pontos</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

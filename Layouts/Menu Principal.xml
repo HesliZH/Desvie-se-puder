@@ -37,11 +37,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>132</x>
-                        <y>-49</y>
+                        <x>352</x>
+                        <y>416</y>
                         <z>0</z>
-                        <width>352</width>
-                        <height>1110</height>
+                        <width>128</width>
+                        <height>480</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -58,10 +58,50 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>384</x>
+                        <y>416</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>480</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="FundoGrama" uid="144">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>288</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BordaDireitaGrama" uid="145">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
                         <y>0</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>1056</height>
+                        <height>288</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -97,10 +137,50 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>-32</x>
-                        <y>-64</y>
+                        <y>0</y>
                         <z>0</z>
                         <width>416</width>
-                        <height>1152</height>
+                        <height>896</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Estrada" uid="146">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
+                        <y>288</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>128</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Estrada" uid="147">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <hotspot>Top-left</hotspot>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>0</width>
+                        <height>224</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -138,7 +218,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>320</x>
-                        <y>640</y>
+                        <y>704</y>
                         <z>0</z>
                         <width>111</width>
                         <height>60</height>
@@ -160,7 +240,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>320</x>
-                        <y>352</y>
+                        <y>480</y>
                         <z>0</z>
                         <width>111</width>
                         <height>60</height>
@@ -251,7 +331,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-                        <opacity>0.400000006</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>
@@ -320,7 +400,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 0" sid="409406178846471">
+        <layer name="Hmm" sid="409406178846471">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -335,7 +415,89 @@
             <use-render-cells>0</use-render-cells>
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
-            <instances />
+            <instances>
+                <instance type="txt_Highscore" uid="148">
+                    <properties>
+                        <text>0</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>255,204,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>288</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txt_Highscore2" uid="149">
+                    <properties>
+                        <text>HIGH</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-21,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>352</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="txt_Highscore2" uid="150">
+                    <properties>
+                        <text>SCORE</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-21,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>352</x>
+                        <y>384</y>
+                        <z>0</z>
+                        <width>128</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
             <effects />
         </layer>
         <layer name="Opcoes" sid="578361071045708">
@@ -378,7 +540,7 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
-                <instance type="Texto_Opcoes" uid="106">
+                <instance type="txtBtn_Opcoes" uid="106">
                     <properties>
                         <text> Jogar</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -420,7 +582,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Texto_Opcoes" uid="107">
+                <instance type="txtBtn_Opcoes" uid="107">
                     <properties>
                         <text> Loja</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -462,7 +624,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Texto_Opcoes" uid="68">
+                <instance type="txtBtn_Opcoes" uid="68">
                     <properties>
                         <text> Créditos</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -504,7 +666,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Texto_Opcoes" uid="69">
+                <instance type="txtBtn_Opcoes" uid="69">
                     <properties>
                         <text> Password</text>
                         <initial-visibility>Visible</initial-visibility>

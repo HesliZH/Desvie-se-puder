@@ -949,7 +949,7 @@
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
-        <object-type name="Texto_Opcoes" sid="905028263229785">
+        <object-type name="txtBtn_Opcoes" sid="905028263229785">
             <plugin id="Text" />
             <instance-variables>
                 <instance-variable name="ID" sid="569501869709909" type="number" />
@@ -1026,6 +1026,12 @@
         </object-type>
         <object-type name="Browser" sid="439717180836448">
             <plugin id="Browser" />
+        </object-type>
+        <object-type name="txt_Highscore" sid="914998338667116">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_Highscore2" sid="188772958301367">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
