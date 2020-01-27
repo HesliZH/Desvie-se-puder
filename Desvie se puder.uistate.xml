@@ -13,9 +13,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">Menu Principal</layout>
         <layout order="4">Tela Inicial</layout>
         <layout order="6">Loja</layout>
-        <layout order="9">Password</layout>
+        <layout active="1" order="9">Password</layout>
         <event-sheet order="1">Eventos Menu</event-sheet>
-        <event-sheet active="1" order="2">Eventos Password</event-sheet>
+        <event-sheet order="2">Eventos Password</event-sheet>
         <event-sheet order="3">Eventos Tela Inicial</event-sheet>
         <event-sheet order="5">Eventos Loja</event-sheet>
         <event-sheet order="7">Eventos de Configurações</event-sheet>

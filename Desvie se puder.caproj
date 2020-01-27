@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
@@ -1023,6 +1024,9 @@
         <object-type name="txtBtn_LojaVoltar" sid="250966730329816">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Browser" sid="439717180836448">
+            <plugin id="Browser" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1074,6 +1078,7 @@
             </properties>
         </global-instance>
         <global-instance type="ArmazenamentoLocal" uid="142" />
+        <global-instance type="Browser" uid="143" />
     </global-instances>
     <sounds-folder>
         <file name="Batida.ogg" />
