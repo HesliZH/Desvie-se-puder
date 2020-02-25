@@ -950,6 +950,66 @@
                 <plugin id="LocalStorage" />
             </object-type>
         </object-folder>
+        <object-folder name="Tutorial Jogabilidade">
+            <object-type name="Hand01" sid="169957362437442">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="540024927161298">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667082685979430" speed="5">
+                        <frame duration="1" hotspotX="0.500894" hotspotY="0.501385" original-source="C:\Projetos\Desvie-se-puder\Textures\Tutorial\hand-96302_960_720.png">
+                            <collision-poly>
+                                <point x="0.0057699" y="0.00434156" />
+                                <point x="0.99423" y="0.00434156" />
+                                <point x="0.99423" y="0.498974" />
+                                <point x="0.938854" y="0.95461" />
+                                <point x="0.498616" y="0.995658" />
+                                <point x="0.0057699" y="0.995658" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FundoDicas" sid="177623711390956">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="483629931844605" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Dicas" sid="799443140015723">
+                <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="Dica" sid="993549444750790" type="number" />
+                </instance-variables>
+            </object-type>
+            <object-type name="Hand2" sid="623276544752232">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="281609771402766">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821900870483755" speed="5">
+                        <frame duration="1" hotspotX="0.500894" hotspotY="0.501385" original-source="C:\Projetos\Desvie-se-puder\Textures\Tutorial\hand-96302_960_720.png">
+                            <collision-poly>
+                                <point x="0.0057699" y="0.00434156" />
+                                <point x="0.99423" y="0.00434156" />
+                                <point x="0.99423" y="0.498974" />
+                                <point x="0.938854" y="0.95461" />
+                                <point x="0.498616" y="0.995658" />
+                                <point x="0.0057699" y="0.995658" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>

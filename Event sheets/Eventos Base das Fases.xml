@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Base das Fases</name>
     <events>
+        <variable constant="0" name="Tutorial" sid="625117273052053" static="0" type="number">1</variable>
         <include>Eventos Carros</include>
         <variable constant="0" name="Highscore" sid="150580278928293" static="0" type="number">0</variable>
         <comment>Contador de inimigos destruídos.</comment>
@@ -30,6 +31,10 @@
                         <action id="-12" name="Set group active" sid="105830124159745" type="System">
                             <param id="0" name="Group name">&quot;Funcionamento do Jogo&quot;</param>
                             <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="791067018972683" type="Dicas">
+                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -339,6 +344,9 @@
                         <condition id="-6" name="Every X seconds" sid="691555725710873" type="System">
                             <param id="0" name="Interval (seconds)">1.0</param>
                         </condition>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="227937682372976" type="System">
+                            <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Spawn another object" sid="691775442311121" type="SpawnerInimigos">
@@ -587,6 +595,9 @@
                                 <condition id="-6" name="Every X seconds" sid="678229851541420" type="System">
                                     <param id="0" name="Interval (seconds)">1</param>
                                 </condition>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="702308190725275" type="System">
+                                    <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                                </condition>
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="636593505365246" type="System">
@@ -831,5 +842,165 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="361919658429100" title="TutorialDeJogabilidade">
+            <sub-events>
+                <event-block sid="476138190308929">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="729514936152875" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="715877312651866" type="Dicas">
+                            <param id="0" name="Text">&quot;Escolha e pressione para qual lado deseja ir&quot;</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="358506308439411" type="Inimigos">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="840546763579638">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="147309699607227" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="707540771877282" type="Dicas">
+                            <param id="0" name="Text">&quot;Esse é seu indicador de pontos. Quanto maior forem os pontos mais dinheiro irá ganhar. Toque nos pontos para continuar.&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="223805155058702" type="Hand01" />
+                        <action id="-15" name="Set visible" sid="847377888351696" type="Hand2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="242923041266403" type="Inimigos">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="207118424017167">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="445115340250890" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="944184567688776" type="Dicas">
+                            <param id="0" name="Text">&quot;Pegue combustível para se manter ativo na estrada&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="606418469220549" type="Hand2" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="888076421303110" title="MudaTutorial">
+            <sub-events>
+                <event-block sid="752697214547674">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="287837785232901" type="Touch">
+                            <param id="0" name="Object">Dicas</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="630329542115783" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="999902811070175" type="System">
+                            <param id="0" name="Variable">Tutorial</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="851613249766765" type="System">
+                            <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="681114654530545" type="System">
+                            <param id="0" name="Group name">&quot;Substrai Combustível&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="505666006722519" type="System">
+                            <param id="0" name="Group name">&quot;Substrai Combustível&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="535081788899722" type="Inimigos">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="867706790370263">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="260176667895781" type="Touch">
+                            <param id="0" name="Object">TextoPontos</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="183860788857166" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="977748663309636" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="647707856432347">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="488914595242650" type="Touch">
+                            <param id="0" name="Object">ControleEsq</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="157154583879759" type="Touch">
+                            <param id="0" name="Object">ControleDir</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="746609793105098">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="796845939551032" type="Dicas">
+                                    <param id="0" name="Instance variable">Dica</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="114341276447239" type="Dicas">
+                                    <param id="0" name="Instance variable">Dica</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="172056571203512" title="AtivaTutorial">
+            <sub-events>
+                <event-block sid="371766396302959">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="599967745898209" type="System" />
+                        <condition id="-14" name="Compare variable" sid="907436919842153" type="System">
+                            <param id="0" name="Variable">Tutorial</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="344503840440515" type="System">
+                            <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
