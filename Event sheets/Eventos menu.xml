@@ -196,5 +196,6 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="Esse método ficará desativado para implementação futura dos achievements." sid="748885961130544" title="GooglePlay" />
     </events>
 </c2eventsheet>

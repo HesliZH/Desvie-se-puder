@@ -13,6 +13,12 @@
                 <action behavior="Car" id="5" name="Set acceleration" sid="727157236032326" type="Playerabertura">
                     <param id="0" name="Acceleration">100</param>
                 </action>
+                <action id="0" name="Play" sid="972927592028509" type="Audio">
+                    <param id="0" name="Audio file">MenuMusic</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;MenuMusic&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="856364114529298">

@@ -2,7 +2,7 @@
 <c2project>
     <name>Desvie se puder</name>
     <description>Desvie de carros andando na contramão e prove suas habilidades ao volante</description>
-    <version>0.01.5</version>
+    <version>0.01.6</version>
     <author>HitKill Studios</author>
     <author-email></author-email>
     <author-website>www.hitkillstudios.com.br</author-website>
@@ -23,6 +23,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+        <plugin author="Scirra" id="googleplay" version="1">Google Play</plugin>
         <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
     <used-behaviors>
@@ -940,6 +941,9 @@
             <object-type name="TextoCodigo" sid="334951198804998">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="GooglePlayServices" sid="774734360044914">
+                <plugin id="googleplay" />
+            </object-type>
         </object-folder>
         <object-folder name="Saves">
             <object-type name="ArmazenamentoLocal" sid="474100462230396">
@@ -1067,7 +1071,7 @@
         <global-instance type="Audio" uid="33">
             <properties>
                 <timescale-audio>Off</timescale-audio>
-                <saveload>All</saveload>
+                <saveload>None</saveload>
                 <play-in-background>No</play-in-background>
                 <positioned-audio></positioned-audio>
                 <panning-model>HRTF</panning-model>
@@ -1085,6 +1089,13 @@
         </global-instance>
         <global-instance type="ArmazenamentoLocal" uid="142" />
         <global-instance type="Browser" uid="143" />
+        <global-instance type="GooglePlayServices" uid="154">
+            <properties>
+                <application-id></application-id>
+                <client-id></client-id>
+                <client-secret></client-secret>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder>
         <file name="Batida.ogg" />
@@ -1092,6 +1103,7 @@
     </sounds-folder>
     <music-folder>
         <file name="Musica.ogg" />
+        <file name="MenuMusic.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">
