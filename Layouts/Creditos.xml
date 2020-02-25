@@ -318,7 +318,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>705</y>
+                        <y>714</y>
                         <z>0</z>
                         <width>480</width>
                         <height>128</height>
@@ -345,7 +345,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>506</y>
+                        <y>544</y>
                         <z>0</z>
                         <width>480</width>
                         <height>96</height>
@@ -372,7 +372,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>608</y>
+                        <y>646</y>
                         <z>0</z>
                         <width>480</width>
                         <height>32</height>
@@ -399,7 +399,34 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>0</x>
-                        <y>640</y>
+                        <y>678</y>
+                        <z>0</z>
+                        <width>480</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Texto_Creditos" uid="160">
+                    <properties>
+                        <text>HESLI H. AZEVEDO</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-19,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>0</x>
+                        <y>512</y>
                         <z>0</z>
                         <width>480</width>
                         <height>32</height>

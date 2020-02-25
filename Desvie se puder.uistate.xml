@@ -12,7 +12,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout order="0">Base</layout>
         <layout order="3">Menu Principal</layout>
-        <event-sheet active="1" order="1">Eventos Base das Fases</event-sheet>
+        <layout active="1" order="4">Creditos</layout>
+        <event-sheet order="1">Eventos Base das Fases</event-sheet>
         <event-sheet order="2">Eventos Menu</event-sheet>
     </open-tabs>
     <properties>
