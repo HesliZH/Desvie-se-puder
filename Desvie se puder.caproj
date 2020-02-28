@@ -93,7 +93,7 @@
             <object-type name="Player" sid="267265731650276">
                 <plugin id="Sprite" />
                 <animation-folder>
-                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870431510694486" speed="0">
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870431510694486" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
                             <image-point name="Escape" x="-0.00390625" y="0.53125" />
                             <collision-poly>
@@ -125,6 +125,10 @@
                                 <point x="0.0273438" y="0.953125" />
                             </collision-poly>
                         </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\004.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\005.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -145,7 +149,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653521158625329" speed="0">
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653521158625329" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
                             <image-point name="Escape" x="-0.00390625" y="0.53125" />
                             <collision-poly>
@@ -161,6 +165,10 @@
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro0\Default\000.png" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro5\Default\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\004.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\005.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -902,6 +910,85 @@
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type name="Carro3" sid="620596571891713">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167054463087499" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\002.png">
+                            <collision-poly>
+                                <point x="0.0403226" y="0.0746269" />
+                                <point x="0.5" y="0.145522" />
+                                <point x="0.921371" y="0.145522" />
+                                <point x="0.997984" y="0.5" />
+                                <point x="0.921371" y="0.854478" />
+                                <point x="0.5" y="0.854478" />
+                                <point x="0.0403226" y="0.925373" />
+                                <point x="0.00201613" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro4" sid="700505124967869">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="630232823692265" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\003.png">
+                            <collision-poly>
+                                <point x="0.0403226" y="0.0746269" />
+                                <point x="0.5" y="0.145522" />
+                                <point x="0.921371" y="0.145522" />
+                                <point x="0.997984" y="0.5" />
+                                <point x="0.921371" y="0.854478" />
+                                <point x="0.5" y="0.854478" />
+                                <point x="0.0403226" y="0.925373" />
+                                <point x="0.00201613" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro5" sid="305324683802949">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121604809417313" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\004.png">
+                            <collision-poly>
+                                <point x="0.0403226" y="0.0746269" />
+                                <point x="0.5" y="0.145522" />
+                                <point x="0.921371" y="0.145522" />
+                                <point x="0.997984" y="0.5" />
+                                <point x="0.921371" y="0.854478" />
+                                <point x="0.5" y="0.854478" />
+                                <point x="0.0403226" y="0.925373" />
+                                <point x="0.00201613" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Carro6" sid="216545258106195">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="520246408130168" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\005.png">
+                            <collision-poly>
+                                <point x="0.0403226" y="0.0746269" />
+                                <point x="0.5" y="0.145522" />
+                                <point x="0.921371" y="0.145522" />
+                                <point x="0.997984" y="0.5" />
+                                <point x="0.921371" y="0.854478" />
+                                <point x="0.5" y="0.854478" />
+                                <point x="0.0403226" y="0.925373" />
+                                <point x="0.00201613" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="InfoGaragem" sid="517073466048432">
+                <plugin id="Text" />
             </object-type>
         </object-folder>
         <object-folder name="Creditos">
