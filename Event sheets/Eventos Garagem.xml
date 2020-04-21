@@ -249,5 +249,15 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="938098654360489">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="605094460422787" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="243522779451981" type="Audio">
+                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

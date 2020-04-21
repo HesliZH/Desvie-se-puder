@@ -10,14 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="2">Loja</layout>
-        <layout order="3">Garagem</layout>
-        <layout order="4">Tela Inicial</layout>
-        <event-sheet order="0">Eventos Garagem</event-sheet>
-        <event-sheet order="1">Eventos Loja</event-sheet>
-        <event-sheet order="5">Eventos dos Creditos</event-sheet>
-        <event-sheet order="6">Eventos Carros</event-sheet>
-        <event-sheet active="1" order="7">Eventos Base das Fases</event-sheet>
+        <layout order="0">Menu Principal</layout>
+        <layout active="1" order="1">Mapas</layout>
+        <layout order="3">Loja</layout>
+        <event-sheet order="2">Eventos do mapa</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -28,31 +24,32 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="0" path="object-folder/Chão/" />
-        <folder expanded="1" path="object-folder/Player/" />
-        <folder expanded="0" path="object-folder/Inimigos/" />
+        <folder expanded="1" path="object-folder/Chão/" />
+        <folder expanded="0" path="object-folder/Player/" />
+        <folder expanded="1" path="object-folder/Inimigos/" />
         <folder expanded="0" path="object-folder/Controles/" />
         <folder expanded="0" path="object-folder/Métodos de Controle/" />
         <folder expanded="0" path="object-folder/Controladores de Spawn/" />
         <folder expanded="0" path="object-folder/Derrota/" />
         <folder expanded="0" path="object-folder/Menu/" />
         <folder expanded="0" path="object-folder/Detalhes da Fase/" />
-        <folder expanded="0" path="object-folder/Objetos/" />
-        <folder expanded="1" path="object-folder/HUD/" />
+        <folder expanded="1" path="object-folder/Objetos/" />
+        <folder expanded="0" path="object-folder/HUD/" />
         <folder expanded="0" path="object-folder/Tela Abertura/" />
         <folder expanded="0" path="object-folder/Loja/" />
         <folder expanded="0" path="object-folder/Arrays/" />
-        <folder expanded="1" path="object-folder/Garagem/" />
+        <folder expanded="0" path="object-folder/Garagem/" />
+        <folder expanded="0" path="object-folder/Garagem/PrimeiroAndar/" />
         <folder expanded="0" path="object-folder/Creditos/" />
         <folder expanded="0" path="object-folder/Codigos/" />
         <folder expanded="0" path="object-folder/Saves/" />
-        <folder expanded="1" path="object-folder/Tutorial Jogabilidade/" />
+        <folder expanded="0" path="object-folder/Tutorial Jogabilidade/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="0" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
-        <folder expanded="1" path="file-folder/Icons/" />
+        <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Marcacao/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/Carro_loja/" />
@@ -86,6 +83,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/btnVoltar2/" />
         <folder expanded="1" path="animation-folder/MyMoney/" />
         <folder expanded="1" path="animation-folder/FundobtnVoltar/" />
+        <folder expanded="1" path="animation-folder/ArrowRight/" />
+        <folder expanded="1" path="animation-folder/ArrowLeft/" />
         <folder expanded="1" path="animation-folder/Carro0/" />
         <folder expanded="1" path="animation-folder/Carro01/" />
         <folder expanded="1" path="animation-folder/Carro02/" />
@@ -99,5 +98,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Hand2/" />
         <folder expanded="1" path="animation-folder/Pessoa1/" />
         <folder expanded="1" path="animation-folder/Pessoa2/" />
+        <folder expanded="1" path="animation-folder/debugColor/" />
+        <folder expanded="1" path="animation-folder/debugColor2/" />
     </folders-expanded>
 </c2uistate>

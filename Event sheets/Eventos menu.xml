@@ -26,6 +26,9 @@
                                 <action id="-2" name="Go to layout" sid="918053800405599" type="System">
                                     <param id="0" name="Layout">Garagem</param>
                                 </action>
+                                <action id="6" name="Stop" sid="871636312206229" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                         <event-block sid="365814655251763">
@@ -141,6 +144,10 @@
                 <action id="5" name="Set web font" sid="853990843316448" type="txt_Highscore2">
                     <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
                     <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="799008403377538" type="FundoBotao">
+                    <param id="0" name="Instance variable">TempoSair</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>

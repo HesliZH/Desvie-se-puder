@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos do mapa</name>
+    <events>
+        <event-block sid="506117311042666">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="781125343558973" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Pin" id="0" name="Pin to object" sid="277436763751072" type="Estrada">
+                    <param id="0" name="Pin to">debugColor2</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" sid="674059918732834" type="debugColor2">
+                    <param id="0" name="Pin to">debugColor</param>
+                    <param id="1" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="731453783826021">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="382043046094015" type="debugColor">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="X co-ordinate">-1240</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
