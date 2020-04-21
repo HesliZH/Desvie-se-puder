@@ -21,6 +21,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="Scirra" id="googleplay" version="1">Google Play</plugin>
@@ -1151,6 +1152,206 @@
                                 <point x="0.0057699" y="0.995658" />
                             </collision-poly>
                         </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Predios">
+            <object-type name="Casa01" sid="784078918468284">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="645703681246450" speed="5">
+                        <frame duration="1" hotspotX="0.491071" hotspotY="0.539063" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Casas\000.png">
+                            <collision-poly>
+                                <point x="0.178571" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.821429" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.964286" y="0.96875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0357143" y="0.96875" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Casa02" sid="294697582125279">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372092714468022" speed="5">
+                        <frame duration="1" hotspotX="0.491071" hotspotY="0.539063" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Casas\007.png">
+                            <collision-poly>
+                                <point x="0.178571" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.821429" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.964286" y="0.96875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0357143" y="0.96875" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Casa3" sid="696408494577714">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231758015449195" speed="5">
+                        <frame duration="1" hotspotX="0.491071" hotspotY="0.539063" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Casas\006.png">
+                            <collision-poly>
+                                <point x="0.178571" y="0.15625" />
+                                <point x="0.5" y="0" />
+                                <point x="0.821429" y="0.15625" />
+                                <point x="1" y="0.5" />
+                                <point x="0.964286" y="0.96875" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0357143" y="0.96875" />
+                                <point x="0" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Predio01" sid="241253108363969">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294449563681444" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Apartamentos\003.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.979167" y="0.979167" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0208333" y="0.979167" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Predio2" sid="518911555563151">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330890615017605" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Lojas\000.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.979167" y="0.979167" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0208333" y="0.979167" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Predio3" sid="956766562620619">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996365542232373" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Oficina\000.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.979167" y="0.979167" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0208333" y="0.979167" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Predio4" sid="201133486903291">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="158648999038152" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Predios Simples\004.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="0.979167" y="0.979167" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0208333" y="0.979167" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Detalhes Cidade">
+            <object-folder name="Exterior">
+                <object-type name="Cerca" sid="322699139234786">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Detalhes\fence_barbed.png" />
+                    <tiles />
+                </object-type>
+                <object-type name="TilemapCity" sid="332964978135085">
+                    <plugin id="Tilemap" />
+                    <texture original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Detalhes\7DRL-Tiles2.png" />
+                    <tiles />
+                </object-type>
+            </object-folder>
+            <object-folder name="Icones">
+                <object-type name="IconeLoja" sid="279501615819724">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="612807511012974" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Predios e casas\Detalhes\Pausa_Background.png">
+                                <collision-poly>
+                                    <point x="0.068662" y="0.0473301" />
+                                    <point x="0.5" y="0.00121359" />
+                                    <point x="0.931338" y="0.0473301" />
+                                    <point x="0.998239" y="0.5" />
+                                    <point x="0.931338" y="0.95267" />
+                                    <point x="0.5" y="0.998786" />
+                                    <point x="0.068662" y="0.95267" />
+                                    <point x="0.00176056" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="CarroIcone" sid="817624915093434">
+                    <plugin id="Sprite" />
+                    <behaviors>
+                        <behavior-type name="Sine" sid="294058482449293">
+                            <behavior id="Sin" />
+                        </behavior-type>
+                    </behaviors>
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="387564943167022" speed="5">
+                            <frame duration="1" hotspotX="0.501139" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\000.png">
+                                <collision-poly>
+                                    <point x="0.0455581" y="0.0746269" />
+                                    <point x="0.498861" y="0.0746269" />
+                                    <point x="0.911162" y="0.145522" />
+                                    <point x="0.997722" y="0.5" />
+                                    <point x="0.911162" y="0.854478" />
+                                    <point x="0.498861" y="0.925373" />
+                                    <point x="0.0455581" y="0.925373" />
+                                    <point x="0.0022779" y="0.5" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+            </object-folder>
+        </object-folder>
+        <object-folder name="Cameras">
+            <object-type name="CameraCidade" sid="106025975513057">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="653838485447578">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                    <behavior-type name="ScrollTo" sid="556733405838621">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="200645020314774" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>

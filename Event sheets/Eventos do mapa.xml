@@ -3,29 +3,53 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos do mapa</name>
     <events>
-        <event-block sid="506117311042666">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="781125343558973" type="System" />
-            </conditions>
-            <actions>
-                <action behavior="Pin" id="0" name="Pin to object" sid="277436763751072" type="Estrada">
-                    <param id="0" name="Pin to">debugColor2</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-                <action behavior="Pin" id="0" name="Pin to object" sid="674059918732834" type="debugColor2">
-                    <param id="0" name="Pin to">debugColor</param>
-                    <param id="1" name="Mode">0</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="731453783826021">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="382043046094015" type="debugColor">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="X co-ordinate">-1240</param>
-                </condition>
-            </conditions>
-            <actions />
-        </event-block>
+        <event-group description="" sid="978650164783637" title="MostraIcones">
+            <sub-events>
+                <event-block sid="911086617656812">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="738220026217696" type="CameraCidade">
+                            <param id="0" name="Object">IconeLoja</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="257934091865699" type="IconeLoja">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="914161349531745" type="CarroIcone">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="534015084509042">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="152069676299197" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="429807764958705" type="IconeLoja">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="543048287466664" type="CarroIcone">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="490398308118191" title="VaiParaOsLugares">
+            <sub-events>
+                <event-block sid="536010194367987">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="904950631234819" type="Touch">
+                            <param id="0" name="Object">CarroIcone</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="856327576473891" type="System">
+                            <param id="0" name="Layout">Loja</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

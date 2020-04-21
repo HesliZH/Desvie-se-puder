@@ -569,7 +569,7 @@
                 </instance>
                 <instance type="txtBtn_Opcoes" uid="107">
                     <properties>
-                        <text> Loja</text>
+                        <text> Mapa</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
                         <color>255,153,0</color>

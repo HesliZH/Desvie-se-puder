@@ -41,7 +41,7 @@
                             </conditions>
                             <actions>
                                 <action id="-2" name="Go to layout" sid="591482122808778" type="System">
-                                    <param id="0" name="Layout">Loja</param>
+                                    <param id="0" name="Layout">Mapas</param>
                                 </action>
                             </actions>
                         </event-block>
