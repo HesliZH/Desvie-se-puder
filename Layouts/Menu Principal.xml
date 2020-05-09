@@ -771,6 +771,13 @@
                 <depth>1</depth>
             </properties>
         </instance>
+        <instance type="StatusCarros" uid="189">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
     </nonworld-instances>
     <effects />
 </c2layout>

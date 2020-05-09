@@ -111,10 +111,14 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="700780691358327" type="System">
-                            <param id="0" name="Layout">Base</param>
+                            <param id="0" name="Layout">GaragemStatus</param>
                         </action>
                         <action id="6" name="Stop" sid="766063821977733" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="626173799524874" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -129,11 +133,15 @@
                             <param id="0" name="Variable">idCarro</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="398768508339738" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                         <action id="6" name="Stop" sid="864317763198550" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="410497725655196" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="400893072299260" type="System">
+                            <param id="0" name="Layout">GaragemStatus</param>
                         </action>
                     </actions>
                 </event-block>
@@ -148,11 +156,15 @@
                             <param id="0" name="Variable">idCarro</param>
                             <param id="1" name="Value">2</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="743905565269419" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                         <action id="6" name="Stop" sid="257882688435555" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="699252844494805" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="325532613805869" type="System">
+                            <param id="0" name="Layout">GaragemStatus</param>
                         </action>
                     </actions>
                 </event-block>
@@ -167,11 +179,15 @@
                             <param id="0" name="Variable">idCarro</param>
                             <param id="1" name="Value">3</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="875622220016618" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                         <action id="6" name="Stop" sid="180982267818882" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="999893069958652" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="241725311792734" type="System">
+                            <param id="0" name="Layout">GaragemStatus</param>
                         </action>
                     </actions>
                 </event-block>
@@ -186,11 +202,15 @@
                             <param id="0" name="Variable">idCarro</param>
                             <param id="1" name="Value">4</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="439568811451667" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                         <action id="6" name="Stop" sid="314657659747100" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="455397951934395" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="512736079014109" type="System">
+                            <param id="0" name="Layout">GaragemStatus</param>
                         </action>
                     </actions>
                 </event-block>
@@ -205,11 +225,15 @@
                             <param id="0" name="Variable">idCarro</param>
                             <param id="1" name="Value">5</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="235340074724537" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                         <action id="6" name="Stop" sid="368155080396177" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="665390626910094" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="709235889955998" type="System">
+                            <param id="0" name="Layout">GaragemStatus</param>
                         </action>
                     </actions>
                 </event-block>
@@ -224,11 +248,15 @@
                             <param id="0" name="Variable">idCarro</param>
                             <param id="1" name="Value">6</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="438026380954731" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                         <action id="6" name="Stop" sid="341407220700114" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="130851071721230" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="649087483549526" type="System">
+                            <param id="0" name="Layout">GaragemStatus</param>
                         </action>
                     </actions>
                 </event-block>

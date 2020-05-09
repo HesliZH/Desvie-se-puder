@@ -181,6 +181,37 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="Carro_Garagem" sid="547418160364738">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Sine" sid="927948913606455">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849856112068720" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
+                            <image-point name="Escape" x="-0.00390625" y="0.53125" />
+                            <collision-poly>
+                                <point x="0.038835" y="0.0653595" />
+                                <point x="0.499029" y="0.0653595" />
+                                <point x="0.924272" y="0.127451" />
+                                <point x="0.998058" y="0.5" />
+                                <point x="0.924272" y="0.872549" />
+                                <point x="0.499029" y="0.934641" />
+                                <point x="0.038835" y="0.934641" />
+                                <point x="0.00194175" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro0\Default\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro5\Default\000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\004.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Carros\005.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Inimigos">
             <object-type name="Inimigos" sid="990568379337386">
@@ -908,6 +939,9 @@
             <object-type global="1" name="CarrosComprados" sid="832185031746071">
                 <plugin id="Arr" />
             </object-type>
+            <object-type global="1" name="StatusCarros" sid="230839655678889">
+                <plugin id="Arr" />
+            </object-type>
         </object-folder>
         <object-folder name="Garagem">
             <object-folder name="PrimeiroAndar">
@@ -1356,6 +1390,32 @@
                 </animation-folder>
             </object-type>
         </object-folder>
+        <object-folder name="Garagem Detalhes">
+            <object-type name="Status" sid="802792840777453">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="952538098745535" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0000.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0004.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0005.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0006.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\Status de carros\flat\wrench03A\wrench03A0007.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="txt_dano" sid="333565460112520">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="txt_Jogar" sid="531129537312566">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="txt_carroStatus" sid="969254166030190">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="Audio" sid="972430251002997">
             <plugin id="Audio" />
         </object-type>
@@ -1487,6 +1547,7 @@
         <layout>Garagem.xml</layout>
         <layout>Password.xml</layout>
         <layout>Mapas.xml</layout>
+        <layout>GaragemStatus.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
@@ -1500,6 +1561,7 @@
         <event-sheet>Eventos dos Creditos.xml</event-sheet>
         <event-sheet>Eventos Password.xml</event-sheet>
         <event-sheet>Eventos do mapa.xml</event-sheet>
+        <event-sheet>Eventos Garagem Status.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">

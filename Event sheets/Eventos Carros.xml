@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Carros</name>
     <events>
+        <variable constant="0" name="Desgaste" sid="485390833078518" static="0" type="number">0</variable>
         <variable constant="0" name="idCarro" sid="728179545230413" static="0" type="number">0</variable>
         <variable constant="0" name="MultiplicadorPontos" sid="211519585980821" static="0" type="number">0</variable>
         <variable constant="0" name="Consumo" sid="385258100178899" static="0" type="number">0</variable>
@@ -159,6 +160,136 @@
                         <action id="-9" name="Set value" sid="279954946163323" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>
                             <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="204950101725116" title="DesgasteCarros">
+            <sub-events>
+                <event-block sid="680854256965613">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="357967413717558" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="750608810659724" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="903702886321832" type="StatusCarros">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">StatusCarros.At(0)+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="994313274619131">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="471659719160861" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="111689110413889" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="968423120569564" type="StatusCarros">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">StatusCarros.At(1)+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="728796446050323">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="762304749917631" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="644835227161382" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="148593565992132" type="StatusCarros">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">StatusCarros.At(2)+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="355121271991377">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="230202028350270" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="494175572220941" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="325468401814286" type="StatusCarros">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">StatusCarros.At(3)+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="847572952532971">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="207325518856554" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="708083341857744" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="182153359383686" type="StatusCarros">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Value">StatusCarros.At(4)+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="388605189366565">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="652415553116257" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="637500562789129" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="139344051042589" type="StatusCarros">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Value">StatusCarros.At(5)+1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="826579342803056">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="391333722386213" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="461586603905931" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="139495834301957" type="StatusCarros">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Value">StatusCarros.At(6)+1</param>
                         </action>
                     </actions>
                 </event-block>
