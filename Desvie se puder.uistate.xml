@@ -10,9 +10,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">GaragemStatus</layout>
-        <layout order="2">Tela Inicial</layout>
-        <event-sheet active="1" order="0">Eventos Garagem Status</event-sheet>
+        <layout order="0">Oficina</layout>
+        <layout order="3">Garagem</layout>
+        <layout order="6">Mapas</layout>
+        <layout order="7">Tela Inicial</layout>
+        <event-sheet order="1">Eventos oficina</event-sheet>
+        <event-sheet order="2">Eventos Loja</event-sheet>
+        <event-sheet order="4">Eventos Garagem</event-sheet>
+        <event-sheet order="5">Eventos do mapa</event-sheet>
+        <event-sheet active="1" order="8">Eventos Garagem Status</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -34,21 +40,25 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Detalhes da Fase/" />
         <folder expanded="0" path="object-folder/Objetos/" />
         <folder expanded="0" path="object-folder/HUD/" />
-        <folder expanded="0" path="object-folder/Tela Abertura/" />
+        <folder expanded="1" path="object-folder/Tela Abertura/" />
         <folder expanded="0" path="object-folder/Loja/" />
         <folder expanded="0" path="object-folder/Arrays/" />
         <folder expanded="0" path="object-folder/Garagem/" />
         <folder expanded="0" path="object-folder/Garagem/PrimeiroAndar/" />
         <folder expanded="0" path="object-folder/Creditos/" />
         <folder expanded="0" path="object-folder/Codigos/" />
-        <folder expanded="0" path="object-folder/Saves/" />
-        <folder expanded="0" path="object-folder/Tutorial Jogabilidade/" />
-        <folder expanded="0" path="object-folder/Predios/" />
-        <folder expanded="0" path="object-folder/Detalhes Cidade/" />
+        <folder expanded="1" path="object-folder/Saves/" />
+        <folder expanded="1" path="object-folder/Tutorial Jogabilidade/" />
+        <folder expanded="1" path="object-folder/Predios/" />
+        <folder expanded="1" path="object-folder/Detalhes Cidade/" />
         <folder expanded="0" path="object-folder/Detalhes Cidade/Exterior/" />
         <folder expanded="1" path="object-folder/Detalhes Cidade/Icones/" />
         <folder expanded="0" path="object-folder/Cameras/" />
-        <folder expanded="1" path="object-folder/Garagem Detalhes/" />
+        <folder expanded="0" path="object-folder/Garagem Detalhes/" />
+        <folder expanded="0" path="object-folder/Oficina/" />
+        <folder expanded="0" path="object-folder/Oficina/Objetos Decoracao/" />
+        <folder expanded="0" path="object-folder/Oficina/Botoes/" />
+        <folder expanded="1" path="object-folder/Oficina/Informacoes/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="file-folder/" />
@@ -111,8 +121,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Predio4/" />
         <folder expanded="1" path="animation-folder/IconeLoja/" />
         <folder expanded="1" path="animation-folder/CarroIcone/" />
+        <folder expanded="1" path="animation-folder/IconeOficina/" />
+        <folder expanded="1" path="animation-folder/ChaveIcone/" />
         <folder expanded="1" path="animation-folder/CameraCidade/" />
         <folder expanded="1" path="animation-folder/Status/" />
+        <folder expanded="1" path="animation-folder/CaixaFerramentas/" />
+        <folder expanded="1" path="animation-folder/Ferramenta1/" />
+        <folder expanded="1" path="animation-folder/Ferramenta2/" />
+        <folder expanded="1" path="animation-folder/Ferramenta3/" />
+        <folder expanded="1" path="animation-folder/BtnConsertar/" />
         <folder expanded="1" path="animation-folder/Pessoa1/" />
         <folder expanded="1" path="animation-folder/Pessoa2/" />
         <folder expanded="1" path="animation-folder/debugColor/" />

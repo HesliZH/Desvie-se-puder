@@ -786,14 +786,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>467</x>
-                        <y>396</y>
+                        <x>390</x>
+                        <y>309</y>
                         <z>0</z>
                         <width>163</width>
                         <height>90</height>
                         <depth>0</depth>
-                        <hotspotX>0.957499981</hotspotX>
-                        <hotspotY>1.422500014</hotspotY>
+                        <hotspotX>0.485000014</hotspotX>
+                        <hotspotY>0.460000008</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

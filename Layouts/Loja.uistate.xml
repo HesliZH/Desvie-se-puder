@@ -23,7 +23,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="TextoOpcoes" />
+    <active-layer name="Piso" />
     <layers>
         <layer locked="1" name="Grama" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Bordas" parallax-in-editor="0" visible="1" />
@@ -35,7 +35,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="1" name="IconesPropriedades" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="TextoPropriedades" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Gatilho" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="BackgroundOpcoes" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="TextoOpcoes" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BackgroundOpcoes" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoOpcoes" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

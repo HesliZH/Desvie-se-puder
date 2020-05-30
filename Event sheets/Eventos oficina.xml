@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos oficina</name>
+    <events>
+        <variable constant="0" name="PrecoConserto" sid="145033243753521" static="0" type="number">0</variable>
+        <event-group description="" sid="383098654823851" title="AnalisaDano">
+            <sub-events>
+                <event-block sid="785805266948817">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="558538508751047" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="185341022242776" type="System">
+                            <param id="0" name="Variable">DanoCarro1</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="794486122127750" type="System">
+                            <param id="0" name="Variable">DanoCarro1</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="652353553232893" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="478342692831563">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="433498026846514" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="499484426430536">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="948376996087006" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="993888592606523" type="System">
+                                    <param id="0" name="Variable">DanoCarro1</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="185446841072798" type="System">
+                                    <param id="0" name="Variable">DanoCarro1</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="803192698579167" type="System">
+                                    <param id="0" name="Variable">PrecoConserto</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="886214619635517">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="569711070495626" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="688838995467130">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="257512967197614" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="256328515779858" type="System">
+                                            <param id="0" name="Variable">DanoCarro1</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="613034087491263" type="System">
+                                            <param id="0" name="Variable">PrecoConserto</param>
+                                            <param id="1" name="Value">36</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="808722006399542">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="937160112845909" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="610060960002613" type="System">
+                            <param id="0" name="Variable">DanoCarro2</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="562983510122938" type="System">
+                            <param id="0" name="Variable">DanoCarro2</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="846078090858358" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="488285660238432">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="440164703665348" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="387024620696607">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="717823120300763" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="539082323449040" type="System">
+                                    <param id="0" name="Variable">DanoCarro2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="543926221639168" type="System">
+                                    <param id="0" name="Variable">DanoCarro2</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="709824897886987" type="System">
+                                    <param id="0" name="Variable">PrecoConserto</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="742810469641329">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="717599243594141" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="245112073229260">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="411791369522476" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="915503338171081" type="System">
+                                            <param id="0" name="Variable">DanoCarro2</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="218854544968894" type="System">
+                                            <param id="0" name="Variable">PrecoConserto</param>
+                                            <param id="1" name="Value">36</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="496512574177780">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="888620817725623" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="477074390380773" type="System">
+                            <param id="0" name="Variable">DanoCarro3</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="345775910589067" type="System">
+                            <param id="0" name="Variable">DanoCarro3</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="255026051669468" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="202807197484736">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="802296213898709" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="512266216664918">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="336421397297404" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="950365537091437" type="System">
+                                    <param id="0" name="Variable">DanoCarro3</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="930984832430114" type="System">
+                                    <param id="0" name="Variable">DanoCarro3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="668145445854066" type="System">
+                                    <param id="0" name="Variable">PrecoConserto</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="319339574391549">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="381761077614820" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="243639025768329">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="551595731284785" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="918454376584805" type="System">
+                                            <param id="0" name="Variable">DanoCarro3</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="537035147285196" type="System">
+                                            <param id="0" name="Variable">PrecoConserto</param>
+                                            <param id="1" name="Value">36</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="753803555797299">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="487895186552018" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="614135850225130" type="System">
+                            <param id="0" name="Variable">DanoCarro4</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="326002808674145" type="System">
+                            <param id="0" name="Variable">DanoCarro4</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="338156173596665" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="460135231935121">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="672643758352455" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="840662366964949">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="852498601901962" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="240969182197129" type="System">
+                                    <param id="0" name="Variable">DanoCarro4</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="347733221222093" type="System">
+                                    <param id="0" name="Variable">DanoCarro4</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="823008712345240" type="System">
+                                    <param id="0" name="Variable">PrecoConserto</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="992918227331153">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="878019261376675" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="494319283613113">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="653346629588292" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="972684732543485" type="System">
+                                            <param id="0" name="Variable">DanoCarro4</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="702843936678174" type="System">
+                                            <param id="0" name="Variable">PrecoConserto</param>
+                                            <param id="1" name="Value">36</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="105862108511684">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="408349193072489" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="784205767652161" type="System">
+                            <param id="0" name="Variable">DanoCarro5</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="835350666942981" type="System">
+                            <param id="0" name="Variable">DanoCarro5</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="548143423644255" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="425188149511907">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="414943114196799" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="706515009378754">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="451037932243614" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="559254221427825" type="System">
+                                    <param id="0" name="Variable">DanoCarro5</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="515014422641209" type="System">
+                                    <param id="0" name="Variable">DanoCarro5</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="253860796724662" type="System">
+                                    <param id="0" name="Variable">PrecoConserto</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="286558371386210">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="827521674366395" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="790279037437532">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="562366106400933" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="819416248177735" type="System">
+                                            <param id="0" name="Variable">DanoCarro5</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="735148400857941" type="System">
+                                            <param id="0" name="Variable">PrecoConserto</param>
+                                            <param id="1" name="Value">36</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="502318491376537">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="697988232407886" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="405216919437204" type="System">
+                            <param id="0" name="Variable">DanoCarro6</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="740488471115995" type="System">
+                            <param id="0" name="Variable">DanoCarro6</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="585524327088171" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="692990297944875">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="762227565214998" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="342766027899512">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="957728020518142" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="360348310616682" type="System">
+                                    <param id="0" name="Variable">DanoCarro6</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="814443137285942" type="System">
+                                    <param id="0" name="Variable">DanoCarro6</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="121182498627721" type="System">
+                                    <param id="0" name="Variable">PrecoConserto</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="592801728845955">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="977587472890088" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="287130358560950">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="915875871142902" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="886454206434052" type="System">
+                                            <param id="0" name="Variable">DanoCarro6</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="442405651879375" type="System">
+                                            <param id="0" name="Variable">PrecoConserto</param>
+                                            <param id="1" name="Value">36</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="995027098219152">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="986391952727737" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="217265904975121" type="System">
+                            <param id="0" name="Variable">DanoCarro7</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="525761447160003" type="System">
+                            <param id="0" name="Variable">DanoCarro7</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="834781340740619" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="480208046095543">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="323178772445522" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="902256209083563">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="811597976277045" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="193180186777247" type="System">
+                                    <param id="0" name="Variable">DanoCarro7</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">26</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="570745606916543" type="System">
+                                    <param id="0" name="Variable">DanoCarro7</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">70</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="688447930869652" type="System">
+                                    <param id="0" name="Variable">PrecoConserto</param>
+                                    <param id="1" name="Value">24</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="712519786124047">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="294823137418891" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="693352841474451">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="298342194029459" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="203820050247594" type="System">
+                                            <param id="0" name="Variable">DanoCarro7</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="106288810943719" type="System">
+                                            <param id="0" name="Variable">PrecoConserto</param>
+                                            <param id="1" name="Value">36</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="170667508558510" title="DefineValor">
+            <sub-events>
+                <event-block sid="173934687905867">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="634953744189550" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="866855117525704" type="txtValorConsert">
+                            <param id="0" name="Text">PrecoConserto</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="361936846712970" title="DefinicaoWebFontOficina">
+            <sub-events>
+                <event-block sid="289319831941339">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="978226874523814" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="838949257856606" type="txtValorConsert">
+                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="786726661349606" type="txtReparar">
+                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="562807530557477" title="EfetuaConserto">
+            <sub-events>
+                <event-block sid="433117380154442">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="550290577546277" type="Touch">
+                            <param id="0" name="Object">txtReparar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="675274305819092" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="792384804949857" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">PrecoConserto</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="638826907966698" type="System">
+                            <param id="0" name="Variable">DanoCarro1</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="985934015780206" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="735522918827250" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="422458036909535">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="716107166365626" type="Touch">
+                            <param id="0" name="Object">txtReparar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="314284965094399" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="370598151275676" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">PrecoConserto</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="571095088740789" type="System">
+                            <param id="0" name="Variable">DanoCarro2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="423822273644238" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="260986308408837" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="488819632644621">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="818863693642533" type="Touch">
+                            <param id="0" name="Object">txtReparar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="194243076090056" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="702019771530627" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">PrecoConserto</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="868998870940680" type="System">
+                            <param id="0" name="Variable">DanoCarro3</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="742944168846317" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="402903242033459" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="307511209781489">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="837969193562914" type="Touch">
+                            <param id="0" name="Object">txtReparar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="350792332926465" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="165955716633543" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">PrecoConserto</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="426008891377593" type="System">
+                            <param id="0" name="Variable">DanoCarro4</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="448614483607385" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="879128225785654" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="454493122860468">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="967991985555918" type="Touch">
+                            <param id="0" name="Object">txtReparar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="362184750446566" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="993352432024945" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">PrecoConserto</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="514718040775368" type="System">
+                            <param id="0" name="Variable">DanoCarro5</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="658118003396973" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="299371581625521" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="385663317679866">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="842398617827723" type="Touch">
+                            <param id="0" name="Object">txtReparar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="869410943064664" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="742947076794470" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">PrecoConserto</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="516047721462707" type="System">
+                            <param id="0" name="Variable">DanoCarro6</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="829492183216708" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="598343322529182" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="131788990227162">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="988264884131844" type="Touch">
+                            <param id="0" name="Object">txtReparar</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="933464270721638" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="986642835478361" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">PrecoConserto</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="518176733025536" type="System">
+                            <param id="0" name="Variable">DanoCarro7</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="988192372488640" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="957863285169324" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

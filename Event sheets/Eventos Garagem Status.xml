@@ -247,6 +247,10 @@
                             <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
                             <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
                         </action>
+                        <action id="5" name="Set web font" sid="159265483143228" type="txtBtn_LojaVoltar">
+                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -575,6 +579,121 @@
         </event-group>
         <event-group description="" sid="812191004486815" title="AvaliacaoDano">
             <sub-events>
+                <event-block sid="347671402398242">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="457570534035582" type="System">
+                            <param id="0" name="Variable">DanoCarro4</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="972305659659642" type="System">
+                            <param id="0" name="Variable">DanoCarro4</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="403315995688465" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="457236135049030" type="txt_carroStatus">
+                            <param id="0" name="Text">&quot;Alguns riscos marcados na lataria. Considere um polimento&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="971756763650255">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="839958924522525" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="763533004328059">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="511331556199835" type="System">
+                                    <param id="0" name="Variable">DanoCarro4</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="749451081232138" type="System">
+                                    <param id="0" name="Variable">DanoCarro4</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="306043104177128" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="484795411630586" type="txt_carroStatus">
+                                    <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="638710463109375">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="619611348508110" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="772704631576212">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="497415049661408" type="System">
+                                            <param id="0" name="Variable">DanoCarro4</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="182015257264836" type="System">
+                                            <param id="0" name="Variable">DanoCarro4</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="547051570531814" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">3</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="867566425904152" type="txt_carroStatus">
+                                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="961408956895927">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="135978597917881" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="308268651414806">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="840533273675851" type="System">
+                                                    <param id="0" name="Variable">DanoCarro4</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">70</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="308315483488235" type="System">
+                                                    <param id="0" name="Variable">CarroAtual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="325691811880558" type="txt_carroStatus">
+                                                    <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
                 <event-block sid="624895863206626">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="584313278750244" type="System">
@@ -587,6 +706,11 @@
                             <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">20</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="425195023062520" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="232383405230687" type="txt_carroStatus">
@@ -594,55 +718,685 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="661275535211639">
+                <event-block sid="174538853940882">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="595377980094377" type="System">
-                            <param id="0" name="Variable">DanoCarro1</param>
+                        <condition id="-22" name="Else" sid="190031762283824" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="661275535211639">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="595377980094377" type="System">
+                                    <param id="0" name="Variable">DanoCarro1</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="968114657734219" type="System">
+                                    <param id="0" name="Variable">DanoCarro1</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="988965201478491" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="397464172856910" type="txt_carroStatus">
+                                    <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="463980315734414">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="324036004830486" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="222569257209917">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="432094243930765" type="System">
+                                            <param id="0" name="Variable">DanoCarro1</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="971028254055999" type="System">
+                                            <param id="0" name="Variable">DanoCarro1</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="621642675284728" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="373644536046405" type="txt_carroStatus">
+                                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="479346486713376">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="599795916140013" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="782546594845204">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="692544582786628" type="System">
+                                                    <param id="0" name="Variable">DanoCarro1</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">70</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="298079194906031" type="System">
+                                                    <param id="0" name="Variable">CarroAtual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">0</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="756387240014364" type="txt_carroStatus">
+                                                    <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="806466633748771">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="271591627245036" type="System">
+                            <param id="0" name="Variable">DanoCarro2</param>
                             <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="459567877697226" type="System">
+                            <param id="0" name="Variable">DanoCarro2</param>
+                            <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">20</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="968114657734219" type="System">
-                            <param id="0" name="Variable">DanoCarro1</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">50</param>
+                        <condition id="-14" name="Compare variable" sid="436605609718708" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="397464172856910" type="txt_carroStatus">
-                            <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                        <action id="0" name="Set text" sid="819443787549904" type="txt_carroStatus">
+                            <param id="0" name="Text">&quot;Alguns riscos marcados na lataria. Considere um polimento&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="222569257209917">
+                <event-block sid="950167915256439">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="432094243930765" type="System">
-                            <param id="0" name="Variable">DanoCarro1</param>
+                        <condition id="-22" name="Else" sid="520863848259351" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="153040855795168">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="340581453548474" type="System">
+                                    <param id="0" name="Variable">DanoCarro2</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="419105300014167" type="System">
+                                    <param id="0" name="Variable">DanoCarro2</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="417136889637832" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="873452012169840" type="txt_carroStatus">
+                                    <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="126012093772208">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="361042763231491" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="601076745487039">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="491729379160486" type="System">
+                                            <param id="0" name="Variable">DanoCarro2</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="763588456413086" type="System">
+                                            <param id="0" name="Variable">DanoCarro2</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="751808439152337" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="797669702007651" type="txt_carroStatus">
+                                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="156384201716142">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="226392310837020" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="523419265579883">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="158463943345675" type="System">
+                                                    <param id="0" name="Variable">DanoCarro2</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">70</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="268314196177071" type="System">
+                                                    <param id="0" name="Variable">CarroAtual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">1</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="629326003560933" type="txt_carroStatus">
+                                                    <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="178688922564819">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="664875883248648" type="System">
+                            <param id="0" name="Variable">DanoCarro3</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">50</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="971028254055999" type="System">
-                            <param id="0" name="Variable">DanoCarro1</param>
+                        <condition id="-14" name="Compare variable" sid="913417032045726" type="System">
+                            <param id="0" name="Variable">DanoCarro3</param>
                             <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">70</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="431351379328399" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="373644536046405" type="txt_carroStatus">
-                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                        <action id="0" name="Set text" sid="383840223853137" type="txt_carroStatus">
+                            <param id="0" name="Text">&quot;Alguns riscos marcados na lataria. Considere um polimento&quot;</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="782546594845204">
+                <event-block sid="963459799735739">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="692544582786628" type="System">
-                            <param id="0" name="Variable">DanoCarro1</param>
+                        <condition id="-22" name="Else" sid="410453828739740" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="129506916148044">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="875453174078679" type="System">
+                                    <param id="0" name="Variable">DanoCarro3</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="653849976998291" type="System">
+                                    <param id="0" name="Variable">DanoCarro3</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="399905402272755" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="733162954406441" type="txt_carroStatus">
+                                    <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="206970212506723">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="969961381800578" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="893273925589495">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="747678222172091" type="System">
+                                            <param id="0" name="Variable">DanoCarro3</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="623289151607683" type="System">
+                                            <param id="0" name="Variable">DanoCarro3</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="198252283651811" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">2</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="401202437954693" type="txt_carroStatus">
+                                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="116702170460380">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="951730272364697" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="735084433034097">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="953200068127880" type="System">
+                                                    <param id="0" name="Variable">DanoCarro3</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">70</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="409631071757320" type="System">
+                                                    <param id="0" name="Variable">CarroAtual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">2</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="235499723434621" type="txt_carroStatus">
+                                                    <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="785490746973263">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="239837508765474" type="System">
+                            <param id="0" name="Variable">DanoCarro5</param>
                             <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">70</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="463137399303613" type="System">
+                            <param id="0" name="Variable">DanoCarro5</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="536829765318923" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="756387240014364" type="txt_carroStatus">
-                            <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                        <action id="0" name="Set text" sid="903375731155244" type="txt_carroStatus">
+                            <param id="0" name="Text">&quot;Alguns riscos marcados na lataria. Considere um polimento&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="985243217114716">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="549154660229079" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="917561848590268">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="619853812067761" type="System">
+                                    <param id="0" name="Variable">DanoCarro5</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="336692749670532" type="System">
+                                    <param id="0" name="Variable">DanoCarro5</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="570573522828749" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="527108636982058" type="txt_carroStatus">
+                                    <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="550665082356603">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="209909198128290" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="246200025595261">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="858095565650154" type="System">
+                                            <param id="0" name="Variable">DanoCarro5</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="479823300517052" type="System">
+                                            <param id="0" name="Variable">DanoCarro5</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="231737516699455" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">4</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="170353311491687" type="txt_carroStatus">
+                                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="904297619310446">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="306123434582998" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="611684701869765">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="699623089610238" type="System">
+                                                    <param id="0" name="Variable">DanoCarro5</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">70</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="199142245708858" type="System">
+                                                    <param id="0" name="Variable">CarroAtual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">4</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="116796378935572" type="txt_carroStatus">
+                                                    <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="719405112905605">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="146673193764386" type="System">
+                            <param id="0" name="Variable">DanoCarro6</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="981240875791708" type="System">
+                            <param id="0" name="Variable">DanoCarro6</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="938816467455559" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="226492441055645" type="txt_carroStatus">
+                            <param id="0" name="Text">&quot;Alguns riscos marcados na lataria. Considere um polimento&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="735203713929789">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="615913275384015" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="726378892522824">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="664124336240311" type="System">
+                                    <param id="0" name="Variable">DanoCarro6</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="544019429885674" type="System">
+                                    <param id="0" name="Variable">DanoCarro6</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="966330369194730" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="159228015666685" type="txt_carroStatus">
+                                    <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="147925605719184">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="137817153139122" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="262521876669390">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="347818448799305" type="System">
+                                            <param id="0" name="Variable">DanoCarro6</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="232358295547436" type="System">
+                                            <param id="0" name="Variable">DanoCarro6</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="562103784089448" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="791134128422235" type="txt_carroStatus">
+                                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="142654711667607">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="866262851433438" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="998713325630482">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="145663746807325" type="System">
+                                                    <param id="0" name="Variable">DanoCarro6</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">70</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="660435511621750" type="System">
+                                                    <param id="0" name="Variable">CarroAtual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">5</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="744641748483516" type="txt_carroStatus">
+                                                    <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="640144808444021">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="571485977385150" type="System">
+                            <param id="0" name="Variable">DanoCarro7</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="765532458407590" type="System">
+                            <param id="0" name="Variable">DanoCarro7</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="489049950371166" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="787687118215038" type="txt_carroStatus">
+                            <param id="0" name="Text">&quot;Alguns riscos marcados na lataria. Considere um polimento&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="699987555888455">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="844687100731317" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="624962650578619">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="634946353707731" type="System">
+                                    <param id="0" name="Variable">DanoCarro7</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">20</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="235244767356820" type="System">
+                                    <param id="0" name="Variable">DanoCarro7</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">50</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="548279492327837" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="813294826437828" type="txt_carroStatus">
+                                    <param id="0" name="Text">&quot;Amassados e vazamento aparecendo&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="159397942667285">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="149912356033977" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="651827140428617">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="988265760069915" type="System">
+                                            <param id="0" name="Variable">DanoCarro7</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">50</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="942877359165036" type="System">
+                                            <param id="0" name="Variable">DanoCarro7</param>
+                                            <param id="1" name="Comparison">3</param>
+                                            <param id="2" name="Value">70</param>
+                                        </condition>
+                                        <condition id="-14" name="Compare variable" sid="735749164664396" type="System">
+                                            <param id="0" name="Variable">CarroAtual</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">6</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Set text" sid="183176704289023" type="txt_carroStatus">
+                                            <param id="0" name="Text">&quot;Procure urgentemente uma oficina&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="839336900756077">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="696108095260386" type="System" />
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="674748757636373">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="110106461398550" type="System">
+                                                    <param id="0" name="Variable">DanoCarro7</param>
+                                                    <param id="1" name="Comparison">4</param>
+                                                    <param id="2" name="Value">70</param>
+                                                </condition>
+                                                <condition id="-14" name="Compare variable" sid="632683974416735" type="System">
+                                                    <param id="0" name="Variable">CarroAtual</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">6</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Set text" sid="152698072136229" type="txt_carroStatus">
+                                                    <param id="0" name="Text">&quot;Motor travado impossivel rodar&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="762888010263672" title="Voltar">
+            <sub-events>
+                <event-block sid="691669461488430">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="882708656743457" type="Touch">
+                            <param id="0" name="Object">txtBtn_LojaVoltar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="881527720366349" type="System">
+                            <param id="0" name="Layout">Garagem</param>
                         </action>
                     </actions>
                 </event-block>
