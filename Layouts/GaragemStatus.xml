@@ -37,7 +37,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1</x>
+                        <x>0</x>
                         <y>-7</y>
                         <z>0</z>
                         <width>480</width>
@@ -77,7 +77,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>319</x>
+                        <x>320</x>
                         <y>569</y>
                         <z>0</z>
                         <width>160</width>
@@ -100,7 +100,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-1</x>
+                        <x>0</x>
                         <y>857</y>
                         <z>0</z>
                         <width>256</width>
@@ -169,28 +169,6 @@
                         <z>0</z>
                         <width>252</width>
                         <height>126</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GatilhoTrocaCarro" uid="206">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>432</x>
-                        <y>730</y>
-                        <z>0</z>
-                        <width>89</width>
-                        <height>244</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -278,10 +256,10 @@
                 </instance>
                 <instance type="txt_dano" uid="197">
                     <properties>
-                        <text>Text</text>
+                        <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
-                        <color>0,0,0</color>
+                        <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -386,11 +364,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>125</x>
-                        <y>363</y>
+                        <x>112</x>
+                        <y>361</y>
                         <z>0</z>
-                        <width>231</width>
-                        <height>75</height>
+                        <width>257</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
