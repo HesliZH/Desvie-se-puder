@@ -655,6 +655,11 @@
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="577546686667715" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">PrecoConserto</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-11" name="Subtract from" sid="792384804949857" type="System">
@@ -672,6 +677,10 @@
                         <action id="-2" name="Go to layout" sid="735522918827250" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
                         </action>
+                        <action id="-9" name="Set value" sid="551571735545853" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="422458036909535">
@@ -683,6 +692,11 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="823743016985721" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">PrecoConserto</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -701,6 +715,10 @@
                         <action id="-2" name="Go to layout" sid="260986308408837" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
                         </action>
+                        <action id="-9" name="Set value" sid="420665780925707" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="488819632644621">
@@ -712,6 +730,11 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="275829613441274" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">PrecoConserto</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -730,6 +753,10 @@
                         <action id="-2" name="Go to layout" sid="402903242033459" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
                         </action>
+                        <action id="-9" name="Set value" sid="889388880813235" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="307511209781489">
@@ -741,6 +768,11 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="744808463688618" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">PrecoConserto</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -759,6 +791,10 @@
                         <action id="-2" name="Go to layout" sid="879128225785654" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
                         </action>
+                        <action id="-9" name="Set value" sid="494046530421573" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="454493122860468">
@@ -770,6 +806,11 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="475716418129124" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">PrecoConserto</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -788,6 +829,10 @@
                         <action id="-2" name="Go to layout" sid="299371581625521" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
                         </action>
+                        <action id="-9" name="Set value" sid="567444581715624" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="385663317679866">
@@ -799,6 +844,11 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">5</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="435434099177487" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">PrecoConserto</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -817,6 +867,10 @@
                         <action id="-2" name="Go to layout" sid="598343322529182" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
                         </action>
+                        <action id="-9" name="Set value" sid="578197491198245" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="131788990227162">
@@ -828,6 +882,11 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">6</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="686222191130801" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">PrecoConserto</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -845,6 +904,24 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="957863285169324" type="System">
                             <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="281617513182598" type="System">
+                            <param id="0" name="Variable">PrecoConserto</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="607792896515025" title="DefinirCarro">
+            <sub-events>
+                <event-block sid="110060764315183">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="633538247318282" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="917215362049640" type="Carro_Garagem">
+                            <param id="0" name="Frame number">CarroAtual</param>
                         </action>
                     </actions>
                 </event-block>

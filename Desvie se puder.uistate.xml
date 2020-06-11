@@ -10,15 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Oficina</layout>
-        <layout order="3">Garagem</layout>
-        <layout order="6">Mapas</layout>
-        <layout order="7">Tela Inicial</layout>
-        <event-sheet order="1">Eventos oficina</event-sheet>
-        <event-sheet order="2">Eventos Loja</event-sheet>
-        <event-sheet order="4">Eventos Garagem</event-sheet>
-        <event-sheet order="5">Eventos do mapa</event-sheet>
-        <event-sheet active="1" order="8">Eventos Garagem Status</event-sheet>
+        <layout order="1">Tela Inicial</layout>
+        <layout order="2">Garagem</layout>
+        <layout order="3">Base</layout>
+        <event-sheet order="0">Eventos Garagem</event-sheet>
+        <event-sheet order="4">Eventos Base das Fases</event-sheet>
+        <event-sheet order="5">Eventos Loja</event-sheet>
+        <event-sheet order="6">Eventos Menu</event-sheet>
+        <event-sheet active="1" order="7">Eventos Carros</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -40,16 +39,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="object-folder/Detalhes da Fase/" />
         <folder expanded="0" path="object-folder/Objetos/" />
         <folder expanded="0" path="object-folder/HUD/" />
-        <folder expanded="1" path="object-folder/Tela Abertura/" />
+        <folder expanded="0" path="object-folder/Tela Abertura/" />
         <folder expanded="0" path="object-folder/Loja/" />
         <folder expanded="0" path="object-folder/Arrays/" />
-        <folder expanded="0" path="object-folder/Garagem/" />
-        <folder expanded="0" path="object-folder/Garagem/PrimeiroAndar/" />
+        <folder expanded="1" path="object-folder/Garagem/" />
+        <folder expanded="1" path="object-folder/Garagem/PrimeiroAndar/" />
         <folder expanded="0" path="object-folder/Creditos/" />
         <folder expanded="0" path="object-folder/Codigos/" />
-        <folder expanded="1" path="object-folder/Saves/" />
+        <folder expanded="0" path="object-folder/Saves/" />
         <folder expanded="1" path="object-folder/Tutorial Jogabilidade/" />
-        <folder expanded="1" path="object-folder/Predios/" />
+        <folder expanded="0" path="object-folder/Predios/" />
         <folder expanded="1" path="object-folder/Detalhes Cidade/" />
         <folder expanded="0" path="object-folder/Detalhes Cidade/Exterior/" />
         <folder expanded="1" path="object-folder/Detalhes Cidade/Icones/" />
@@ -108,6 +107,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Carro4/" />
         <folder expanded="1" path="animation-folder/Carro5/" />
         <folder expanded="1" path="animation-folder/Carro6/" />
+        <folder expanded="1" path="animation-folder/Carro7/" />
+        <folder expanded="1" path="animation-folder/Carro8/" />
+        <folder expanded="1" path="animation-folder/Carro9/" />
         <folder expanded="1" path="animation-folder/Codigos/" />
         <folder expanded="1" path="animation-folder/Hand01/" />
         <folder expanded="1" path="animation-folder/FundoDicas/" />

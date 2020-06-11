@@ -16,8 +16,8 @@
                     </conditions>
                     <actions>
                         <action id="-3" name="Set position" sid="218912129177607" type="Carro01">
-                            <param id="0" name="X">68</param>
-                            <param id="1" name="Y">625</param>
+                            <param id="0" name="X">418</param>
+                            <param id="1" name="Y">627</param>
                         </action>
                     </actions>
                 </event-block>
@@ -96,170 +96,293 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="485562185109878">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="360432386935358" type="CarrosComprados">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="401214501106123" type="Carro7">
+                            <param id="0" name="X">62</param>
+                            <param id="1" name="Y">536</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="475380440577834">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="964653619152971" type="CarrosComprados">
+                            <param id="0" name="X">8</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="792966326148502" type="Carro8">
+                            <param id="0" name="X">63</param>
+                            <param id="1" name="Y">627</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="434908948759647">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="374650494941514" type="CarrosComprados">
+                            <param id="0" name="X">9</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">9</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="277115204938976" type="Carro9">
+                            <param id="0" name="X">63</param>
+                            <param id="1" name="Y">716</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="651364136001047" title="IniciaFase">
             <sub-events>
-                <event-block sid="731669844858307">
+                <event-block sid="714046524380713">
                     <conditions>
-                        <condition id="3" name="On touched object" sid="609702821857213" type="Touch">
-                            <param id="0" name="Object">Carro0</param>
+                        <condition id="-14" name="Compare variable" sid="750751196175092" type="System">
+                            <param id="0" name="Variable">Oficina</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="804702712961430" type="System">
-                            <param id="0" name="Variable">idCarro</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="700780691358327" type="System">
-                            <param id="0" name="Layout">GaragemStatus</param>
-                        </action>
-                        <action id="6" name="Stop" sid="766063821977733" type="Audio">
-                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="626173799524874" type="System">
-                            <param id="0" name="Variable">CarroAtual</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="711963907431168">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="969190767836931" type="Touch">
-                            <param id="0" name="Object">Carro01</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="262365263916299" type="System">
-                            <param id="0" name="Variable">idCarro</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="6" name="Stop" sid="864317763198550" type="Audio">
-                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="410497725655196" type="System">
-                            <param id="0" name="Variable">CarroAtual</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="400893072299260" type="System">
-                            <param id="0" name="Layout">GaragemStatus</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="698459039716292">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="693239895247467" type="Touch">
-                            <param id="0" name="Object">Carro02</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="265260435795588" type="System">
-                            <param id="0" name="Variable">idCarro</param>
-                            <param id="1" name="Value">2</param>
-                        </action>
-                        <action id="6" name="Stop" sid="257882688435555" type="Audio">
-                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="699252844494805" type="System">
-                            <param id="0" name="Variable">CarroAtual</param>
-                            <param id="1" name="Value">2</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="325532613805869" type="System">
-                            <param id="0" name="Layout">GaragemStatus</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="583338376983021">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="732115286393464" type="Touch">
-                            <param id="0" name="Object">Carro3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="310043904057441" type="System">
-                            <param id="0" name="Variable">idCarro</param>
-                            <param id="1" name="Value">3</param>
-                        </action>
-                        <action id="6" name="Stop" sid="180982267818882" type="Audio">
-                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="999893069958652" type="System">
-                            <param id="0" name="Variable">CarroAtual</param>
-                            <param id="1" name="Value">3</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="241725311792734" type="System">
-                            <param id="0" name="Layout">GaragemStatus</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="447174993171111">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="807294640016649" type="Touch">
-                            <param id="0" name="Object">Carro4</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="745235548935009" type="System">
-                            <param id="0" name="Variable">idCarro</param>
-                            <param id="1" name="Value">4</param>
-                        </action>
-                        <action id="6" name="Stop" sid="314657659747100" type="Audio">
-                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="455397951934395" type="System">
-                            <param id="0" name="Variable">CarroAtual</param>
-                            <param id="1" name="Value">4</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="512736079014109" type="System">
-                            <param id="0" name="Layout">GaragemStatus</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="726813151303132">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="461473619917907" type="Touch">
-                            <param id="0" name="Object">Carro5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="513035067817187" type="System">
-                            <param id="0" name="Variable">idCarro</param>
-                            <param id="1" name="Value">5</param>
-                        </action>
-                        <action id="6" name="Stop" sid="368155080396177" type="Audio">
-                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="665390626910094" type="System">
-                            <param id="0" name="Variable">CarroAtual</param>
-                            <param id="1" name="Value">5</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="709235889955998" type="System">
-                            <param id="0" name="Layout">GaragemStatus</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="354134913838696">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="168269650191209" type="Touch">
-                            <param id="0" name="Object">Carro6</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="417379540250485" type="System">
-                            <param id="0" name="Variable">idCarro</param>
-                            <param id="1" name="Value">6</param>
-                        </action>
-                        <action id="6" name="Stop" sid="341407220700114" type="Audio">
-                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="130851071721230" type="System">
-                            <param id="0" name="Variable">CarroAtual</param>
-                            <param id="1" name="Value">6</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="649087483549526" type="System">
-                            <param id="0" name="Layout">GaragemStatus</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="731669844858307">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="609702821857213" type="Touch">
+                                    <param id="0" name="Object">Carro0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="804702712961430" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="700780691358327" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                                <action id="6" name="Stop" sid="766063821977733" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="626173799524874" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="711963907431168">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="969190767836931" type="Touch">
+                                    <param id="0" name="Object">Carro01</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="262365263916299" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="6" name="Stop" sid="864317763198550" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="410497725655196" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="954167502221191" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="698459039716292">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="693239895247467" type="Touch">
+                                    <param id="0" name="Object">Carro02</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="265260435795588" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="6" name="Stop" sid="257882688435555" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="699252844494805" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="123853854203079" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="583338376983021">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="732115286393464" type="Touch">
+                                    <param id="0" name="Object">Carro3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="310043904057441" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="6" name="Stop" sid="180982267818882" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="999893069958652" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">3</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="381198282199468" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="447174993171111">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="807294640016649" type="Touch">
+                                    <param id="0" name="Object">Carro4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="745235548935009" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="6" name="Stop" sid="314657659747100" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="455397951934395" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">4</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="692391993327905" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="726813151303132">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="461473619917907" type="Touch">
+                                    <param id="0" name="Object">Carro5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="513035067817187" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="6" name="Stop" sid="368155080396177" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="665390626910094" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="922596163224674" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="354134913838696">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="168269650191209" type="Touch">
+                                    <param id="0" name="Object">Carro6</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="417379540250485" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="6" name="Stop" sid="341407220700114" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="130851071721230" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="528075795722580">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="605875618485632" type="Touch">
+                                    <param id="0" name="Object">Carro7</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="180934949440961" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">7</param>
+                                </action>
+                                <action id="6" name="Stop" sid="866782770288367" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="218675414879308" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">7</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="154788579473488" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="871550380927368">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="784621925997311" type="Touch">
+                                    <param id="0" name="Object">Carro8</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="876735147697462" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">8</param>
+                                </action>
+                                <action id="6" name="Stop" sid="445618074818134" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="132022273900826" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">8</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="112955497744475" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="364702919595000">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="254815526412960" type="Touch">
+                                    <param id="0" name="Object">Carro9</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="819002171679214" type="System">
+                                    <param id="0" name="Variable">idCarro</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                                <action id="6" name="Stop" sid="374369206929344" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="496764513576313" type="System">
+                                    <param id="0" name="Variable">CarroAtual</param>
+                                    <param id="1" name="Value">9</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="768636368919880" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
