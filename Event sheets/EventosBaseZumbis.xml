@@ -1,0 +1,950 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EventosBaseZumbis</name>
+    <events>
+        <variable constant="0" name="ZumbisPerdidos" sid="348567305881145" static="0" type="number">0</variable>
+        <include>Eventos Carros</include>
+        <event-group description="Grupo responsável por definir os valores, funcionamentos e configurações iniciais da fase." sid="391589134862135" title="DefinicoesIniciais">
+            <sub-events>
+                <comment>No início do layout os grupos de funcionamento do jogo são ativados, as layers de jogo são definidas como visíveis e a layer de Game Over é definida como invisível.</comment>
+                <event-block sid="521791034167773">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="258410424394995" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="205550077264537" type="System">
+                            <param id="0" name="Group name">&quot;Funcionamento do Jogo2&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="361001223430145" type="Dicas">
+                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="973610091012844" type="Audio">
+                            <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Durante todo tempo de execução o texto de exibição dos pontos é movido para o topo do layer e o texto de exibição dos pontos exibe os pontos do jogador.</comment>
+                <event-block sid="252618120540874">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="623330762035607" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-24" name="Move to top" sid="748522193801405" type="TextoPontos" />
+                        <action id="0" name="Set text" sid="990637928492080" type="TextoPontos">
+                            <param id="0" name="Text">Pontos</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Durante todo tempo de execução a opacidade dos layers de terreno recebem os valores das variáveis globais de opacidade.</comment>
+                <event-block sid="749954961309530">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="734424544695331" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-18" name="Set layer opacity" sid="855945474593299" type="System">
+                            <param id="0" name="Layer">&quot;FundoGrama&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeGrama</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="275011635677845" type="System">
+                            <param id="0" name="Layer">&quot;BordaGrama&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeGrama</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="979978971920178" type="System">
+                            <param id="0" name="Layer">&quot;FundoTerra&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeTerra</param>
+                        </action>
+                        <action id="-18" name="Set layer opacity" sid="399407271636474" type="System">
+                            <param id="0" name="Layer">&quot;BordaTerra&quot;</param>
+                            <param id="1" name="Opacity">OpacidadeTerra</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>No início do layout os pontos são definidos como 0, o multiplicado é resetado para 1 e as partículas são fixadas no carro do jogador.</comment>
+                <event-block sid="606868674015958">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="880035057186079" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="621889562199794" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="833904587319816" type="System">
+                            <param id="0" name="Variable">Gasolina</param>
+                            <param id="1" name="Value">40</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="980695043923332" type="System">
+                            <param id="0" name="Variable">Multiplicador</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="391334540512722" type="Particles">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="451317799211768" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Define a opacidade da layer da grama como 100 (totalmente opaca) e as demais opacidades das layers como 0 (não visível).</comment>
+                <event-block sid="902580528960690">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="837178026628183" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="821481101885154" type="System">
+                            <param id="0" name="Variable">OpacidadeGrama</param>
+                            <param id="1" name="Value">100</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="564160461814694" type="System">
+                            <param id="0" name="Variable">OpacidadeTerra</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Define a velocidade da bala como a velocidade base dos inimigos multiplicado pelo valor de multiplicador de velocidade.</comment>
+                <event-block sid="377816260166448">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="393933042007703" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="122468024897909" type="Inimigos">
+                            <param id="0" name="Speed">Inimigos.Bullet.Speed * Multiplicador</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por simular o movimento da estrada, do fundo e das bordas." sid="693947015673916" title="SimulacaoMovimento">
+            <sub-events>
+                <event-block sid="249120216989134">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="889899375189367" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="374364916750244" type="Estrada">
+                            <param id="0" name="Y">Estrada.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="777685151491745" type="FundoGrama">
+                            <param id="0" name="Y">FundoGrama.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="347592710580745" type="BordaEsquerdaGrama">
+                            <param id="0" name="Y">BordaEsquerdaGrama.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="607166315790414" type="BordaDireitaGrama">
+                            <param id="0" name="Y">BordaDireitaGrama.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="769192872849031" type="FundoTerra">
+                            <param id="0" name="Y">FundoTerra.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="690626138481196" type="BordaDireitaTerra">
+                            <param id="0" name="Y">BordaDireitaTerra.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="995452966892380" type="BordaEsquerdaTerra">
+                            <param id="0" name="Y">BordaEsquerdaTerra.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="913278665152858" type="FundoAreia">
+                            <param id="0" name="Y">FundoAreia.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="203505493332516" type="BordaDireitaAreia">
+                            <param id="0" name="Y">BordaDireitaAreia.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="801048558342134" type="BordaEsquerdaAreia">
+                            <param id="0" name="Y">BordaEsquerdaAreia.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="307169891143285" type="ControleDir">
+                            <param id="0" name="Y">ControleDir.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="951859659556742" type="ControleEsq">
+                            <param id="0" name="Y">ControleEsq.Y + 5</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="847179138397522" type="Marcas">
+                            <param id="0" name="Y">Marcas.Y + 5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="515930031770822">
+                    <conditions>
+                        <condition id="-2" name="Compare Y" sid="681627126740647" type="Estrada">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Y co-ordinate">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Set Y" sid="168843896918139" type="Estrada">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="906833773032000" type="FundoGrama">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="938461166647179" type="BordaEsquerdaGrama">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="450149626857585" type="BordaDireitaGrama">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="560787449603366" type="FundoTerra">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="432967899346668" type="BordaDireitaTerra">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="610952202685245" type="BordaEsquerdaTerra">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="723526754045479" type="FundoAreia">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="895390543993069" type="BordaDireitaAreia">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="121720451952084" type="BordaEsquerdaAreia">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="576927388419628" type="ControleDir">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="858473397101292" type="ControleEsq">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="973319866769535" type="Marcas">
+                            <param id="0" name="Y">-255</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por controlar a posição do carro." inactive="1" sid="979839571968566" title="Controle de Alteração da Pista2">
+            <sub-events>
+                <comment>Ao tocar o gatilho do controle esquerdo é subtraído 1 ao valor da pista atual. O valor não pode ser substiuído caso o valor da pista atual for menor que 1.</comment>
+                <event-block sid="964161227308488">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="789750249528269" type="Touch">
+                            <param id="0" name="Object">ControleEsq</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="552470608337136" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="690117300577990" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Ao tocar o gatilho do controle direito é adicionado 1 ao valor da pista atual. O valor não pode ser substiuído caso o valor da pista atual for maior que 3.</comment>
+                <event-block sid="798997178565599">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="486445498450361" type="Touch">
+                            <param id="0" name="Object">ControleDir</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="392125442109323" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="102910481242282" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por alterar a posição do carro conforme o valor da pista atual é alterado." sid="705843135662580" title="Controle de Posicionamento da Pista2">
+            <sub-events>
+                <comment>Caso o valor da pista atual for 1 a posição do eixo X do jogador é definido para 134.</comment>
+                <event-block sid="309605933312236">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="377543227621841" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="151374013808353" type="Player">
+                            <param id="0" name="X">134</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Caso o valor da pista atual for 2 a posição do eixo X do jogador é definido para 240.</comment>
+                <event-block sid="358429964183406">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="419495867066412" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="650631736050556" type="Player">
+                            <param id="0" name="X">240</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Caso o valor da pista atual for 3 a posição do eixo X do jogador é definido para 344.</comment>
+                <event-block sid="156031413771349">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="771537718547036" type="System">
+                            <param id="0" name="Variable">PistaAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="956727840017753" type="Player">
+                            <param id="0" name="X">344</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por gerenciar a destruição dos inimigos." sid="469740566032423" title="Destrói Inimigos2">
+            <sub-events>
+                <comment>Ao entrar em colisão com o gatilho de destruição o inimigo é destruído. O gatilho se encontra abaixo da borda inferior da tela. </comment>
+                <event-block sid="583899314189841">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="212630585111389" type="Inimigos">
+                            <param id="0" name="Object">DespawnerInimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="727577707394090" type="Inimigos" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por spawnar os inimigos." sid="450793904902196" title="Spawner de Inimigos2">
+            <sub-events>
+                <comment>A cada um segundo é criado um inimigo no gatilho de spawner de inimigos. Quando é criado um inimigo novo é randomizado a pista a qual o inimigo estará e o sprite do inimigo. O gatilho se encontra acima da borda superior da tela.</comment>
+                <event-block sid="626922554006081">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="537866096249455" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                        <condition id="-9" inverted="1" name="Layer is visible" sid="700609069949305" type="System">
+                            <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Spawn another object" sid="613365642741568" type="SpawnerInimigos">
+                            <param id="0" name="Object">Inimigos</param>
+                            <param id="1" name="Layer">&quot;Player&quot;</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="570940491739719" type="Inimigos">
+                            <param id="0" name="Frame number">int(random(0,4))</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="720009071785281" type="Inimigos">
+                            <param id="0" name="X">choose(134, 240, 344)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por gerenciar os eventos de colisão entre o jogador e o inimigo. será alterado" sid="610763609005595" title="Colisão Inimigo-Jogador2">
+            <sub-events>
+                <comment>Ao colidir com um inimigo o jogo acaba. Os grupos de funcionamento do jogo são desativados. A tela de Game Over é exibida e os detalhes do jogo são destruídos.</comment>
+                <event-block disabled="1" sid="597317190289862">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="435413410383511" type="Player">
+                            <param id="0" name="Object">Inimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="676901364580641" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Derrota&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="967524146878728" type="System">
+                            <param id="0" name="Group name">&quot;Funcionamento do Jogo2&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Play" sid="967221204743851" type="Audio">
+                            <param id="0" name="Audio file">Batida</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="218793337840299" type="Audio">
+                            <param id="0" name="Tag">&quot;Musica&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="653070448893341">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="530442582782828" type="Inimigos">
+                            <param id="0" name="Object">DespawnerInimigos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="870957273980762" type="System">
+                            <param id="0" name="Variable">InimigosDestruidos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo que controla o menu de GameOver." sid="254795992726786" title="Controle do Menu2">
+            <sub-events>
+                <comment>Caso a layer de GameOver esteja visível e o botão de retornar ao menu principal for tocado o jogo retorna ao menu principal.</comment>
+                <event-block sid="149579240548044">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="575685487849514" type="Touch">
+                            <param id="0" name="Object">FundoBotao</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="458604793878865" type="System">
+                            <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="257073294244019" type="System">
+                            <param id="0" name="Layout">Menu Principal</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por controlar o fluxo de pontos do jogador." sid="129819185168580" title="Controle de Pontos2">
+            <sub-events>
+                <comment>A cada 0.5 segundos é somado 1 aos pontos do jogador. É somado também 0.0001 ao multiplicador de velocidade. A cada 5 segundos é adicionado 0.5 de dinheiro ao jogador</comment>
+                <event-block sid="354732236126281">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="909129863860436" type="System">
+                            <param id="0" name="Interval (seconds)">0.5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="903251126798540" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Value">1 * MultiplicadorPontos</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="397774199804216" type="System">
+                            <param id="0" name="Variable">Multiplicador</param>
+                            <param id="1" name="Value">0.0001</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="407366415696369">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="818184667592047" type="System">
+                            <param id="0" name="Interval (seconds)">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="545808663988082" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Value">0.5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Caso os pontos forem menores que 100 a opacidade do layer da grama é gradativamente diminuída até que os objetos da layer não sejam mais visíveis.</comment>
+                <event-block sid="930627037598210">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="628674848686189" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="945585920130888">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="720801359897162" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="983587520349648" type="System">
+                                    <param id="0" name="Variable">OpacidadeGrama</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <comment>Caso os pontos forem menores que 200 a opacidade do layer da grama é gradativamente diminuída até que os objetos da layer não sejam mais visíveis.</comment>
+                <event-block sid="852787853520967">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="142946915344443" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">200</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="822666375137842">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="923864268989241" type="System">
+                                    <param id="0" name="Interval (seconds)">0.5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="147570440184894" type="System">
+                                    <param id="0" name="Variable">OpacidadeTerra</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por subtrair e spawnar mais combustivel." sid="731295655646558" title="Controle de Combustível2">
+            <sub-events>
+                <event-group description="Grupo responsável por definir o funcionamento do sprite que exibe o combustível." sid="891642691726229" title="Representar Combustível2">
+                    <sub-events>
+                        <event-block sid="727431621293497">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="641388310717582" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="784543072195330" type="ContadorGasolina" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="182790617375374">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="584690511932338" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="5" name="Set frame" sid="136287652876824" type="ContadorGasolina">
+                                    <param id="0" name="Frame number">40 - Gasolina</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Grupo responsável por adicionar combustível ao contador do jogador conforme o jogo avança." sid="140149805689602" title="Adiciona Combustível2">
+                    <sub-events>
+                        <event-block sid="448262200249620">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="463011135216764" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="2" name="Stop" sid="931787945617879" type="Gasolina" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="650306196427964">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="588970537623682" type="Player">
+                                    <param id="0" name="Object">Gasolina</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="643897405356743" type="Gasolina" />
+                                <action id="-9" name="Set value" sid="424953553133992" type="System">
+                                    <param id="0" name="Variable">Gasolina</param>
+                                    <param id="1" name="Value">40</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Grupo responsável por subtrair o combustível." sid="937628084008753" title="Substrai Combustível2">
+                    <sub-events>
+                        <event-block sid="343806411446344">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="577818543355263" type="System">
+                                    <param id="0" name="Interval (seconds)">1</param>
+                                </condition>
+                                <condition id="-9" inverted="1" name="Layer is visible" sid="645007573070315" type="System">
+                                    <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="677737358009561" type="System">
+                                    <param id="0" name="Variable">Gasolina</param>
+                                    <param id="1" name="Value">Consumo</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="290313682395963">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="107851679535243" type="System">
+                                    <param id="0" name="Variable">Gasolina</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-12" name="Set group active" sid="371131665317924" type="System">
+                                    <param id="0" name="Group name">&quot;Controle de Derrota&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="987853733160328" type="System">
+                                    <param id="0" name="Group name">&quot;Funcionamento do Jogo&quot;</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                                <action id="6" name="Stop" sid="912975990210840" type="Audio">
+                                    <param id="0" name="Tag">&quot;Musica&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="Grupo para realizar o Spawner de combustíveis" sid="748971843431752" title="Spawner Combustivel2">
+                    <sub-events>
+                        <event-block any="1" sid="600745627923865">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="996914098012330" type="System">
+                                    <param id="0" name="Interval (seconds)">random(2,7)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="897547641054157" type="SpawnerObjetos">
+                                    <param id="0" name="Object">Gasolina</param>
+                                    <param id="1" name="Layer">&quot;Player&quot;</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="440921597062449" type="Gasolina">
+                                    <param id="0" name="X">choose(134, 240, 344)</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="928209352132994" type="Gasolina">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por controlar as configurações de GameOver." sid="587713820939871" title="Controle de Derrota2">
+            <sub-events>
+                <event-block sid="945417922504548">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="683627356971737" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Derrota&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="775962160587394" type="System">
+                            <param id="0" name="Group name">&quot;Simula Movimento&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="523659437572368" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Alteração da Pista&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="791157241887228" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Posicionamento da Pista&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="289432650652872" type="System">
+                            <param id="0" name="Group name">&quot;Destrói Inimigos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="257157300325001" type="System">
+                            <param id="0" name="Group name">&quot;Spawner de Inimigos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="538060134204703" type="System">
+                            <param id="0" name="Group name">&quot;Colisão Inimigo-Jogador&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="226836700502754" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Pontos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="733927611410395" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Combustível&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="941288405831707" type="System">
+                            <param id="0" name="Layer">&quot;Controle&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="205783861209616" type="System">
+                            <param id="0" name="Layer">&quot;Player&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="640323564279839" type="System">
+                            <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="935382611538284" type="Particles" />
+                    </actions>
+                </event-block>
+                <event-block sid="357467503124627">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="842794675354686" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">Highscore</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="305755016483253" type="System">
+                            <param id="0" name="Variable">Highscore</param>
+                            <param id="1" name="Value">Pontos</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Grupo responsável por definir o funcionamento do jogo." sid="129861239972709" title="Funcionamento do Jogo2">
+            <sub-events>
+                <event-block sid="843175471761443">
+                    <conditions>
+                        <condition id="-15" name="Is group active" sid="796808118555811" type="System">
+                            <param id="0" name="Group name">&quot;Funcionamento do Jogo&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="267395615257239" type="System">
+                            <param id="0" name="Group name">&quot;Simula Movimento&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="514916396278640" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Alteração da Pista&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="483592611331483" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Posicionamento da Pista&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="141826862314405" type="System">
+                            <param id="0" name="Group name">&quot;Destrói Inimigos&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="261736671299993" type="System">
+                            <param id="0" name="Group name">&quot;Spawner de Inimigos&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="407973721628998" type="System">
+                            <param id="0" name="Group name">&quot;Colisão Inimigo-Jogador&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="564971944224714" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Pontos&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="469304022203621" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Combustível&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="539232332884525" type="System">
+                            <param id="0" name="Layer">&quot;Controle&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="879259966373734" type="System">
+                            <param id="0" name="Layer">&quot;Player&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="246758349825139" type="System">
+                            <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="367595985635446">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="845139099066863" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="607207196099774" type="Audio">
+                    <param id="0" name="Audio file">Musica</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Musica&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="635494654453634">
+            <conditions>
+                <condition id="3" name="On touched object" sid="865297838077755" type="Touch">
+                    <param id="0" name="Object">FundoBotao</param>
+                </condition>
+                <condition id="-9" name="Layer is visible" sid="744429188434723" type="System">
+                    <param id="0" name="Layer">&quot;Derrota&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="754898035249934" type="System">
+                    <param id="0" name="Layout">Menu Principal</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="324204923721468" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;dinheiro&quot;</param>
+                    <param id="1" name="Value">Dinheiro</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="714635278193643" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;carro01&quot;</param>
+                    <param id="1" name="Value">CarrosComprados.At(1)</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="359257582889635" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;carro02&quot;</param>
+                    <param id="1" name="Value">CarrosComprados.At(2)</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="128232505629985" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;carro03&quot;</param>
+                    <param id="1" name="Value">CarrosComprados.At(3)</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="348208158890966" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;codigo01&quot;</param>
+                    <param id="1" name="Value">CarroUsado</param>
+                </action>
+                <action disabled="1" id="0" name="Set item" sid="513752160316236" type="ArmazenamentoLocal">
+                    <param id="0" name="Key">&quot;codigo02&quot;</param>
+                    <param id="1" name="Value">DinheiroUsado</param>
+                </action>
+                <action id="-9" name="Set value" sid="236599841861065" type="System">
+                    <param id="0" name="Variable">Salvar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" inactive="1" sid="444115557130285" title="TutorialDeJogabilidade2">
+            <sub-events>
+                <event-block sid="390637473268191">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="801701862314190" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="988178848778181" type="Dicas">
+                            <param id="0" name="Text">&quot;Escolha e pressione para qual lado deseja ir&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="968247339977345">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="347055763942208" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="886106065341199" type="Dicas">
+                            <param id="0" name="Text">&quot;Esse é seu indicador de pontos. Quanto maior forem os pontos mais dinheiro irá ganhar. Toque nos pontos para continuar.&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="964839767900834" type="Hand01" />
+                        <action id="-15" name="Set visible" sid="686742146111531" type="Hand2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="126837103359055">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="713443836142990" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="494849991847522" type="Dicas">
+                            <param id="0" name="Text">&quot;Pegue combustível para se manter ativo na estrada&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="562222976349619" type="Hand2" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="540686133717868" title="MudaTutorial2">
+            <sub-events>
+                <event-block sid="866455646612381">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="483576603486863" type="Touch">
+                            <param id="0" name="Object">Dicas</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="882582166406219" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="975750872580935" type="System">
+                            <param id="0" name="Variable">Tutorial</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="822185470446754" type="System">
+                            <param id="0" name="Layer">&quot;Tutorial&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="546636444507986" type="System">
+                            <param id="0" name="Group name">&quot;Substrai Combustível&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="644122019079547" type="System">
+                            <param id="0" name="Group name">&quot;MudaTutorial&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="727475761426761" type="System">
+                            <param id="0" name="Group name">&quot;TutorialDeJogabilidade&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="869884765492501" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="602484771442083">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="187672950426869" type="Touch">
+                            <param id="0" name="Object">TextoPontos</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="564977035437959" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="484333156200960" type="Dicas">
+                            <param id="0" name="Instance variable">Dica</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="988380195603205">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="172014574325861" type="Touch">
+                            <param id="0" name="Object">ControleEsq</param>
+                        </condition>
+                        <condition id="3" name="On touched object" sid="402626707542215" type="Touch">
+                            <param id="0" name="Object">ControleDir</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="341484394725373">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="529735774638947" type="Dicas">
+                                    <param id="0" name="Instance variable">Dica</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="625284324045558" type="Dicas">
+                                    <param id="0" name="Instance variable">Dica</param>
+                                    <param id="1" name="Value">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
