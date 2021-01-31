@@ -355,30 +355,18 @@
         <event-group description="Grupo responsável por gerenciar os eventos de colisão entre o jogador e o inimigo. será alterado" sid="610763609005595" title="ColisãoZumbiJogador">
             <sub-events>
                 <comment>Ao colidir com um inimigo o jogo acaba. Os grupos de funcionamento do jogo são desativados. A tela de Game Over é exibida e os detalhes do jogo são destruídos.</comment>
-                <event-block disabled="1" sid="597317190289862">
+                <event-block sid="597317190289862">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="435413410383511" type="Player">
                             <param id="0" name="Object">Inimigos</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-12" name="Set group active" sid="676901364580641" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Derrota&quot;</param>
-                            <param id="1" name="State">1</param>
+                        <action id="-10" name="Add to" sid="419727156790104" type="System">
+                            <param id="0" name="Variable">Pontos</param>
+                            <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="967524146878728" type="System">
-                            <param id="0" name="Group name">&quot;Funcionamento do Jogo2&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="0" name="Play" sid="967221204743851" type="Audio">
-                            <param id="0" name="Audio file">Batida</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="218793337840299" type="Audio">
-                            <param id="0" name="Tag">&quot;Musica&quot;</param>
-                        </action>
+                        <action id="-9" name="Destroy" sid="361775916064524" type="Inimigos" />
                     </actions>
                 </event-block>
                 <event-block sid="653070448893341">
@@ -389,7 +377,7 @@
                     </conditions>
                     <actions>
                         <action id="-10" name="Add to" sid="870957273980762" type="System">
-                            <param id="0" name="Variable">InimigosDestruidos</param>
+                            <param id="0" name="Variable">ZumbisPerdidos</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -426,10 +414,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-10" name="Add to" sid="903251126798540" type="System">
-                            <param id="0" name="Variable">Pontos</param>
-                            <param id="1" name="Value">1 * MultiplicadorPontos</param>
-                        </action>
                         <action id="-10" name="Add to" sid="397774199804216" type="System">
                             <param id="0" name="Variable">Multiplicador</param>
                             <param id="1" name="Value">0.0001</param>
@@ -581,11 +565,11 @@
                             </conditions>
                             <actions>
                                 <action id="-12" name="Set group active" sid="371131665317924" type="System">
-                                    <param id="0" name="Group name">&quot;Controle de Derrota&quot;</param>
+                                    <param id="0" name="Group name">&quot;Controle de Derrota2&quot;</param>
                                     <param id="1" name="State">1</param>
                                 </action>
                                 <action id="-12" name="Set group active" sid="987853733160328" type="System">
-                                    <param id="0" name="Group name">&quot;Funcionamento do Jogo&quot;</param>
+                                    <param id="0" name="Group name">&quot;Funcionamento do Jogo2&quot;</param>
                                     <param id="1" name="State">0</param>
                                 </action>
                                 <action id="6" name="Stop" sid="912975990210840" type="Audio">

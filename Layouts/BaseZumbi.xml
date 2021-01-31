@@ -2,7 +2,7 @@
 <c2layout>
     <name>BaseZumbi</name>
     <sid>102681000963643</sid>
-    <event-sheet>Eventos Base das Fases</event-sheet>
+    <event-sheet>EventosBaseZumbis</event-sheet>
     <size>
         <width>480</width>
         <height>854</height>
@@ -828,7 +828,7 @@
             <effects />
         </layer>
         <layer name="Tutorial" sid="348466891791379">
-            <initially-visible>1</initially-visible>
+            <initially-visible>0</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>

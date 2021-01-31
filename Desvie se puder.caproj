@@ -270,7 +270,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576916189586686" speed="0">
+                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576916189586686" speed="0">
                         <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\000.png">
                             <collision-poly>
                                 <point x="0.0545073" y="0.0373134" />
@@ -280,43 +280,8 @@
                                 <point x="0.0251572" y="0.917911" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.500846" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\001.png">
-                            <collision-poly>
-                                <point x="0.037225" y="0.0820895" />
-                                <point x="0.94247" y="0.0895522" />
-                                <point x="0.993232" y="0.522388" />
-                                <point x="0.884941" y="0.865672" />
-                                <point x="0.0439932" y="0.858209" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.501538" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\002.png">
-                            <collision-poly>
-                                <point x="0.0411985" y="0.08" />
-                                <point x="0.891386" y="0.0676923" />
-                                <point x="0.975655" y="0.496923" />
-                                <point x="0.88015" y="0.932308" />
-                                <point x="0.0299625" y="0.932308" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\003.png">
-                            <collision-poly>
-                                <point x="0.0524345" y="0.0970149" />
-                                <point x="0.496255" y="0.0597015" />
-                                <point x="0.925094" y="0.126866" />
-                                <point x="0.93633" y="0.820896" />
-                                <point x="0.483146" y="0.91791" />
-                                <point x="0.0524345" y="0.80597" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\004.png">
-                            <collision-poly>
-                                <point x="0.0483871" y="0.0447761" />
-                                <point x="0.895161" y="0.0895523" />
-                                <point x="0.967742" y="0.485075" />
-                                <point x="0.901209" y="0.88806" />
-                                <point x="0.0282258" y="0.895522" />
-                            </collision-poly>
-                        </frame>
+                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" />
                     </animation>
                 </animation-folder>
             </object-type>
