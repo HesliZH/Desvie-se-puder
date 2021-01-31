@@ -530,19 +530,19 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="119295843106273" type="info_Consumo">
-                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                            <param id="0" name="Text">&quot;7.2 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="376840853264396" type="info_Motor">
-                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 4.1&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="635020186471452" type="info_Multiplicacao">
-                            <param id="0" name="Text">&quot;1X&quot;</param>
+                            <param id="0" name="Text">&quot;0.5X&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="211124365566293" type="info_PrecoCarro">
-                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;1100&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="405614108174080" type="MarcaCarro">
-                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                            <param id="0" name="Text">&quot;SUPER HEAVY RANGER&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -556,19 +556,19 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="173259165126837" type="info_Consumo">
-                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                            <param id="0" name="Text">&quot;5 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="559744530157580" type="info_Motor">
-                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 6.0&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="332172785733180" type="info_Multiplicacao">
-                            <param id="0" name="Text">&quot;1X&quot;</param>
+                            <param id="0" name="Text">&quot;1.5X&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="748751007623152" type="info_PrecoCarro">
-                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;1508&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="592520731865631" type="MarcaCarro">
-                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                            <param id="0" name="Text">&quot;NACIA S1500&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -582,19 +582,19 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="927759859619683" type="info_Consumo">
-                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                            <param id="0" name="Text">&quot;9 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="119310733110444" type="info_Motor">
-                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 2.2&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="689606268405196" type="info_Multiplicacao">
-                            <param id="0" name="Text">&quot;1X&quot;</param>
+                            <param id="0" name="Text">&quot;2X&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="445904026269667" type="info_PrecoCarro">
-                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;1876&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="165803058215758" type="MarcaCarro">
-                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                            <param id="0" name="Text">&quot;320 LANDRA&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -608,19 +608,19 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="680445041677469" type="info_Consumo">
-                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                            <param id="0" name="Text">&quot;6 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="713451892191364" type="info_Motor">
-                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 3.6&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="174019885805035" type="info_Multiplicacao">
                             <param id="0" name="Text">&quot;1X&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="467273852557663" type="info_PrecoCarro">
-                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;1905&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="783938585962872" type="MarcaCarro">
-                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                            <param id="0" name="Text">&quot;MC 3600SH&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -634,19 +634,19 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="416902418460360" type="info_Consumo">
-                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                            <param id="0" name="Text">&quot;13 KM/L&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="746340797666439" type="info_Motor">
-                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                            <param id="0" name="Text">&quot;MOTOR 1.4&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="762725514000994" type="info_Multiplicacao">
-                            <param id="0" name="Text">&quot;1X&quot;</param>
+                            <param id="0" name="Text">&quot;0.5X&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="329626028962230" type="info_PrecoCarro">
-                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;2000&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="281664988631680" type="MarcaCarro">
-                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                            <param id="0" name="Text">&quot;WV LUDEM&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -695,6 +695,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">1</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="115712638712916" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">100</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="979211347114754" type="CarrosComprados">
@@ -721,6 +726,11 @@
                             <param id="0" name="X">2</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="844002427184015" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">200</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -749,6 +759,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">3</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="830246494451681" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">400</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="490821154827213" type="CarrosComprados">
@@ -775,6 +790,11 @@
                             <param id="0" name="X">4</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">4</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="923796830124084" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">552</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -803,6 +823,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">5</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="431603773876715" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">628</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="136765983264190" type="CarrosComprados">
@@ -829,6 +854,11 @@
                             <param id="0" name="X">6</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">6</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="738073399566281" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1006</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -857,6 +887,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">7</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="749240299352121" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">150</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="201779496933699" type="CarrosComprados">
@@ -883,6 +918,11 @@
                             <param id="0" name="X">8</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">8</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="253492845083878" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">219</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -911,6 +951,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">9</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="285327863051209" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">304</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="536272883314842" type="CarrosComprados">
@@ -938,6 +983,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">10</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="425188353749172" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1100</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="238189198267545" type="CarrosComprados">
@@ -946,7 +996,7 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="656577176902577" type="System">
                             <param id="0" name="Variable">Dinheiro</param>
-                            <param id="1" name="Value">304</param>
+                            <param id="1" name="Value">1100</param>
                         </action>
                     </actions>
                 </event-block>
@@ -965,6 +1015,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">11</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="110931855660136" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1508</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="639150819364606" type="CarrosComprados">
@@ -973,7 +1028,7 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="217838581769609" type="System">
                             <param id="0" name="Variable">Dinheiro</param>
-                            <param id="1" name="Value">304</param>
+                            <param id="1" name="Value">1508</param>
                         </action>
                     </actions>
                 </event-block>
@@ -992,6 +1047,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">12</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="716662094063812" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1876</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="347629704888604" type="CarrosComprados">
@@ -1000,7 +1060,7 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="157172050086718" type="System">
                             <param id="0" name="Variable">Dinheiro</param>
-                            <param id="1" name="Value">304</param>
+                            <param id="1" name="Value">1876</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1019,6 +1079,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">13</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="298775826727745" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">1905</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="879560923234669" type="CarrosComprados">
@@ -1027,7 +1092,7 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="154244635018613" type="System">
                             <param id="0" name="Variable">Dinheiro</param>
-                            <param id="1" name="Value">304</param>
+                            <param id="1" name="Value">1905</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1046,6 +1111,11 @@
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">14</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="692613784494750" type="System">
+                            <param id="0" name="Variable">Dinheiro</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2000</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="2" name="Set at X" sid="902674178402916" type="CarrosComprados">
@@ -1054,7 +1124,7 @@
                         </action>
                         <action id="-11" name="Subtract from" sid="751417373679296" type="System">
                             <param id="0" name="Variable">Dinheiro</param>
-                            <param id="1" name="Value">304</param>
+                            <param id="1" name="Value">2000</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1096,6 +1166,11 @@
                 <action id="5" name="Set web font" sid="113745373443990" type="txtBtn_LojaVoltar">
                     <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                </action>
+                <action id="1" name="Set size" sid="133412675700461" type="CarrosComprados">
+                    <param id="0" name="Width">50</param>
+                    <param id="1" name="Height">1</param>
+                    <param id="2" name="Depth">1</param>
                 </action>
             </actions>
         </event-block>
