@@ -2,7 +2,7 @@
 <c2project>
     <name>Desvie se puder</name>
     <description>Desvie de carros andando na contramão e prove suas habilidades ao volante</description>
-    <version>0.01.11r-test</version>
+    <version>0.01.12</version>
     <author>HitKill Studios</author>
     <author-email></author-email>
     <author-website>www.hitkillstudios.com.br</author-website>
@@ -289,18 +289,12 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576916189586686" speed="0">
-                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="C:\Projetos\Desvie-se-puder\Textures\CarrosInimigos\000.png">
-                            <collision-poly>
-                                <point x="0.0545073" y="0.0373134" />
-                                <point x="0.849056" y="0.119403" />
-                                <point x="0.958071" y="0.507463" />
-                                <point x="0.822851" y="0.921642" />
-                                <point x="0.0251572" y="0.917911" />
-                            </collision-poly>
-                        </frame>
-                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" />
+                    <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="576916189586686" speed="0">
+                        <frame duration="1" hotspotX="0.501048" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\CarrosInimigos\000.png" />
+                        <frame duration="1" hotspotX="0.500846" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\CarrosInimigos\001.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.501538" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\CarrosInimigos\002.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\CarrosInimigos\003.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\CarrosInimigos\004.png" />
                     </animation>
                 </animation-folder>
             </object-type>

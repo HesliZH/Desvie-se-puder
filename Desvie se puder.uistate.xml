@@ -15,8 +15,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="5">Loja</layout>
         <layout order="6">Tela Inicial</layout>
         <event-sheet order="2">EventosBaseZumbis</event-sheet>
-        <event-sheet order="3">Eventos Carros</event-sheet>
-        <event-sheet active="1" order="4">Eventos Loja</event-sheet>
+        <event-sheet active="1" order="3">Eventos Carros</event-sheet>
+        <event-sheet order="4">Eventos Loja</event-sheet>
         <event-sheet order="7">Eventos Garagem</event-sheet>
         <event-sheet order="8">Eventos Tela Inicial</event-sheet>
     </open-tabs>
@@ -31,7 +31,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Chão/" />
         <folder expanded="1" path="object-folder/Player/" />
-        <folder expanded="0" path="object-folder/Inimigos/" />
+        <folder expanded="1" path="object-folder/Inimigos/" />
         <folder expanded="0" path="object-folder/Controles/" />
         <folder expanded="0" path="object-folder/Métodos de Controle/" />
         <folder expanded="0" path="object-folder/Controladores de Spawn/" />
