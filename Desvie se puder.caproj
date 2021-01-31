@@ -196,7 +196,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653521158625329" speed="0">
+                    <animation framecount="15" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653521158625329" speed="0">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\Estacione-se-Puder\Animations\Carro1\Default\000.png">
                             <image-point name="Escape" x="0" y="0.530769" />
                             <collision-poly>
@@ -240,6 +240,11 @@
                                 <point x="0.996124" y="1" />
                             </collision-poly>
                         </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 5 DSP.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 6 DPS.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 7 DSP .png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 8 DSP .png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.504065" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 9 DSP.png" />
                     </animation>
                 </animation-folder>
             </object-type>
