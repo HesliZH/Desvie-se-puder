@@ -414,7 +414,7 @@
                             <param id="0" name="Text">&quot;MOTOR 300cc&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="879128554556748" type="info_Multiplicacao">
-                            <param id="0" name="Text">&quot;1X&quot;</param>
+                            <param id="0" name="Text">&quot;0X&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="432886583868439" type="info_PrecoCarro">
                             <param id="0" name="Text">&quot;R$&quot; &amp; &quot;219&quot;</param>
@@ -440,7 +440,7 @@
                             <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="917162412950241" type="info_Multiplicacao">
-                            <param id="0" name="Text">&quot;2X&quot;</param>
+                            <param id="0" name="Text">&quot;1X&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="235156827075721" type="info_PrecoCarro">
                             <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>

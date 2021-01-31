@@ -177,11 +177,11 @@
                         </action>
                         <action id="-9" name="Set value" sid="424221633459053" type="System">
                             <param id="0" name="Variable">Consumo</param>
-                            <param id="1" name="Value">0.8</param>
+                            <param id="1" name="Value">0.5</param>
                         </action>
                         <action id="-9" name="Set value" sid="387406874459323" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>
-                            <param id="1" name="Value">4</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -199,11 +199,11 @@
                         </action>
                         <action id="-9" name="Set value" sid="705866330723033" type="System">
                             <param id="0" name="Variable">Consumo</param>
-                            <param id="1" name="Value">0.8</param>
+                            <param id="1" name="Value">0.7</param>
                         </action>
                         <action id="-9" name="Set value" sid="340342412220020" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>
-                            <param id="1" name="Value">4</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -221,11 +221,11 @@
                         </action>
                         <action id="-9" name="Set value" sid="892340901441212" type="System">
                             <param id="0" name="Variable">Consumo</param>
-                            <param id="1" name="Value">0.8</param>
+                            <param id="1" name="Value">1.2</param>
                         </action>
                         <action id="-9" name="Set value" sid="671781608546731" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>
-                            <param id="1" name="Value">4</param>
+                            <param id="1" name="Value">2</param>
                         </action>
                     </actions>
                 </event-block>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Anuncios</name>
+    <events>
+        <event-group description="" sid="366053530701591" title="CarregarAnuncios">
+            <sub-events>
+                <event-block sid="520393983480514">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="479254655472531" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

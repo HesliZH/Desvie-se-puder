@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
+        <include>Eventos Anuncios</include>
         <variable constant="0" name="Salvar" sid="948882073332959" static="0" type="number">0</variable>
         <event-group description="" sid="851830550865762" title="IniciaJogo">
             <sub-events>

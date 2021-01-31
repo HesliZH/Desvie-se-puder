@@ -2,13 +2,13 @@
 <c2project>
     <name>Desvie se puder</name>
     <description>Desvie de carros andando na contramão e prove suas habilidades ao volante</description>
-    <version>0.01.8</version>
+    <version>0.01.11r-test</version>
     <author>HitKill Studios</author>
     <author-email></author-email>
     <author-website>www.hitkillstudios.com.br</author-website>
     <app-id>com.hitkillstudios.desp</app-id>
     <unique-id>yn5rpjqkmlxn</unique-id>
-    <saved-with-version>26500</saved-with-version>
+    <saved-with-version>27900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
@@ -1797,6 +1797,7 @@
         <event-sheet>Eventos do mapa.xml</event-sheet>
         <event-sheet>Eventos Garagem Status.xml</event-sheet>
         <event-sheet>Eventos oficina.xml</event-sheet>
+        <event-sheet>Eventos Anuncios.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">
