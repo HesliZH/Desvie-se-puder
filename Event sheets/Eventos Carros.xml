@@ -229,6 +229,116 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="277310189672464">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="511064612441523" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="760642670657599" type="Player">
+                            <param id="0" name="Frame number">10</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="827873285800385" type="System">
+                            <param id="0" name="Variable">Consumo</param>
+                            <param id="1" name="Value">1.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="939950968913100" type="System">
+                            <param id="0" name="Variable">MultiplicadorPontos</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="578319945942282">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="457028642957870" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="864803320109316" type="Player">
+                            <param id="0" name="Frame number">11</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="556230666888410" type="System">
+                            <param id="0" name="Variable">Consumo</param>
+                            <param id="1" name="Value">1.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="160273570240953" type="System">
+                            <param id="0" name="Variable">MultiplicadorPontos</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="709210457872621">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="428546569415644" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="878041718660543" type="Player">
+                            <param id="0" name="Frame number">12</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="989845874528168" type="System">
+                            <param id="0" name="Variable">Consumo</param>
+                            <param id="1" name="Value">1.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="453803565863864" type="System">
+                            <param id="0" name="Variable">MultiplicadorPontos</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="894290772164647">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="796141668378044" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="792936240429413" type="Player">
+                            <param id="0" name="Frame number">13</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="351299753220122" type="System">
+                            <param id="0" name="Variable">Consumo</param>
+                            <param id="1" name="Value">1.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="313789678717880" type="System">
+                            <param id="0" name="Variable">MultiplicadorPontos</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="324878982344598">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="964753769093821" type="System">
+                            <param id="0" name="Variable">idCarro</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="848308230682461" type="Player">
+                            <param id="0" name="Frame number">14</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="984173166696547" type="System">
+                            <param id="0" name="Variable">Consumo</param>
+                            <param id="1" name="Value">1.2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="780585552719971" type="System">
+                            <param id="0" name="Variable">MultiplicadorPontos</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="204950101725116" title="DesgasteCarros">

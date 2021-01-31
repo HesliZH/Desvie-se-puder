@@ -186,6 +186,76 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="338908145892538">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="206710309268991" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="390574715965625" type="Carro_loja">
+                            <param id="0" name="Frame number">10</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="277700428850731">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="718724452968627" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="930366348393944" type="Carro_loja">
+                            <param id="0" name="Frame number">11</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="970754818831408">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="104807595418215" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="207197715952310" type="Carro_loja">
+                            <param id="0" name="Frame number">12</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="110331202358136">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="471263141201703" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="509905754600826" type="Carro_loja">
+                            <param id="0" name="Frame number">13</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="153396209461192">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="992606001192749" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="234208210011289" type="Carro_loja">
+                            <param id="0" name="Frame number">14</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="255108190633266" title="DefineStatusCarro">
@@ -446,6 +516,136 @@
                             <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="581581003304793" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="951720235814287">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="692707788978969" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="119295843106273" type="info_Consumo">
+                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="376840853264396" type="info_Motor">
+                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="635020186471452" type="info_Multiplicacao">
+                            <param id="0" name="Text">&quot;1X&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="211124365566293" type="info_PrecoCarro">
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="405614108174080" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="104952756219865">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="212695741680734" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="173259165126837" type="info_Consumo">
+                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="559744530157580" type="info_Motor">
+                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="332172785733180" type="info_Multiplicacao">
+                            <param id="0" name="Text">&quot;1X&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="748751007623152" type="info_PrecoCarro">
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="592520731865631" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="462587120378059">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="429837602862209" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="927759859619683" type="info_Consumo">
+                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="119310733110444" type="info_Motor">
+                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="689606268405196" type="info_Multiplicacao">
+                            <param id="0" name="Text">&quot;1X&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="445904026269667" type="info_PrecoCarro">
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="165803058215758" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="632144193648710">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="174669836322309" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="680445041677469" type="info_Consumo">
+                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="713451892191364" type="info_Motor">
+                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="174019885805035" type="info_Multiplicacao">
+                            <param id="0" name="Text">&quot;1X&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="467273852557663" type="info_PrecoCarro">
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="783938585962872" type="MarcaCarro">
+                            <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="141102214859142">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="413162057305150" type="System">
+                            <param id="0" name="Variable">CarroAtual</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="416902418460360" type="info_Consumo">
+                            <param id="0" name="Text">&quot;31 KM/L&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="746340797666439" type="info_Motor">
+                            <param id="0" name="Text">&quot;MOTOR 600cc&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="762725514000994" type="info_Multiplicacao">
+                            <param id="0" name="Text">&quot;1X&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="329626028962230" type="info_PrecoCarro">
+                            <param id="0" name="Text">&quot;R$&quot; &amp; &quot;304&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="281664988631680" type="MarcaCarro">
                             <param id="0" name="Text">&quot;JCX 600 +&quot;</param>
                         </action>
                     </actions>
