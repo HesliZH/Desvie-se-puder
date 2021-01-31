@@ -218,7 +218,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por controlar a posição do carro." inactive="1" sid="979839571968566" title="Controle de Alteração da Pista2">
+        <event-group description="Grupo responsável por controlar a posição do carro." inactive="1" sid="979839571968566" title="AlteracaoDePista">
             <sub-events>
                 <comment>Ao tocar o gatilho do controle esquerdo é subtraído 1 ao valor da pista atual. O valor não pode ser substiuído caso o valor da pista atual for menor que 1.</comment>
                 <event-block sid="964161227308488">
@@ -260,7 +260,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por alterar a posição do carro conforme o valor da pista atual é alterado." sid="705843135662580" title="Controle de Posicionamento da Pista2">
+        <event-group description="Grupo responsável por alterar a posição do carro conforme o valor da pista atual é alterado." sid="705843135662580" title="DefiniçãoDeCoordenadasPista">
             <sub-events>
                 <comment>Caso o valor da pista atual for 1 a posição do eixo X do jogador é definido para 134.</comment>
                 <event-block sid="309605933312236">
@@ -309,7 +309,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por gerenciar a destruição dos inimigos." sid="469740566032423" title="Destrói Inimigos2">
+        <event-group description="Grupo responsável por gerenciar a destruição dos inimigos.Otimização de cenário" sid="469740566032423" title="DestróiZumbisExtras">
             <sub-events>
                 <comment>Ao entrar em colisão com o gatilho de destruição o inimigo é destruído. O gatilho se encontra abaixo da borda inferior da tela. </comment>
                 <event-block sid="583899314189841">
@@ -324,7 +324,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por spawnar os inimigos." sid="450793904902196" title="Spawner de Inimigos2">
+        <event-group description="Grupo responsável por spawnar os inimigos." sid="450793904902196" title="SpawnerZumbi">
             <sub-events>
                 <comment>A cada um segundo é criado um inimigo no gatilho de spawner de inimigos. Quando é criado um inimigo novo é randomizado a pista a qual o inimigo estará e o sprite do inimigo. O gatilho se encontra acima da borda superior da tela.</comment>
                 <event-block sid="626922554006081">
@@ -352,7 +352,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por gerenciar os eventos de colisão entre o jogador e o inimigo. será alterado" sid="610763609005595" title="Colisão Inimigo-Jogador2">
+        <event-group description="Grupo responsável por gerenciar os eventos de colisão entre o jogador e o inimigo. será alterado" sid="610763609005595" title="ColisãoZumbiJogador">
             <sub-events>
                 <comment>Ao colidir com um inimigo o jogo acaba. Os grupos de funcionamento do jogo são desativados. A tela de Game Over é exibida e os detalhes do jogo são destruídos.</comment>
                 <event-block disabled="1" sid="597317190289862">
@@ -396,7 +396,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo que controla o menu de GameOver." sid="254795992726786" title="Controle do Menu2">
+        <event-group description="Grupo que controla o menu de GameOver." sid="254795992726786" title="MenuDerrota">
             <sub-events>
                 <comment>Caso a layer de GameOver esteja visível e o botão de retornar ao menu principal for tocado o jogo retorna ao menu principal.</comment>
                 <event-block sid="149579240548044">
@@ -416,7 +416,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="Grupo responsável por controlar o fluxo de pontos do jogador." sid="129819185168580" title="Controle de Pontos2">
+        <event-group description="Grupo responsável por controlar o fluxo de pontos do jogador." sid="129819185168580" title="DefinicaoPontos">
             <sub-events>
                 <comment>A cada 0.5 segundos é somado 1 aos pontos do jogador. É somado também 0.0001 ao multiplicador de velocidade. A cada 5 segundos é adicionado 0.5 de dinheiro ao jogador</comment>
                 <event-block sid="354732236126281">
@@ -630,36 +630,36 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-12" name="Set group active" sid="775962160587394" type="System">
-                            <param id="0" name="Group name">&quot;Simula Movimento&quot;</param>
+                        <action id="-12" name="Set group active" sid="636439031512614" type="System">
+                            <param id="0" name="Group name">&quot;SimulacaoMovimento&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="523659437572368" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Alteração da Pista&quot;</param>
+                        <action id="-12" name="Set group active" sid="458102832125154" type="System">
+                            <param id="0" name="Group name">&quot;AlteracaoDePista&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="791157241887228" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Posicionamento da Pista&quot;</param>
+                        <action id="-12" name="Set group active" sid="121534813271125" type="System">
+                            <param id="0" name="Group name">&quot;DefiniçãoDeCoordenadasPista&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="289432650652872" type="System">
-                            <param id="0" name="Group name">&quot;Destrói Inimigos&quot;</param>
+                        <action id="-12" name="Set group active" sid="760397658830462" type="System">
+                            <param id="0" name="Group name">&quot;DestróiZumbisExtras&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="257157300325001" type="System">
-                            <param id="0" name="Group name">&quot;Spawner de Inimigos&quot;</param>
+                        <action id="-12" name="Set group active" sid="796673530462343" type="System">
+                            <param id="0" name="Group name">&quot;SpawnerZumbi&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="538060134204703" type="System">
-                            <param id="0" name="Group name">&quot;Colisão Inimigo-Jogador&quot;</param>
+                        <action id="-12" name="Set group active" sid="588066569679121" type="System">
+                            <param id="0" name="Group name">&quot;ColisãoZumbiJogador&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="226836700502754" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Pontos&quot;</param>
+                        <action id="-12" name="Set group active" sid="991773603280086" type="System">
+                            <param id="0" name="Group name">&quot;DefinicaoPontos&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
-                        <action id="-12" name="Set group active" sid="733927611410395" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Combustível&quot;</param>
+                        <action id="-12" name="Set group active" sid="907967246827985" type="System">
+                            <param id="0" name="Group name">&quot;Controle de Combustível2&quot;</param>
                             <param id="1" name="State">0</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="941288405831707" type="System">
@@ -699,40 +699,40 @@
                 <event-block sid="843175471761443">
                     <conditions>
                         <condition id="-15" name="Is group active" sid="796808118555811" type="System">
-                            <param id="0" name="Group name">&quot;Funcionamento do Jogo&quot;</param>
+                            <param id="0" name="Group name">&quot;Funcionamento do Jogo2&quot;</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-12" name="Set group active" sid="267395615257239" type="System">
-                            <param id="0" name="Group name">&quot;Simula Movimento&quot;</param>
+                            <param id="0" name="Group name">&quot;SimulacaoMovimento&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="514916396278640" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Alteração da Pista&quot;</param>
+                            <param id="0" name="Group name">&quot;AlteracaoDePista&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="483592611331483" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Posicionamento da Pista&quot;</param>
+                            <param id="0" name="Group name">&quot;DefiniçãoDeCoordenadasPista&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="141826862314405" type="System">
-                            <param id="0" name="Group name">&quot;Destrói Inimigos&quot;</param>
+                            <param id="0" name="Group name">&quot;DestróiZumbisExtras&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="261736671299993" type="System">
-                            <param id="0" name="Group name">&quot;Spawner de Inimigos&quot;</param>
+                            <param id="0" name="Group name">&quot;SpawnerZumbi&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="407973721628998" type="System">
-                            <param id="0" name="Group name">&quot;Colisão Inimigo-Jogador&quot;</param>
+                            <param id="0" name="Group name">&quot;ColisãoZumbiJogador&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="564971944224714" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Pontos&quot;</param>
+                            <param id="0" name="Group name">&quot;DefinicaoPontos&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-12" name="Set group active" sid="469304022203621" type="System">
-                            <param id="0" name="Group name">&quot;Controle de Combustível&quot;</param>
+                            <param id="0" name="Group name">&quot;Controle de Combustível2&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
                         <action id="-4" name="Set layer visible" sid="539232332884525" type="System">
@@ -764,6 +764,7 @@
                 </action>
             </actions>
         </event-block>
+        <comment>Manter linhas abaixo em todos os modos de jogo. Grupos para salvamento</comment>
         <event-block sid="635494654453634">
             <conditions>
                 <condition id="3" name="On touched object" sid="865297838077755" type="Touch">
@@ -807,144 +808,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" inactive="1" sid="444115557130285" title="TutorialDeJogabilidade2">
-            <sub-events>
-                <event-block sid="390637473268191">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="801701862314190" type="Dicas">
-                            <param id="0" name="Instance variable">Dica</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="988178848778181" type="Dicas">
-                            <param id="0" name="Text">&quot;Escolha e pressione para qual lado deseja ir&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="968247339977345">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="347055763942208" type="Dicas">
-                            <param id="0" name="Instance variable">Dica</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="886106065341199" type="Dicas">
-                            <param id="0" name="Text">&quot;Esse é seu indicador de pontos. Quanto maior forem os pontos mais dinheiro irá ganhar. Toque nos pontos para continuar.&quot;</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="964839767900834" type="Hand01" />
-                        <action id="-15" name="Set visible" sid="686742146111531" type="Hand2">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="126837103359055">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="713443836142990" type="Dicas">
-                            <param id="0" name="Instance variable">Dica</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Set text" sid="494849991847522" type="Dicas">
-                            <param id="0" name="Text">&quot;Pegue combustível para se manter ativo na estrada&quot;</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="562222976349619" type="Hand2" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="" inactive="1" sid="540686133717868" title="MudaTutorial2">
-            <sub-events>
-                <event-block sid="866455646612381">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="483576603486863" type="Touch">
-                            <param id="0" name="Object">Dicas</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="882582166406219" type="Dicas">
-                            <param id="0" name="Instance variable">Dica</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="975750872580935" type="System">
-                            <param id="0" name="Variable">Tutorial</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-4" name="Set layer visible" sid="822185470446754" type="System">
-                            <param id="0" name="Layer">&quot;Tutorial&quot;</param>
-                            <param id="1" name="Visibility">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="546636444507986" type="System">
-                            <param id="0" name="Group name">&quot;Substrai Combustível&quot;</param>
-                            <param id="1" name="State">1</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="644122019079547" type="System">
-                            <param id="0" name="Group name">&quot;MudaTutorial&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="727475761426761" type="System">
-                            <param id="0" name="Group name">&quot;TutorialDeJogabilidade&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="869884765492501" type="System">
-                            <param id="0" name="Variable">Pontos</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="602484771442083">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="187672950426869" type="Touch">
-                            <param id="0" name="Object">TextoPontos</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="564977035437959" type="Dicas">
-                            <param id="0" name="Instance variable">Dica</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-10" name="Set value" sid="484333156200960" type="Dicas">
-                            <param id="0" name="Instance variable">Dica</param>
-                            <param id="1" name="Value">3</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block any="1" sid="988380195603205">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="172014574325861" type="Touch">
-                            <param id="0" name="Object">ControleEsq</param>
-                        </condition>
-                        <condition id="3" name="On touched object" sid="402626707542215" type="Touch">
-                            <param id="0" name="Object">ControleDir</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="341484394725373">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="529735774638947" type="Dicas">
-                                    <param id="0" name="Instance variable">Dica</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-10" name="Set value" sid="625284324045558" type="Dicas">
-                                    <param id="0" name="Instance variable">Dica</param>
-                                    <param id="1" name="Value">2</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
     </events>
 </c2eventsheet>
