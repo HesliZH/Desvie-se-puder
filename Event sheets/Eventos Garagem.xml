@@ -141,6 +141,81 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="891136721618757">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="321175528455545" type="CarrosComprados">
+                            <param id="0" name="X">10</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="277439724893998" type="Carro10">
+                            <param id="0" name="X">60</param>
+                            <param id="1" name="Y">199</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="711011994459445">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="854504390558838" type="CarrosComprados">
+                            <param id="0" name="X">11</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">11</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="275999916476490" type="Carro11">
+                            <param id="0" name="X">401</param>
+                            <param id="1" name="Y">199</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="942523269025443">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="615701092193431" type="CarrosComprados">
+                            <param id="0" name="X">12</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">12</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="509434336228722" type="Carro12">
+                            <param id="0" name="X">62</param>
+                            <param id="1" name="Y">367</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="111070294526192">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="587700856154497" type="CarrosComprados">
+                            <param id="0" name="X">13</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">13</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="134710657424164" type="Carro13">
+                            <param id="0" name="X">72</param>
+                            <param id="1" name="Y">808</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="857449484253781">
+                    <conditions>
+                        <condition id="0" name="Compare at X" sid="920352961192515" type="CarrosComprados">
+                            <param id="0" name="X">14</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">14</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="466187678987566" type="Carro14">
+                            <param id="0" name="X">416</param>
+                            <param id="1" name="Y">808</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="651364136001047" title="IniciaFase">

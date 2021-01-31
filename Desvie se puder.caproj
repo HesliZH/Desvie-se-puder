@@ -1162,6 +1162,101 @@
                         </animation>
                     </animation-folder>
                 </object-type>
+                <object-type name="Carro10" sid="931235685078701">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="571767443090660" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 5 DSP.png">
+                                <collision-poly>
+                                    <point x="0.0779244" y="1" />
+                                    <point x="0.14827" y="0.5" />
+                                    <point x="0.14827" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.85173" y="0" />
+                                    <point x="0.85173" y="0.5" />
+                                    <point x="0.922076" y="1" />
+                                    <point x="0.5" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Carro11" sid="790350130326343">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="849231075817888" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 6 DPS.png">
+                                <collision-poly>
+                                    <point x="0.0779244" y="1" />
+                                    <point x="0.14827" y="0.5" />
+                                    <point x="0.14827" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.85173" y="0" />
+                                    <point x="0.85173" y="0.5" />
+                                    <point x="0.922076" y="1" />
+                                    <point x="0.5" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Carro12" sid="401995684300048">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="687989736591876" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 7 DSP .png">
+                                <collision-poly>
+                                    <point x="0.0779244" y="1" />
+                                    <point x="0.14827" y="0.5" />
+                                    <point x="0.14827" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.85173" y="0" />
+                                    <point x="0.85173" y="0.5" />
+                                    <point x="0.922076" y="1" />
+                                    <point x="0.5" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Carro13" sid="963124365495224">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="589149937168488" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 8 DSP .png">
+                                <collision-poly>
+                                    <point x="0.0779244" y="1" />
+                                    <point x="0" y="0.217391" />
+                                    <point x="0.14827" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="0.931275" y="0" />
+                                    <point x="1" y="0.478261" />
+                                    <point x="0.922076" y="1" />
+                                    <point x="0.5" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
+                <object-type name="Carro14" sid="263219094659736">
+                    <plugin id="Sprite" />
+                    <animation-folder>
+                        <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="654924029577235" speed="5">
+                            <frame duration="1" hotspotX="0.5" hotspotY="0.504065" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\update 2021\Carro 9 DSP.png">
+                                <collision-poly>
+                                    <point x="0.0779244" y="1" />
+                                    <point x="0" y="0.337398" />
+                                    <point x="0" y="0" />
+                                    <point x="0.5" y="0" />
+                                    <point x="1" y="0" />
+                                    <point x="1" y="0.45935" />
+                                    <point x="0.922076" y="1" />
+                                    <point x="0.5" y="1" />
+                                </collision-poly>
+                            </frame>
+                        </animation>
+                    </animation-folder>
+                </object-type>
             </object-folder>
             <object-type name="InfoGaragem" sid="517073466048432">
                 <plugin id="Text" />
