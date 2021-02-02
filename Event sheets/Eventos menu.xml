@@ -3,122 +3,19 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu</name>
     <events>
+        <include>Array Textos</include>
         <include>Eventos Anuncios</include>
         <variable constant="0" name="Salvar" sid="948882073332959" static="0" type="number">0</variable>
-        <event-group description="" sid="851830550865762" title="IniciaJogo">
-            <sub-events>
-                <event-block sid="165674701894936">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="107862314689259" type="Touch">
-                            <param id="0" name="Object">txtBtn_Opcoes</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="261458257242883">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="878572243826244" type="txtBtn_Opcoes">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="918053800405599" type="System">
-                                    <param id="0" name="Layout">Garagem</param>
-                                </action>
-                                <action id="6" name="Stop" sid="871636312206229" type="Audio">
-                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="365814655251763">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="124486111604371" type="txtBtn_Opcoes">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="591482122808778" type="System">
-                                    <param id="0" name="Layout">Loja</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <comment>Caso acesse os password irá para a tela de reedeen code</comment>
-                        <event-block sid="140222408677780">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="558320825905842" type="txtBtn_Opcoes">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">3</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="116857104600066" type="System">
-                                    <param id="0" name="Layout">Password</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="381110761492853">
-                            <conditions>
-                                <condition id="-7" name="Compare instance variable" sid="578952165701072" type="txtBtn_Opcoes">
-                                    <param id="0" name="Instance variable">ID</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">4</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-2" name="Go to layout" sid="465880963234250" type="System">
-                                    <param id="0" name="Layout">Creditos</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-                <event-block sid="491471333447738">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="616165548660811" type="Touch">
-                            <param id="0" name="Object">txtBtn_AlterarIdioma</param>
-                        </condition>
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="645539867857616">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="372694027472485" type="System">
-                                    <param id="0" name="Variable">idioma</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;pt&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="657655841271363" type="System">
-                                    <param id="0" name="Variable">idioma</param>
-                                    <param id="1" name="Value">&quot;en&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                        <event-block sid="124720815697319">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="458472498452168" type="System">
-                                    <param id="0" name="Variable">idioma</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">&quot;en&quot;</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="199033994488779" type="System">
-                                    <param id="0" name="Variable">idioma</param>
-                                    <param id="1" name="Value">&quot;pt&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
+        <event-block sid="908423081688465">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="747097413599371" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="574052505868093" type="txt_Highscore">
+                    <param id="0" name="Text">Highscore</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="953741821611446">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="838505882608183" type="System" />
@@ -191,6 +88,64 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="614089238919524">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="773941725596106" type="txtBtn_Opcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="950114195100450" type="txtBtn_Opcoes">
+                            <param id="0" name="Text">Textos.At(1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="943119567792515">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="365496165972974" type="txtBtn_Opcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="662908885556247" type="txtBtn_Opcoes">
+                            <param id="0" name="Text">Textos.At(2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="974571641396079">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="644043770883477" type="txtBtn_Opcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="143043507635998" type="txtBtn_Opcoes">
+                            <param id="0" name="Text">Textos.At(3)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="818401887668462">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="660866255199196" type="txtBtn_Opcoes">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="927929648343227" type="txtBtn_Opcoes">
+                            <param id="0" name="Text">Textos.At(4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="230584500729499">
             <conditions>
@@ -208,43 +163,129 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" inactive="1" sid="117553665280491" title="SalvarGame">
+        <event-group description="" sid="851830550865762" title="ControleMenu">
             <sub-events>
-                <event-block sid="785815575660217">
+                <event-block sid="165674701894936">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="931511806549539" type="System">
-                            <param id="0" name="Variable">Salvar</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                        <condition id="3" name="On touched object" sid="107862314689259" type="Touch">
+                            <param id="0" name="Object">txtBtn_Opcoes</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-36" name="Save" sid="641472153991418" type="System">
-                            <param id="0" name="Slot">&quot;dsp001&quot;</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="699970438480469" type="System">
-                            <param id="0" name="Variable">Salvar</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-12" name="Set group active" sid="521286917399146" type="System">
-                            <param id="0" name="Group name">&quot;SalvarGame&quot;</param>
-                            <param id="1" name="State">0</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="261458257242883">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="878572243826244" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="918053800405599" type="System">
+                                    <param id="0" name="Layout">Garagem</param>
+                                </action>
+                                <action id="6" name="Stop" sid="871636312206229" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="365814655251763">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="124486111604371" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="591482122808778" type="System">
+                                    <param id="0" name="Layout">Loja</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="140222408677780">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="558320825905842" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="116857104600066" type="System">
+                                    <param id="0" name="Layout">Password</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="381110761492853">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="578952165701072" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="465880963234250" type="System">
+                                    <param id="0" name="Layout">Creditos</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="491471333447738">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="616165548660811" type="Touch">
+                            <param id="0" name="Object">txtBtn_AlterarIdioma</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="645539867857616">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="372694027472485" type="System">
+                                    <param id="0" name="Variable">idioma</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;pt&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="657655841271363" type="System">
+                                    <param id="0" name="Variable">idioma</param>
+                                    <param id="1" name="Value">&quot;en&quot;</param>
+                                </action>
+                                <action id="-26" name="Restart layout" sid="964073866208503" type="System" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="200295837227924">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="278393090922917" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="124720815697319">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="458472498452168" type="System">
+                                            <param id="0" name="Variable">idioma</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">&quot;en&quot;</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="199033994488779" type="System">
+                                            <param id="0" name="Variable">idioma</param>
+                                            <param id="1" name="Value">&quot;pt&quot;</param>
+                                        </action>
+                                        <action id="-26" name="Restart layout" sid="810308204010244" type="System" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="908423081688465">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="747097413599371" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="574052505868093" type="txt_Highscore">
-                    <param id="0" name="Text">Highscore</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-group description="Esse método ficará desativado para implementação futura dos achievements." sid="748885961130544" title="GooglePlay" />
         <event-group description="" sid="963476446884453" title="DefineTextosMenu">
             <sub-events>
                 <event-block sid="310141827850144">
@@ -317,5 +358,32 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" inactive="1" sid="117553665280491" title="SalvarGame">
+            <sub-events>
+                <event-block sid="785815575660217">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="931511806549539" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-36" name="Save" sid="641472153991418" type="System">
+                            <param id="0" name="Slot">&quot;dsp001&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="699970438480469" type="System">
+                            <param id="0" name="Variable">Salvar</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="521286917399146" type="System">
+                            <param id="0" name="Group name">&quot;SalvarGame&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Esse método ficará desativado para implementação futura dos achievements." sid="748885961130544" title="GooglePlay" />
     </events>
 </c2eventsheet>

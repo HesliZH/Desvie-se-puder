@@ -4,6 +4,16 @@
     <name>Eventos Garagem</name>
     <events>
         <variable constant="0" name="Oficina" sid="635594925793570" static="0" type="number">0</variable>
+        <event-block sid="458431472406120">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="664361892420530" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="660924535558347" type="InfoGaragem">
+                    <param id="0" name="Text">Textos.At(12)</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="889868046205976" title="AnalisaCarros">
             <sub-events>
                 <event-block sid="487369106849984">

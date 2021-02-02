@@ -555,10 +555,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>128</x>
+                        <x>160</x>
                         <y>352</y>
                         <z>0</z>
-                        <width>256</width>
+                        <width>320</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -597,10 +597,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>128</x>
+                        <x>160</x>
                         <y>480</y>
                         <z>0</z>
-                        <width>256</width>
+                        <width>320</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -639,10 +639,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
+                        <x>160</x>
                         <y>736</y>
                         <z>0</z>
-                        <width>384</width>
+                        <width>320</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -681,10 +681,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>192</x>
+                        <x>160</x>
                         <y>610</y>
                         <z>0</z>
-                        <width>384</width>
+                        <width>320</width>
                         <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

@@ -1267,6 +1267,9 @@
         <object-folder name="Creditos">
             <object-type name="Texto_Creditos" sid="366643110326382">
                 <plugin id="Text" />
+                <instance-variables>
+                    <instance-variable name="ID" sid="598167527993993" type="number" />
+                </instance-variables>
             </object-type>
             <object-type name="Texto_CreditosVoltar" sid="305214702432538">
                 <plugin id="Text" />
@@ -1845,6 +1848,9 @@
             </animation-folder>
         </object-type>
         <object-type name="txtBtn_AlterarIdioma" sid="912809567225169">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="txt_Aviso" sid="241793650709394">
             <plugin id="Text" />
         </object-type>
     </object-folder>

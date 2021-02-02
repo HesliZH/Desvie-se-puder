@@ -16,7 +16,138 @@
                     <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
                 </action>
+                <action id="0" name="Set text" sid="825926686599114" type="Texto_CreditosVoltar">
+                    <param id="0" name="Text">Textos.At(11)</param>
+                </action>
             </actions>
+            <sub-events>
+                <event-block sid="781133245302501">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="446023096461046" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="281231894327762" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(4)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="371766957779991">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="533071355789239" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="117986248974071" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(7)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="368990429537335">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="632509295644613" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="199455144489563" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(8)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="140968857183095">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="911356301759945" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="311335713192085" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(9)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="942604721200303">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="971848265694765" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="277548711362890" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(10)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="136907816399510">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="739812552769487" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="477194251067041" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(14)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="176077507662837">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="340914162751709" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="706172777493030" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(13)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485177025275711">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="576425510889053" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="748043645352784" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(15)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="360979898953296">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="358392488240700" type="Texto_Creditos">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="902354899671752" type="Texto_Creditos">
+                            <param id="0" name="Text">Textos.At(16)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="584151946911253">
             <conditions>
