@@ -640,7 +640,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>192</x>
-                        <y>738</y>
+                        <y>736</y>
                         <z>0</z>
                         <width>384</width>
                         <height>128</height>
@@ -759,6 +759,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="txtBtn_AlterarIdioma" uid="276">
+                    <properties>
+                        <text>AL</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-37.6,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>384</x>
+                        <y>768</y>
+                        <z>0</z>
+                        <width>96</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -813,6 +840,13 @@
             </properties>
         </instance>
         <instance type="StatusCarros" uid="189">
+            <properties>
+                <width>10</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="Textos" uid="275">
             <properties>
                 <width>10</width>
                 <height>1</height>

@@ -77,6 +77,46 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="491471333447738">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="616165548660811" type="Touch">
+                            <param id="0" name="Object">txtBtn_AlterarIdioma</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="645539867857616">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="372694027472485" type="System">
+                                    <param id="0" name="Variable">idioma</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;pt&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="657655841271363" type="System">
+                                    <param id="0" name="Variable">idioma</param>
+                                    <param id="1" name="Value">&quot;en&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="124720815697319">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="458472498452168" type="System">
+                                    <param id="0" name="Variable">idioma</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">&quot;en&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="199033994488779" type="System">
+                                    <param id="0" name="Variable">idioma</param>
+                                    <param id="1" name="Value">&quot;pt&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
         <event-block sid="953741821611446">
@@ -205,5 +245,77 @@
             </actions>
         </event-block>
         <event-group description="Esse método ficará desativado para implementação futura dos achievements." sid="748885961130544" title="GooglePlay" />
+        <event-group description="" sid="963476446884453" title="DefineTextosMenu">
+            <sub-events>
+                <event-block sid="310141827850144">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="777007620038475" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="287417380367266" type="txtBtn_AlterarIdioma">
+                            <param id="0" name="Text">Textos.At(5)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="170194348935405">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="455714660345699" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="585953670421772" type="txtBtn_Opcoes">
+                                    <param id="0" name="Text">Textos.At(1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="131961157099985">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="835785269216535" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="729638400422762" type="txtBtn_Opcoes">
+                                    <param id="0" name="Text">Textos.At(2)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="767334517958023">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="586907730400570" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="900073374164964" type="txtBtn_Opcoes">
+                                    <param id="0" name="Text">Textos.At(3)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="947551838953742">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="778673291963914" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="666172711008917" type="txtBtn_Opcoes">
+                                    <param id="0" name="Text">Textos.At(4)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

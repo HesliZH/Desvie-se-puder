@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Array Textos</name>
+    <events>
+        <event-group description="" sid="446109454247604" title="AdicionaTextoArray">
+            <sub-events>
+                <event-block sid="844087281954224">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="278983452323446" type="System">
+                            <param id="0" name="Variable">idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;pt&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="522911237175212">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="572630500565285" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="324063256679467" type="Textos">
+                                    <param id="0" name="Width">10</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="947508599904617" type="Textos">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Jogar&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="801294905249933" type="Textos">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Loja&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="679917587201627" type="Textos">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Códigos&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="895796772686177" type="Textos">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Créditos&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="556960598569893" type="Textos">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;PT&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="620862129237290">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="839844062213541" type="System">
+                            <param id="0" name="Variable">idioma</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;en&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="643769486808564">
+                            <conditions>
+                                <condition id="-2" name="On start of layout" sid="408603417050281" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Set size" sid="556003315703690" type="Textos">
+                                    <param id="0" name="Width">10</param>
+                                    <param id="1" name="Height">1</param>
+                                    <param id="2" name="Depth">1</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="733753690097217" type="Textos">
+                                    <param id="0" name="X">1</param>
+                                    <param id="1" name="Value">&quot;Play&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="356133894378437" type="Textos">
+                                    <param id="0" name="X">2</param>
+                                    <param id="1" name="Value">&quot;Shop&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="345855014474985" type="Textos">
+                                    <param id="0" name="X">3</param>
+                                    <param id="1" name="Value">&quot;Password&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="605099962849643" type="Textos">
+                                    <param id="0" name="X">4</param>
+                                    <param id="1" name="Value">&quot;Credits&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="475123647795445" type="Textos">
+                                    <param id="0" name="X">5</param>
+                                    <param id="1" name="Value">&quot;EN&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

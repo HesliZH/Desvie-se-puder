@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Tela Inicial</name>
     <events>
+        <include>Array Textos</include>
+        <variable constant="0" name="idioma" sid="590562208332249" static="0" type="text">en</variable>
         <variable constant="0" name="Jogo" sid="222751210415130" static="0" type="number">0</variable>
         <variable constant="0" name="TempoInicio" sid="552885361135609" static="0" type="number">0</variable>
         <event-block sid="956758533503218">
