@@ -27,8 +27,8 @@
                     <param id="2" name="Depth">1</param>
                 </action>
                 <action id="5" name="Set web font" sid="566144518550480" type="txt_Aviso">
-                    <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
-                    <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                    <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
                 </action>
             </actions>
         </event-block>

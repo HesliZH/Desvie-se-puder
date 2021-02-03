@@ -535,7 +535,7 @@
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <line-height>50</line-height>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <ID>1</ID>
@@ -555,11 +555,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
+                        <x>165.5</x>
                         <y>352</y>
                         <z>0</z>
-                        <width>320</width>
-                        <height>128</height>
+                        <width>293</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -577,7 +577,7 @@
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <line-height>50</line-height>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <ID>2</ID>
@@ -597,11 +597,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
+                        <x>165.5</x>
                         <y>480</y>
                         <z>0</z>
-                        <width>320</width>
-                        <height>128</height>
+                        <width>293</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -619,7 +619,7 @@
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <line-height>50</line-height>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <ID>4</ID>
@@ -639,11 +639,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
+                        <x>165.5</x>
                         <y>736</y>
                         <z>0</z>
-                        <width>320</width>
-                        <height>128</height>
+                        <width>293</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -661,7 +661,7 @@
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
                         <wrapping>Word</wrapping>
-                        <line-height>50</line-height>
+                        <line-height>0</line-height>
                     </properties>
                     <instance-variables>
                         <ID>3</ID>
@@ -681,11 +681,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>160</x>
-                        <y>610</y>
+                        <x>165.5</x>
+                        <y>608</y>
                         <z>0</z>
-                        <width>320</width>
-                        <height>128</height>
+                        <width>293</width>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>

@@ -1949,5 +1949,11 @@
         <file name="joy.css" />
         <file name="joystix_monospace-webfont.woff" />
         <file name="joystix_monospace-webfont.woff2" />
+        <file name="arcadepi-webfont.woff" />
+        <file name="arcadepi-webfont.woff2" />
+        <file name="arcadepix.css" />
+        <file name="retroville.css" />
+        <file name="retroville_nc-webfont.woff" />
+        <file name="retroville_nc-webfont.woff2" />
     </files-folder>
 </c2project>

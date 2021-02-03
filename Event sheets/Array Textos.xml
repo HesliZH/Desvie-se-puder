@@ -27,23 +27,23 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="947508599904617" type="Textos">
                                     <param id="0" name="X">1</param>
-                                    <param id="1" name="Value">&quot; JOGAR&quot;</param>
+                                    <param id="1" name="Value">&quot;JOGAR&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="801294905249933" type="Textos">
                                     <param id="0" name="X">2</param>
-                                    <param id="1" name="Value">&quot; LOJA&quot;</param>
+                                    <param id="1" name="Value">&quot;LOJA&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="679917587201627" type="Textos">
                                     <param id="0" name="X">3</param>
-                                    <param id="1" name="Value">&quot; CÓDIGOS&quot;</param>
+                                    <param id="1" name="Value">&quot;CÓDIGOS&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="895796772686177" type="Textos">
                                     <param id="0" name="X">4</param>
-                                    <param id="1" name="Value">&quot; CRÉDITOS&quot;</param>
+                                    <param id="1" name="Value">&quot;CRÉDITOS&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="556960598569893" type="Textos">
                                     <param id="0" name="X">5</param>
-                                    <param id="1" name="Value">&quot; PT&quot;</param>
+                                    <param id="1" name="Value">&quot;PT&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="297636325647041" type="Textos">
                                     <param id="0" name="X">6</param>
@@ -115,19 +115,19 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="733753690097217" type="Textos">
                                     <param id="0" name="X">1</param>
-                                    <param id="1" name="Value">&quot; PLAY&quot;</param>
+                                    <param id="1" name="Value">&quot;PLAY&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="356133894378437" type="Textos">
                                     <param id="0" name="X">2</param>
-                                    <param id="1" name="Value">&quot; SHOP&quot;</param>
+                                    <param id="1" name="Value">&quot;SHOP&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="345855014474985" type="Textos">
                                     <param id="0" name="X">3</param>
-                                    <param id="1" name="Value">&quot; PASSWORD&quot;</param>
+                                    <param id="1" name="Value">&quot;PASSWORD&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="605099962849643" type="Textos">
                                     <param id="0" name="X">4</param>
-                                    <param id="1" name="Value">&quot; CREDITS&quot;</param>
+                                    <param id="1" name="Value">&quot;CREDITS&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="475123647795445" type="Textos">
                                     <param id="0" name="X">5</param>
