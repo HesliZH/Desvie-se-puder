@@ -203,7 +203,7 @@
                         </action>
                         <action id="-9" name="Set value" sid="340342412220020" type="System">
                             <param id="0" name="Variable">MultiplicadorPontos</param>
-                            <param id="1" name="Value">0</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>

@@ -20,8 +20,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="3">Eventos Menu</event-sheet>
         <event-sheet order="5">Eventos Tela Inicial</event-sheet>
         <event-sheet order="8">Eventos dos Creditos</event-sheet>
-        <event-sheet active="1" order="9">Eventos Garagem</event-sheet>
+        <event-sheet order="9">Eventos Garagem</event-sheet>
         <event-sheet order="12">Eventos Base das Fases</event-sheet>
+        <event-sheet active="1" order="13">Eventos Carros</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
