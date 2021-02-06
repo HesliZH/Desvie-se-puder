@@ -1263,6 +1263,9 @@
             <object-type name="InfoGaragem" sid="517073466048432">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="VoltarGaragem" sid="291773929916943">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder name="Creditos">
             <object-type name="Texto_Creditos" sid="366643110326382">
