@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>240</position-x>
-        <position-y>333.294</position-y>
-        <position-z>182.84</position-z>
+        <position-y>49.4709</position-y>
+        <position-z>113.529</position-z>
         <lookat-x>240</lookat-x>
-        <lookat-y>333.294</lookat-y>
+        <lookat-y>49.4709</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -32,9 +32,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layer locked="1" name="BordaAreia" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="BordaTerra" parallax-in-editor="0" visible="0" />
         <layer locked="1" name="BordaGrama" parallax-in-editor="0" visible="1" />
-        <layer locked="0" name="Player" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Controle" parallax-in-editor="0" visible="0" />
+        <layer locked="1" name="Player" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Controle" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Derrota" parallax-in-editor="0" visible="0" />
-        <layer locked="0" name="Tutorial" parallax-in-editor="0" visible="1" />
+        <layer locked="1" name="Tutorial" parallax-in-editor="0" visible="1" />
     </layers>
 </c2uistate>

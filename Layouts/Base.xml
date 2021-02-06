@@ -604,7 +604,7 @@
                     <properties>
                         <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Impact,-48,400,0</font>
+                        <font>Impact,-37,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -618,10 +618,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>0</x>
+                        <x>-28</x>
                         <y>0</y>
                         <z>0</z>
-                        <width>96</width>
+                        <width>138</width>
                         <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

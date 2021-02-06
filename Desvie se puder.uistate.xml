@@ -10,19 +10,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Menu Principal</layout>
+        <layout order="0">Menu Principal</layout>
         <layout order="3">Tela Inicial</layout>
         <layout order="5">Opções</layout>
         <layout order="6">Creditos</layout>
         <layout order="9">Garagem</layout>
-        <layout order="10">Base</layout>
         <event-sheet order="1">Array Textos</event-sheet>
         <event-sheet order="2">Eventos Menu</event-sheet>
         <event-sheet order="4">Eventos Tela Inicial</event-sheet>
         <event-sheet order="7">Eventos dos Creditos</event-sheet>
         <event-sheet order="8">Eventos Garagem</event-sheet>
-        <event-sheet order="11">Eventos Base das Fases</event-sheet>
-        <event-sheet order="12">Eventos Carros</event-sheet>
+        <event-sheet order="10">Eventos Base das Fases</event-sheet>
+        <event-sheet active="1" order="11">Eventos Carros</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
