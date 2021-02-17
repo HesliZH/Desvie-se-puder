@@ -121,6 +121,14 @@
                                     <param id="0" name="X">24</param>
                                     <param id="1" name="Value">&quot;GARAGEM&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="501841949714371" type="Textos">
+                                    <param id="0" name="X">25</param>
+                                    <param id="1" name="Value">&quot;CONFIRMAR&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="373535301812880" type="Textos">
+                                    <param id="0" name="X">26</param>
+                                    <param id="1" name="Value">&quot;CÓDIGO ATIVADO&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -240,6 +248,14 @@
                                 <action id="2" name="Set at X" sid="772879759326573" type="Textos">
                                     <param id="0" name="X">24</param>
                                     <param id="1" name="Value">&quot;GARAGE&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="437976134639573" type="Textos">
+                                    <param id="0" name="X">25</param>
+                                    <param id="1" name="Value">&quot;CONFIRM&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="426785074861620" type="Textos">
+                                    <param id="0" name="X">26</param>
+                                    <param id="1" name="Value">&quot;CHEAT ACTIVATED&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
