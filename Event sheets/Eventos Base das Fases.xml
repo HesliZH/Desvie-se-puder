@@ -32,9 +32,17 @@
                             <param id="0" name="Group name">&quot;Funcionamento do Jogo&quot;</param>
                             <param id="1" name="State">1</param>
                         </action>
-                        <action id="5" name="Set web font" sid="791067018972683" type="Dicas">
-                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                        <action id="5" name="Set web font" sid="693714863262833" type="Dicas">
+                            <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="433605759352029" type="TxtVoltarMenu">
+                            <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="851850243670235" type="TextoFinalizacao">
+                            <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
                         </action>
                         <action id="6" name="Stop" sid="702407493900595" type="Audio">
                             <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
@@ -50,6 +58,12 @@
                         <action id="-24" name="Move to top" sid="542949633669761" type="TextoPontos" />
                         <action id="0" name="Set text" sid="976883381986593" type="TextoPontos">
                             <param id="0" name="Text">Pontos</param>
+                        </action>
+                        <action id="0" name="Set text" sid="113338722585367" type="TextoFinalizacao">
+                            <param id="0" name="Text">Textos.At(22)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="355485792577709" type="TxtVoltarMenu">
+                            <param id="0" name="Text">Textos.At(23)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -861,7 +875,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="715877312651866" type="Dicas">
-                            <param id="0" name="Text">&quot;Escolha e pressione para qual lado deseja ir&quot;</param>
+                            <param id="0" name="Text">Textos.At(19)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -875,7 +889,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="707540771877282" type="Dicas">
-                            <param id="0" name="Text">&quot;Esse é seu indicador de pontos. Quanto maior forem os pontos mais dinheiro irá ganhar. Toque nos pontos para continuar.&quot;</param>
+                            <param id="0" name="Text">Textos.At(20)</param>
                         </action>
                         <action id="-9" name="Destroy" sid="223805155058702" type="Hand01" />
                         <action id="-15" name="Set visible" sid="847377888351696" type="Hand2">
@@ -893,7 +907,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="944184567688776" type="Dicas">
-                            <param id="0" name="Text">&quot;Pegue combustível para se manter ativo na estrada&quot;</param>
+                            <param id="0" name="Text">Textos.At(21)</param>
                         </action>
                         <action id="-9" name="Destroy" sid="606418469220549" type="Hand2" />
                     </actions>

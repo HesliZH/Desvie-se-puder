@@ -1856,6 +1856,12 @@
         <object-type name="txt_Aviso" sid="241793650709394">
             <plugin id="Text" />
         </object-type>
+        <object-type name="TextoFinalizacao" sid="907300255533035">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TxtVoltarMenu" sid="968584666889572">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

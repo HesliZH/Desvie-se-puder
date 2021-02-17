@@ -4,7 +4,7 @@
     <name>Eventos Tela Inicial</name>
     <events>
         <include>Array Textos</include>
-        <variable constant="0" name="idioma" sid="590562208332249" static="0" type="text">en</variable>
+        <variable constant="0" name="idioma" sid="590562208332249" static="0" type="text">pt</variable>
         <variable constant="0" name="Jogo" sid="222751210415130" static="0" type="number">0</variable>
         <variable constant="0" name="TempoInicio" sid="552885361135609" static="0" type="number">0</variable>
         <event-block sid="956758533503218">
@@ -29,6 +29,10 @@
                 <action id="5" name="Set web font" sid="566144518550480" type="txt_Aviso">
                     <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
                     <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="717549304946195" type="System">
+                    <param id="0" name="Variable">ResetLayout</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>

@@ -1159,18 +1159,31 @@
                     <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
                     <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="440787629100993" type="txtBtn_LojaComprar">
-                    <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
-                    <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                <action id="5" name="Set web font" sid="616327857003594" type="txtBtn_LojaComprar">
+                    <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
                 </action>
-                <action id="5" name="Set web font" sid="113745373443990" type="txtBtn_LojaVoltar">
-                    <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
-                    <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                <action id="5" name="Set web font" sid="613565403517098" type="txtBtn_LojaVoltar">
+                    <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                    <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
                 </action>
                 <action id="1" name="Set size" sid="133412675700461" type="CarrosComprados">
                     <param id="0" name="Width">50</param>
                     <param id="1" name="Height">1</param>
                     <param id="2" name="Depth">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558168135921855">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="364217057453650" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="259311923936969" type="txtBtn_LojaComprar">
+                    <param id="0" name="Text">Textos.At(17)</param>
+                </action>
+                <action id="0" name="Set text" sid="888086400266157" type="txtBtn_LojaVoltar">
+                    <param id="0" name="Text">Textos.At(18)</param>
                 </action>
             </actions>
         </event-block>

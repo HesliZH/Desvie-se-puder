@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>240</position-x>
-        <position-y>409.819</position-y>
-        <position-z>160.817</position-z>
+        <position-y>476.005</position-y>
+        <position-z>109.84</position-z>
         <lookat-x>240</lookat-x>
-        <lookat-y>409.819</lookat-y>
+        <lookat-y>476.005</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>0</snap-to-grid>
@@ -23,17 +23,17 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Margins" />
         <property expanded="1" name="Effects" />
     </properties>
-    <active-layer name="Piso" />
+    <active-layer name="IconesPropriedades" />
     <layers>
         <layer locked="1" name="Grama" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Bordas" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Piso" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Estrada" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Carro" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Pessoas" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="BackgroundPropriedades" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="IconesPropriedades" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="TextoPropriedades" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Pessoas" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="BackgroundPropriedades" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="IconesPropriedades" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="TextoPropriedades" parallax-in-editor="0" visible="1" />
         <layer locked="1" name="Gatilho" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundOpcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="TextoOpcoes" parallax-in-editor="0" visible="1" />

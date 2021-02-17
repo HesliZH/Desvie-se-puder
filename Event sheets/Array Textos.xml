@@ -21,7 +21,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="324063256679467" type="Textos">
-                                    <param id="0" name="Width">20</param>
+                                    <param id="0" name="Width">50</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
@@ -89,6 +89,34 @@
                                     <param id="0" name="X">16</param>
                                     <param id="1" name="Value">&quot;CARLOS E. TREVISAN&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="272544721144179" type="Textos">
+                                    <param id="0" name="X">17</param>
+                                    <param id="1" name="Value">&quot;Comprar&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="111268585598334" type="Textos">
+                                    <param id="0" name="X">18</param>
+                                    <param id="1" name="Value">&quot;Voltar&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="880265184309592" type="Textos">
+                                    <param id="0" name="X">19</param>
+                                    <param id="1" name="Value">&quot;Escolha e pressione para qual lado deseja ir&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="437152775983516" type="Textos">
+                                    <param id="0" name="X">20</param>
+                                    <param id="1" name="Value">&quot;Esse é seu indicador de pontos. Quanto maior forem os pontos mais dinheiro irá ganhar. Toque nos pontos para continuar.&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="981062409691635" type="Textos">
+                                    <param id="0" name="X">21</param>
+                                    <param id="1" name="Value">&quot;Pegue combustível para se manter ativo na estrada&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="141907518245242" type="Textos">
+                                    <param id="0" name="X">22</param>
+                                    <param id="1" name="Value">&quot;Puts meu querido, parece que você bateu&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="882338159629869" type="Textos">
+                                    <param id="0" name="X">23</param>
+                                    <param id="1" name="Value">&quot;Voltar ao menu&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -109,7 +137,7 @@
                             </conditions>
                             <actions>
                                 <action id="1" name="Set size" sid="556003315703690" type="Textos">
-                                    <param id="0" name="Width">20</param>
+                                    <param id="0" name="Width">50</param>
                                     <param id="1" name="Height">1</param>
                                     <param id="2" name="Depth">1</param>
                                 </action>
@@ -176,6 +204,34 @@
                                 <action id="2" name="Set at X" sid="555117825100968" type="Textos">
                                     <param id="0" name="X">16</param>
                                     <param id="1" name="Value">&quot;CARLOS E. TREVISAN&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="188383747048780" type="Textos">
+                                    <param id="0" name="X">17</param>
+                                    <param id="1" name="Value">&quot;Buy&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="216127094607462" type="Textos">
+                                    <param id="0" name="X">18</param>
+                                    <param id="1" name="Value">&quot;Back&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="768946093419341" type="Textos">
+                                    <param id="0" name="X">19</param>
+                                    <param id="1" name="Value">&quot;Choose in which track do you want to go&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="820678990873305" type="Textos">
+                                    <param id="0" name="X">20</param>
+                                    <param id="1" name="Value">&quot;The higher the score, the more money you earn. Touch the score to continue&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="935864620057353" type="Textos">
+                                    <param id="0" name="X">21</param>
+                                    <param id="1" name="Value">&quot;Grab fuel to keep driving&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="366154530395739" type="Textos">
+                                    <param id="0" name="X">22</param>
+                                    <param id="1" name="Value">&quot;Oh, looks like someone got hit&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="907877305221936" type="Textos">
+                                    <param id="0" name="X">23</param>
+                                    <param id="1" name="Value">&quot;Back to menu&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
