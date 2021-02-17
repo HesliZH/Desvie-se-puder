@@ -14,14 +14,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">Tela Inicial</layout>
         <layout order="3">Creditos</layout>
         <layout order="5">Loja</layout>
-        <layout active="1" order="8">Menu Principal</layout>
+        <layout order="8">Menu Principal</layout>
         <layout order="10">Base</layout>
+        <layout order="12">BaseZumbi</layout>
         <event-sheet order="1">Eventos Garagem</event-sheet>
-        <event-sheet order="4">Array Textos</event-sheet>
+        <event-sheet active="1" order="4">Array Textos</event-sheet>
         <event-sheet order="6">Eventos Loja</event-sheet>
         <event-sheet order="7">Eventos Tela Inicial</event-sheet>
         <event-sheet order="9">Eventos Menu</event-sheet>
         <event-sheet order="11">Eventos Base das Fases</event-sheet>
+        <event-sheet order="13">EventosBaseZumbis</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

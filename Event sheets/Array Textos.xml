@@ -111,11 +111,15 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="141907518245242" type="Textos">
                                     <param id="0" name="X">22</param>
-                                    <param id="1" name="Value">&quot;Puts meu querido, parece que você bateu&quot;</param>
+                                    <param id="1" name="Value">&quot;PUTS MEU QUERIDO, PARECE QUE VOCÊ BATEU&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="882338159629869" type="Textos">
                                     <param id="0" name="X">23</param>
-                                    <param id="1" name="Value">&quot;Voltar ao menu&quot;</param>
+                                    <param id="1" name="Value">&quot;VOLTAR AO MENU&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="562707578308578" type="Textos">
+                                    <param id="0" name="X">24</param>
+                                    <param id="1" name="Value">&quot;GARAGEM&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -227,11 +231,15 @@
                                 </action>
                                 <action id="2" name="Set at X" sid="366154530395739" type="Textos">
                                     <param id="0" name="X">22</param>
-                                    <param id="1" name="Value">&quot;Oh, looks like someone got hit&quot;</param>
+                                    <param id="1" name="Value">&quot;OH, LOOKS LIKE SOMEONE GOT HIT&quot;</param>
                                 </action>
                                 <action id="2" name="Set at X" sid="907877305221936" type="Textos">
                                     <param id="0" name="X">23</param>
-                                    <param id="1" name="Value">&quot;Back to menu&quot;</param>
+                                    <param id="1" name="Value">&quot;BACK TO MENU&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="772879759326573" type="Textos">
+                                    <param id="0" name="X">24</param>
+                                    <param id="1" name="Value">&quot;GARAGE&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

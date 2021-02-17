@@ -584,13 +584,26 @@
                         <condition id="-2" name="On start of layout" sid="124850336763511" type="System" />
                     </conditions>
                     <actions>
-                        <action id="5" name="Set web font" sid="592097257807155" type="InfoGaragem">
-                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                        <action id="5" name="Set web font" sid="839123822006948" type="InfoGaragem">
+                            <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
                         </action>
-                        <action id="5" name="Set web font" sid="491842457245936" type="VoltarGaragem">
-                            <param id="0" name="Family name">&quot;sneak_attackregular&quot;</param>
-                            <param id="1" name="CSS URL">&quot;sneakattack.css&quot;</param>
+                        <action id="5" name="Set web font" sid="574699911309263" type="VoltarGaragem">
+                            <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="132347529070445">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="897243611361068" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="967435362977982" type="VoltarGaragem">
+                            <param id="0" name="Text">Textos.At(23)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="970352458376981" type="InfoGaragem">
+                            <param id="0" name="Text">Textos.At(24)</param>
                         </action>
                     </actions>
                 </event-block>

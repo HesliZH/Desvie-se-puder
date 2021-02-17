@@ -300,10 +300,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>209</x>
-                        <y>236</y>
+                        <y>124</y>
                         <z>0</z>
                         <width>64</width>
-                        <height>656</height>
+                        <height>608</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -708,7 +708,7 @@
                     <properties>
                         <text>Garagem</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-32,400,0</font>
+                        <font>Arial,-34.4,400,0</font>
                         <color>0,153,255</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -719,11 +719,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>22</x>
-                        <y>-20</y>
+                        <x>32</x>
+                        <y>0</y>
                         <z>0</z>
-                        <width>439</width>
-                        <height>150</height>
+                        <width>416</width>
+                        <height>128</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -955,10 +955,10 @@
                     <properties>
                         <text>Sair da garagem</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-19,400,0</font>
-                        <color>0,153,255</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
+                        <font>Arial,-21.6,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
@@ -966,11 +966,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>175</x>
-                        <y>169</y>
+                        <x>160</x>
+                        <y>746</y>
                         <z>0</z>
                         <width>160</width>
-                        <height>74</height>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
