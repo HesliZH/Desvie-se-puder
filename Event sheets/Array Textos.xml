@@ -129,6 +129,14 @@
                                     <param id="0" name="X">26</param>
                                     <param id="1" name="Value">&quot;CÓDIGO ATIVADO&quot;</param>
                                 </action>
+                                <action id="2" name="Set at X" sid="507674409623347" type="Textos">
+                                    <param id="0" name="X">27</param>
+                                    <param id="1" name="Value">&quot;MODO NORMAL&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="284590701637529" type="Textos">
+                                    <param id="0" name="X">28</param>
+                                    <param id="1" name="Value">&quot;MODO ZUMBI&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -256,6 +264,14 @@
                                 <action id="2" name="Set at X" sid="426785074861620" type="Textos">
                                     <param id="0" name="X">26</param>
                                     <param id="1" name="Value">&quot;CHEAT ACTIVATED&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="652833562649125" type="Textos">
+                                    <param id="0" name="X">27</param>
+                                    <param id="1" name="Value">&quot;NORMAL MODE&quot;</param>
+                                </action>
+                                <action id="2" name="Set at X" sid="278330469795471" type="Textos">
+                                    <param id="0" name="X">28</param>
+                                    <param id="1" name="Value">&quot;ZOMBIE MODE&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

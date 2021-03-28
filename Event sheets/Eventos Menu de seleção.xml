@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Menu de seleção</name>
     <events>
+        <include>Array Textos</include>
         <variable comment="Caso seja 0 = normal 1 = Zumbi" constant="0" name="ModoDeJogo" sid="228794134735184" static="0" type="number">0</variable>
         <comment>Modo de jogo controlado por variável 0 = normal 1 = zumbi</comment>
         <event-group description="" sid="472240675065484" title="ControleDeSelecao">
@@ -93,6 +94,50 @@
                             <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
                         </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="689089519430449">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="459350917828130" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="788439075655761" type="txtBtn_Opcoes">
+                                    <param id="0" name="Text">Textos.At(27)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="900789131149509">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="865822756864499" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="420160262043301" type="txtBtn_Opcoes">
+                                    <param id="0" name="Text">Textos.At(28)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="867774650038727">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="147059816946264" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="504038660128911" type="txtBtn_Opcoes">
+                                    <param id="0" name="Text">Textos.At(11)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
