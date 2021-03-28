@@ -656,7 +656,7 @@
                         <text> Password</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-32,400,0</font>
-                        <color>255,0,102</color>
+                        <color>120,120,120</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
                         <hotspot>Center</hotspot>
