@@ -306,10 +306,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="250731169878906" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="106687668537915">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="803374575018168" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="415649514243199" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="389694907357035">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="755396449354624" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="427731584825913">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="783290066273256" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="787381620656690" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="697370014517718">
                     <conditions>
@@ -329,10 +364,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">2</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="868588605309668" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="716642920828166">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="799133324331609" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="898109583153590" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="681853252278428">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="868498815380485" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="237980485935480">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="768649745580631" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="465032468310958" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="155993854177692">
                     <conditions>
@@ -352,10 +422,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">3</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="677496794268300" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="436993304591772">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="811126103728226" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="752671557286184" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="232334587308098">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="554372208673951" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="192918682682914">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="183786267484693" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="622421406272760" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="391570075192017">
                     <conditions>
@@ -375,10 +480,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">4</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="224701005980664" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="396870312781538">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="554222093870902" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="996610334684826" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="367371688218027">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="516847367184342" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="244239006342225">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="689763376841538" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="397979855324168" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="180062333635273">
                     <conditions>
@@ -398,10 +538,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">5</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="472031600344337" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="378214696243424">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="154731326392713" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="487733628062197" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="461026479170867">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="128899097392569" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="702592113923033">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="477584868286371" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="580282062729111" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="661235706384280">
                     <conditions>
@@ -421,10 +596,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">6</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="873164042452939" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="857280854772890">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="386363608369544" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="918462244774071" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="848381422570092">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="568248501758702" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="364621547276653">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="816846580513478" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="115882177563799" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="489404657155882">
                     <conditions>
@@ -444,10 +654,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">7</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="172132572107929" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="839057924564142">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="615836462310449" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="874876623108813" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="393234835491084">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="306658701825485" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="427549198662726">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="954964780457562" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="469893966671478" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="748755697875530">
                     <conditions>
@@ -467,10 +712,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">8</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="763849168447820" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="410059568540844">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="464753897191216" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="155758106661921" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="827778317359053">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="341552812599029" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="994164074715834">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="191739834658575" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="942569372719924" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="604056400672966">
                     <conditions>
@@ -490,10 +770,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">9</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="743792747137755" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="374455757219367">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="935402758910106" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="316536211190661" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="617729772661380">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="173045382682133" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="851872969773661">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="333096212820648" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="248706677818225" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="750885080431926">
                     <conditions>
@@ -513,10 +828,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">10</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="368823030537475" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="366223082799605">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="719953241458862" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="507440732500179" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="262715149985037">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="102194990064028" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="547106064290404">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="616822106891533" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="480447463156814" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="551316966414724">
                     <conditions>
@@ -536,10 +886,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">11</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="161407650521635" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="643465352491837">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="232451917112673" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="187810565083592" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="274639523616103">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="306256285769709" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="468777161891232">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="734788149640016" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="206400007517911" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="136442354534274">
                     <conditions>
@@ -559,10 +944,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">12</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="920735523262895" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="959931411199594">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="307872253154676" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="239114614503720" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="501515795819533">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="192519786214050" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="208254649799832">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="960850078850712" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="116176794036758" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="225093016838891">
                     <conditions>
@@ -582,10 +1002,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">13</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="178278273335960" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="394217227561706">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="367193289513614" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="517534823885371" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="582559613758438">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="197611567769641" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="216501892451781">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="771365968388811" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="546695794848024" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block sid="573989024351629">
                     <conditions>
@@ -605,10 +1060,45 @@
                             <param id="0" name="Variable">CarroAtual</param>
                             <param id="1" name="Value">14</param>
                         </action>
-                        <action id="-2" name="Go to layout" sid="306183207820667" type="System">
-                            <param id="0" name="Layout">Base</param>
-                        </action>
                     </actions>
+                    <sub-events>
+                        <event-block sid="289195990770850">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="876813808659774" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="464250279077410" type="System">
+                                    <param id="0" name="Layout">Base</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="720409213940303">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="715998853710158" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="684647142430313">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="535154930889561" type="System">
+                                            <param id="0" name="Variable">ModoDeJogo</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-2" name="Go to layout" sid="771437844741387" type="System">
+                                            <param id="0" name="Layout">BaseZumbi</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

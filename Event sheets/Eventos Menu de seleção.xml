@@ -73,5 +73,28 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-group description="" sid="483395476737019" title="DefineWebFontSelecao">
+            <sub-events>
+                <event-block sid="518029297576776">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="866425366006324" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set web font" sid="912217047121440" type="txtBtn_Opcoes">
+                            <param id="0" name="Family name">&quot;retroville_ncregular&quot;</param>
+                            <param id="1" name="CSS URL">&quot;retroville.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="414863616250900" type="txt_Highscore">
+                            <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                            <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="999594912728005" type="txt_Highscore2">
+                            <param id="0" name="Family name">&quot;joystixmonospace&quot;</param>
+                            <param id="1" name="CSS URL">&quot;joy.css&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
