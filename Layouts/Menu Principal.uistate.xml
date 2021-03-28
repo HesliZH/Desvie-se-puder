@@ -5,10 +5,10 @@ It is entirely optional and the project will load without it.  If you are placin
 you probably do not want to add any .uistate.xml files to the repository.-->
     <camera>
         <position-x>240</position-x>
-        <position-y>427</position-y>
+        <position-y>402.471</position-y>
         <position-z>196.234</position-z>
         <lookat-x>240</lookat-x>
-        <lookat-y>427</lookat-y>
+        <lookat-y>402.471</lookat-y>
         <lookat-z>0</lookat-z>
     </camera>
     <snap-to-grid>1</snap-to-grid>
@@ -25,11 +25,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </properties>
     <active-layer name="AnuncioUpdate" />
     <layers>
-        <layer locked="1" name="Fundo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Fundo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Estrada" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Carros" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="BackgroundTitulo" parallax-in-editor="0" visible="1" />
-        <layer locked="1" name="Titulo" parallax-in-editor="0" visible="1" />
+        <layer locked="0" name="Titulo" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Hmm" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="Opcoes" parallax-in-editor="0" visible="1" />
         <layer locked="0" name="AnuncioUpdate" parallax-in-editor="0" visible="1" />

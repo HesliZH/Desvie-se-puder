@@ -411,6 +411,107 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="ZumbisMenu" sid="825203999681763">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="508472689348154">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292477137141460" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_00.png">
+                            <collision-poly>
+                                <point x="0.383929" y="0.200893" />
+                                <point x="0.71875" y="0.272321" />
+                                <point x="0.776785" y="0.776785" />
+                                <point x="0.258929" y="0.732143" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_01.png">
+                            <collision-poly>
+                                <point x="0.294643" y="0.254464" />
+                                <point x="0.709822" y="0.227679" />
+                                <point x="0.75" y="0.763393" />
+                                <point x="0.28125" y="0.772322" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_02.png">
+                            <collision-poly>
+                                <point x="0.3125" y="0.258929" />
+                                <point x="0.700893" y="0.232143" />
+                                <point x="0.758929" y="0.754464" />
+                                <point x="0.276786" y="0.785715" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_03.png">
+                            <collision-poly>
+                                <point x="0.34375" y="0.227679" />
+                                <point x="0.696429" y="0.21875" />
+                                <point x="0.75" y="0.741071" />
+                                <point x="0.245536" y="0.794643" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_04.png">
+                            <collision-poly>
+                                <point x="0.348214" y="0.214286" />
+                                <point x="0.767858" y="0.200893" />
+                                <point x="0.754465" y="0.763393" />
+                                <point x="0.254464" y="0.799107" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_05.png">
+                            <collision-poly>
+                                <point x="0.3125" y="0.191964" />
+                                <point x="0.732143" y="0.196429" />
+                                <point x="0.741072" y="0.776786" />
+                                <point x="0.334822" y="0.84375" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_06.png">
+                            <collision-poly>
+                                <point x="0.303572" y="0.209821" />
+                                <point x="0.683036" y="0.214286" />
+                                <point x="0.736607" y="0.754464" />
+                                <point x="0.308036" y="0.803571" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_07.png">
+                            <collision-poly>
+                                <point x="0.34375" y="0.183036" />
+                                <point x="0.732143" y="0.174107" />
+                                <point x="0.75" y="0.78125" />
+                                <point x="0.316964" y="0.834821" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_08.png">
+                            <collision-poly>
+                                <point x="0.241071" y="0.191964" />
+                                <point x="0.790179" y="0.200893" />
+                                <point x="0.790179" y="0.758929" />
+                                <point x="0.254464" y="0.834821" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_09.png">
+                            <collision-poly>
+                                <point x="0.330357" y="0.196429" />
+                                <point x="0.736607" y="0.165179" />
+                                <point x="0.754465" y="0.348214" />
+                                <point x="0.542411" y="0.745536" />
+                                <point x="0.3125" y="0.78125" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Users\User\Desktop\backup\Backup\Projetos\Desvie-se-puder\Textures\Zumbis\zumbis_10.png">
+                            <collision-poly>
+                                <point x="0.285715" y="0.205357" />
+                                <point x="0.794643" y="0.1875" />
+                                <point x="0.763393" y="0.772321" />
+                                <point x="0.267857" y="0.799107" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder name="Controles">
             <object-type name="ControleDir" sid="901962205847499">
@@ -1978,6 +2079,7 @@
         <layout>Mapas.xml</layout>
         <layout>GaragemStatus.xml</layout>
         <layout>Oficina.xml</layout>
+        <layout>Menu Selecao.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Eventos Menu.xml</event-sheet>
@@ -1996,6 +2098,7 @@
         <event-sheet>Eventos Anuncios.xml</event-sheet>
         <event-sheet>EventosBaseZumbis.xml</event-sheet>
         <event-sheet>Array Textos.xml</event-sheet>
+        <event-sheet>Eventos Menu de seleção.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Touch" uid="5">

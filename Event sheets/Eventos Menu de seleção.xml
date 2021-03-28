@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Menu de seleção</name>
+    <events>
+        <variable comment="Caso seja 0 = normal 1 = Zumbi" constant="0" name="ModoDeJogo" sid="228794134735184" static="0" type="number">0</variable>
+        <comment>Modo de jogo controlado por variável 0 = normal 1 = zumbi</comment>
+        <event-group description="" sid="472240675065484" title="ControleDeSelecao">
+            <sub-events>
+                <event-block sid="892371598382086">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="812498261157514" type="Touch">
+                            <param id="0" name="Object">txtBtn_Opcoes</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="553971696184335">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="607276646682012" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="798717304813926" type="System">
+                                    <param id="0" name="Layout">Garagem</param>
+                                </action>
+                                <action id="6" name="Stop" sid="624716905735705" type="Audio">
+                                    <param id="0" name="Tag">&quot;MenuMusic&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="678661719428405" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="862046346022192">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="551491074785461" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="745817944365359" type="System">
+                                    <param id="0" name="Layout">Garagem</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="759185960121252" type="System">
+                                    <param id="0" name="Variable">ModoDeJogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>Retorna a tela principal para acesso a loja</comment>
+                        <event-block sid="798184751867766">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="340148537208278" type="txtBtn_Opcoes">
+                                    <param id="0" name="Instance variable">ID</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="789740405550912" type="System">
+                                    <param id="0" name="Layout">Menu Principal</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
